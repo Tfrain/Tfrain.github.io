@@ -3,7 +3,13 @@
   <entry>
     <title><![CDATA[再一次测试]]></title>
     <url>%2F2018%2F08%2F23%2F%E5%86%8D%E4%B8%80%E6%AC%A1%E6%B5%8B%E8%AF%95%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[##测试一下目录结构 ###目录1 1printf("Hello world!"); More info: c语言 ###目录2 1cout&lt;&lt;"Hello world"; More info: c++ ###目录3 1sout("Hello word"); More info: java ###目录4 暂无 ##测试以下流程 ###— ###—- ###—-]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>

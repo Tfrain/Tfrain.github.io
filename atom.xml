@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Wei&#39;s  Blog</title>
+  <title>Thunderforrain&#39;s  Blog</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://Thunderforrain.github.io/"/>
-  <updated>2018-08-23T12:48:28.239Z</updated>
+  <updated>2018-08-24T07:33:01.687Z</updated>
   <id>https://Thunderforrain.github.io/</id>
   
   <author>
-    <name>Cheng Wei</name>
+    <name>Thunderforrain</name>
     
   </author>
   
@@ -21,12 +21,26 @@
     <link href="https://Thunderforrain.github.io/2018/08/23/%E5%86%8D%E4%B8%80%E6%AC%A1%E6%B5%8B%E8%AF%95/"/>
     <id>https://Thunderforrain.github.io/2018/08/23/再一次测试/</id>
     <published>2018-08-23T12:39:29.000Z</published>
-    <updated>2018-08-23T12:48:28.239Z</updated>
+    <updated>2018-08-24T07:33:01.687Z</updated>
     
     <summary type="html">
     
+      
+      
+        
+        
+          &lt;p&gt;##测试一下目录结构&lt;/p&gt;
+&lt;p&gt;###目录1&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
     </summary>
     
+      <category term="test" scheme="https://Thunderforrain.github.io/categories/test/"/>
+    
+    
+      <category term="markdown" scheme="https://Thunderforrain.github.io/tags/markdown/"/>
     
   </entry>
   
