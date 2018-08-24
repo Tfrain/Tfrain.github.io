@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://Thunderforrain.github.io/"/>
-  <updated>2018-08-24T07:33:01.687Z</updated>
+  <updated>2018-08-24T08:27:37.804Z</updated>
   <id>https://Thunderforrain.github.io/</id>
   
   <author>
@@ -21,19 +21,18 @@
     <link href="https://Thunderforrain.github.io/2018/08/23/%E5%86%8D%E4%B8%80%E6%AC%A1%E6%B5%8B%E8%AF%95/"/>
     <id>https://Thunderforrain.github.io/2018/08/23/再一次测试/</id>
     <published>2018-08-23T12:39:29.000Z</published>
-    <updated>2018-08-24T07:33:01.687Z</updated>
+    <updated>2018-08-24T08:27:37.804Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;##测试一下目录结构&lt;/p&gt;
-&lt;p&gt;###目录1&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
-        
-      
+      &lt;pre&gt;&lt;code&gt;测试
+更多的测试
+更多的、更多的、更多的测试
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;没有测试的项目是很扯淡的，除非你的项目只有一个函数，然后那个函数返回Hello,World。&lt;/p&gt;
+&lt;p&gt;如果你的项目代码有上千行，如果你能保证测试覆盖率可以达到95%以的话，那么我想你的项目不会有太复杂的函数。假使有这样的函数，那么它也是被测试覆盖住的。&lt;/p&gt;
+&lt;p&gt;如果你在用心做这个项目，那么你看到代码写得不好也会试着改进，即重构。当有了一些，你的技能会不断提升。你开始会试着接触更多的东西，如stub，如mock，如fakeserver。&lt;/p&gt;
+&lt;p&gt;有一天，你会发现你离不开测试。&lt;/p&gt;
+&lt;p&gt;然后就会相信: 那些没有写测试的项目都是在耍流氓 &lt;/p&gt;
     
     </summary>
     
