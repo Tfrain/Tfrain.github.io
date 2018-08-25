@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fposts%2F20180825-Hello</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[hexo链接持久化终极解决之道]]></title>
     <url>%2Fposts%2F20180825-hexo_permalink</url>
     <content type="text"><![CDATA[mcksldjvckgbchsdhckdjcjkcbnnjcnkjnvj]]></content>
@@ -10,7 +15,7 @@
   </entry>
   <entry>
     <title><![CDATA[再一次测试]]></title>
-    <url>%2Fposts%2F20180823-null</url>
+    <url>%2Fposts%2F20180823-Test</url>
     <content type="text"><![CDATA[优秀的人，不是不合群，而是他们合群的人里面没有你 测试 更多的测试 更多的、更多的、更多的测试 没有测试的项目是很扯淡的，除非你的项目只有一个函数，然后那个函数返回Hello,World。 如果你的项目代码有上千行，如果你能保证测试覆盖率可以达到95%以的话，那么我想你的项目不会有太复杂的函数。假使有这样的函数，那么它也是被测试覆盖住的。 如果你在用心做这个项目，那么你看到代码写得不好也会试着改进，即重构。当有了一些，你的技能会不断提升。你开始会试着接触更多的东西，如stub，如mock，如fakeserver。 有一天，你会发现你离不开测试。 然后就会相信: 那些没有写测试的项目都是在耍流氓 测试一下目录结构目录11printf("Hello world!"); More info: c语言 目录21cout&lt;&lt;"Hello world"; More info: c++ 目录31sout("Hello word"); More info: java 目录4暂无 测一下流程流程1 我们可以从中获取到不同的知识、内容、信息。每个人都可以从别人的代码中学习，当我们需要构建一个库的时候，我们可以在上面寻找不同的库和代码来实现我们的功能。如当我在实现一个库的时候，我会在GitHub上找到相应的组件: Promise 支持 Class类(ps:没有一个好的类使用的方式) Template 一个简单的模板引擎 Router 用来控制页面的路由 Ajax 基本的Ajax Get/Post请求 流程2 越来越多的人因为GitHub获得工作，因为他们的做的东西正好符合一些公司的要求。那么，这些公司在寻找代码的时候，就会试着邀请他们。 因而，在GitHub寻找合适的候选人，已经是一种趋势。 流程3 如果我们想创造出更好、强大地框架时，那么认识更多的人可能会带来更多的帮助。有时候会同上面那一点一样的效果]]></content>
       <categories>
         <category>test</category>
@@ -18,10 +23,5 @@
       <tags>
         <tag>markdown</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2Fposts%2F20180823-null</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
