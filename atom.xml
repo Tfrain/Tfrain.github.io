@@ -37,17 +37,12 @@
     <link href="https://Thunderforrain.github.io/posts/19acb239/"/>
     <id>https://Thunderforrain.github.io/posts/19acb239/</id>
     <published>2018-08-25T02:00:54.000Z</published>
-    <updated>2018-08-25T05:17:12.333Z</updated>
+    <updated>2018-08-25T05:37:39.104Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;安装NexT主题&quot;&gt;&lt;a href=&quot;#安装NexT主题&quot; class=&quot;headerlink&quot; title=&quot;安装NexT主题&quot;&gt;&lt;/a&gt;安装NexT主题&lt;/h2&gt;&lt;p&gt;Hexo 安装主题的方式非常简单，只需要将主题文件拷贝至站点目录的 themes 目录下，
-        
-      
+      &lt;h2 id=&quot;安装NexT主题&quot;&gt;&lt;a href=&quot;#安装NexT主题&quot; class=&quot;headerlink&quot; title=&quot;安装NexT主题&quot;&gt;&lt;/a&gt;安装NexT主题&lt;/h2&gt;&lt;p&gt;Hexo 安装主题的方式非常简单，只需要将主题文件拷贝至站点目录的 themes 目录下， 然后修改下配置文件即可。具体到 NexT 来说，安装步骤如下。&lt;/p&gt;
+&lt;h3 id=&quot;安装主题&quot;&gt;&lt;a href=&quot;#安装主题&quot; class=&quot;headerlink&quot; title=&quot;安装主题&quot;&gt;&lt;/a&gt;安装主题&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/iissnan/hexo-theme-next themes/next&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;### 启动主题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;与所有 Hexo 主题启用的模式一样。 当 克隆/下载 完成后，打开 站点配置文件， 找到 theme 字段，并将其值更改为 next。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;```bash&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;theme: next&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -58,10 +53,10 @@
   
   <entry>
     <title>再一次测试</title>
-    <link href="https://Thunderforrain.github.io/posts/Test_again/"/>
-    <id>https://Thunderforrain.github.io/posts/Test_again/</id>
+    <link href="https://Thunderforrain.github.io/posts/45bf9d15/"/>
+    <id>https://Thunderforrain.github.io/posts/45bf9d15/</id>
     <published>2018-08-23T12:39:29.000Z</published>
-    <updated>2018-08-25T05:17:14.533Z</updated>
+    <updated>2018-08-25T05:28:36.677Z</updated>
     
     <summary type="html">
     
