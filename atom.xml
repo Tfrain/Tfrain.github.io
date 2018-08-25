@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://Thunderforrain.github.io/"/>
-  <updated>2018-08-25T02:02:42.568Z</updated>
+  <updated>2018-08-25T02:31:01.126Z</updated>
   <id>https://Thunderforrain.github.io/</id>
   
   <author>
@@ -18,12 +18,20 @@
   
   <entry>
     <title>hexo链接持久化终极解决之道</title>
-    <link href="https://Thunderforrain.github.io/posts/uncategorized/20180825-hexo_permalink.html"/>
-    <id>https://Thunderforrain.github.io/posts/uncategorized/20180825-hexo_permalink.html</id>
+    <link href="https://Thunderforrain.github.io/posts/20180825-hexo_permalink"/>
+    <id>https://Thunderforrain.github.io/posts/20180825-hexo_permalink</id>
     <published>2018-08-25T02:00:54.000Z</published>
-    <updated>2018-08-25T02:02:42.568Z</updated>
+    <updated>2018-08-25T02:31:01.126Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;mcksldjvck&quot;&gt;&lt;a href=&quot;#mcksldjvck&quot; class=&quot;headerlink&quot;
+        
+      
     
     </summary>
     
@@ -34,10 +42,10 @@
   
   <entry>
     <title>再一次测试</title>
-    <link href="https://Thunderforrain.github.io/posts/test/20180823-index.html"/>
-    <id>https://Thunderforrain.github.io/posts/test/20180823-index.html</id>
+    <link href="https://Thunderforrain.github.io/posts/20180823-null"/>
+    <id>https://Thunderforrain.github.io/posts/20180823-null</id>
     <published>2018-08-23T12:39:29.000Z</published>
-    <updated>2018-08-25T00:55:50.862Z</updated>
+    <updated>2018-08-25T02:36:36.446Z</updated>
     
     <summary type="html">
     
@@ -59,8 +67,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://Thunderforrain.github.io/posts/uncategorized/20180823-index.html"/>
-    <id>https://Thunderforrain.github.io/posts/uncategorized/20180823-index.html</id>
+    <link href="https://Thunderforrain.github.io/posts/20180823-null"/>
+    <id>https://Thunderforrain.github.io/posts/20180823-null</id>
     <published>2018-08-23T12:30:44.860Z</published>
     <updated>2018-08-23T12:30:44.820Z</updated>
     
