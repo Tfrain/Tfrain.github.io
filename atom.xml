@@ -5,9 +5,9 @@
   <subtitle>实迷途其未远,觉今是而昨非</subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="https://Thunderforrain.github.io/"/>
+  <link href="https://Thunderforrain.github.io/blog/"/>
   <updated>2018-08-25T14:12:44.649Z</updated>
-  <id>https://Thunderforrain.github.io/</id>
+  <id>https://Thunderforrain.github.io/blog/</id>
   
   <author>
     <name>魏程程</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>hexo+github_page+ubuntu</title>
-    <link href="https://Thunderforrain.github.io/posts/19acb239/"/>
-    <id>https://Thunderforrain.github.io/posts/19acb239/</id>
+    <link href="https://Thunderforrain.github.io/blog/posts/19acb239/"/>
+    <id>https://Thunderforrain.github.io/blog/posts/19acb239/</id>
     <published>2018-08-25T02:00:54.000Z</published>
     <updated>2018-08-25T14:12:44.649Z</updated>
     
@@ -51,14 +51,14 @@
     </summary>
     
     
-      <category term="hexo" scheme="https://Thunderforrain.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="https://Thunderforrain.github.io/blog/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>再一次测试</title>
-    <link href="https://Thunderforrain.github.io/posts/45bf9d15/"/>
-    <id>https://Thunderforrain.github.io/posts/45bf9d15/</id>
+    <link href="https://Thunderforrain.github.io/blog/posts/45bf9d15/"/>
+    <id>https://Thunderforrain.github.io/blog/posts/45bf9d15/</id>
     <published>2018-08-23T12:39:29.000Z</published>
     <updated>2018-08-25T05:28:36.677Z</updated>
     
@@ -73,17 +73,17 @@
     
     </summary>
     
-      <category term="test" scheme="https://Thunderforrain.github.io/categories/test/"/>
+      <category term="test" scheme="https://Thunderforrain.github.io/blog/categories/test/"/>
     
     
-      <category term="markdown" scheme="https://Thunderforrain.github.io/tags/markdown/"/>
+      <category term="markdown" scheme="https://Thunderforrain.github.io/blog/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://Thunderforrain.github.io/posts/4a17b156/"/>
-    <id>https://Thunderforrain.github.io/posts/4a17b156/</id>
+    <link href="https://Thunderforrain.github.io/blog/posts/4a17b156/"/>
+    <id>https://Thunderforrain.github.io/blog/posts/4a17b156/</id>
     <published>2018-08-23T02:00:54.000Z</published>
     <updated>2018-08-25T10:43:12.150Z</updated>
     
