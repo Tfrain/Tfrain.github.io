@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://Thunderforrain.github.io/"/>
-  <updated>2018-08-25T14:12:44.649Z</updated>
+  <updated>2018-08-26T01:56:35.492Z</updated>
   <id>https://Thunderforrain.github.io/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://Thunderforrain.github.io/posts/19acb239/"/>
     <id>https://Thunderforrain.github.io/posts/19acb239/</id>
     <published>2018-08-25T02:00:54.000Z</published>
-    <updated>2018-08-25T14:12:44.649Z</updated>
+    <updated>2018-08-26T01:56:35.492Z</updated>
     
     <summary type="html">
     
       &lt;h2 id=&quot;菜鸟搭建须知（是我没错，备忘）&quot;&gt;&lt;a href=&quot;#菜鸟搭建须知（是我没错，备忘）&quot; class=&quot;headerlink&quot; title=&quot;菜鸟搭建须知（是我没错，备忘）&quot;&gt;&lt;/a&gt;菜鸟搭建须知（是我没错，备忘）&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;会一些基本的Linux命令和vim的操作命令&lt;/li&gt;
-&lt;li&gt;网上已经浏览了&lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;网上已经浏览了 &lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方文档&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;安装ubuntu和git（因为最近在学习用ubuntu，而且很多操作ubuntu上会更简单）&lt;/li&gt;
 &lt;li&gt;安装Node.js并拥有github账号&lt;/li&gt;
 &lt;li&gt;github上新建好一个专门的仓库，并最好熟悉github及其基本操作比如SSH密钥&lt;/li&gt;
