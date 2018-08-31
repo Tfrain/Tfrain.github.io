@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://Thunderforrain.github.io/"/>
-  <updated>2018-08-29T04:58:13.133Z</updated>
+  <updated>2018-08-31T08:19:00.459Z</updated>
   <id>https://Thunderforrain.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>写在前面</title>
+    <link href="https://Thunderforrain.github.io/posts/ca8bfdf3/"/>
+    <id>https://Thunderforrain.github.io/posts/ca8bfdf3/</id>
+    <published>2018-08-31T07:18:01.000Z</published>
+    <updated>2018-08-31T08:19:00.459Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;你不能一直做一些烂事，然后自己后悔，好像后悔有用一样，你需要变好&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="life" scheme="https://Thunderforrain.github.io/categories/life/"/>
+    
+    
+      <category term="life" scheme="https://Thunderforrain.github.io/tags/life/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo+nexT中的其他内容</title>
@@ -43,7 +63,7 @@
     <link href="https://Thunderforrain.github.io/posts/19acb239/"/>
     <id>https://Thunderforrain.github.io/posts/19acb239/</id>
     <published>2018-08-25T02:00:54.000Z</published>
-    <updated>2018-08-28T14:00:13.589Z</updated>
+    <updated>2018-08-31T08:25:22.591Z</updated>
     
     <summary type="html">
     
@@ -53,9 +73,7 @@
 &lt;li&gt;安装ubuntu和git（因为最近在学习用ubuntu，而且很多操作ubuntu上会更简单）&lt;/li&gt;
 &lt;li&gt;安装Node.js并拥有github账号&lt;/li&gt;
 &lt;li&gt;github上新建好一个专门的仓库，并最好熟悉github及其基本操作比如SSH密钥&lt;/li&gt;
-&lt;li&gt;以上知识网上有比较完善的信息，搜索关键字学习并进行必要的搭建前提已经完成下图：&lt;br&gt;&lt;img src=&quot;/posts/19acb239/hexo1.png&quot; alt=&quot;页面&quot;&gt;&lt;br&gt;建议大家选择不同的博客建站，可以参考&lt;a href=&quot;https://www.zhihu.com/question/24422335&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;有哪些好看的 Hexo 主题?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;新手初步搭建可能有用&quot;&gt;&lt;a href=&quot;#新手初步搭建可能有用&quot; class=&quot;headerlink&quot; title=&quot;新手初步搭建可能有用&quot;&gt;&lt;/a&gt;新手初步搭建可能有用&lt;/h3&gt;&lt;p&gt;搭建nexT主题可能有帮助的链接：&lt;br&gt; &lt;a href=&quot;https://www.cnblogs.com/fengxiongZz/p/7707219.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.cnblogs.com/fengxiongZz/p/7707219.html&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;https://www.jianshu.com/p/a0a27d840992&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.jianshu.com/p/a0a27d840992&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;https://www.jianshu.com/p/24cb74aeb0a3&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.jianshu.com/p/24cb74aeb0a3&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;以上知识网上有比较完善的信息，搜索关键字学习并进行必要的搭建前提已经完成下图：&lt;br&gt;&lt;img src=&quot;/posts/19acb239/hexo1.png&quot; alt=&quot;页面&quot;&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
