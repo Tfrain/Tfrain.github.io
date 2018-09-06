@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://Thunderforrain.github.io/"/>
-  <updated>2018-08-31T08:19:00.459Z</updated>
+  <updated>2018-09-06T12:05:04.522Z</updated>
   <id>https://Thunderforrain.github.io/</id>
   
   <author>
@@ -17,11 +17,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>java入门学习</title>
+    <link href="https://Thunderforrain.github.io/posts/ae257b96/"/>
+    <id>https://Thunderforrain.github.io/posts/ae257b96/</id>
+    <published>2018-09-06T19:36:50.000Z</published>
+    <updated>2018-09-06T12:05:04.522Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;还是要发点博客&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Java" scheme="https://Thunderforrain.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="https://Thunderforrain.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阅读资料</title>
+    <link href="https://Thunderforrain.github.io/posts/5e4c7542/"/>
+    <id>https://Thunderforrain.github.io/posts/5e4c7542/</id>
+    <published>2018-09-06T12:06:13.000Z</published>
+    <updated>2018-09-06T12:15:57.512Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;你要是无聊，它可以让你学不动，给你省了时间和金钱&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="read" scheme="https://Thunderforrain.github.io/categories/read/"/>
+    
+    
+      <category term="read" scheme="https://Thunderforrain.github.io/tags/read/"/>
+    
+  </entry>
+  
+  <entry>
     <title>写在前面</title>
     <link href="https://Thunderforrain.github.io/posts/ca8bfdf3/"/>
     <id>https://Thunderforrain.github.io/posts/ca8bfdf3/</id>
     <published>2018-08-31T07:18:01.000Z</published>
-    <updated>2018-08-31T08:19:00.459Z</updated>
+    <updated>2018-09-06T12:18:34.121Z</updated>
     
     <summary type="html">
     
