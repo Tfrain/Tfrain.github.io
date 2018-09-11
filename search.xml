@@ -12,20 +12,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[阅读资料]]></title>
-    <url>%2Fposts%2F5e4c7542%2F</url>
-    <content type="text"><![CDATA[你要是无聊，它可以让你学不动，给你省了时间和金钱 计算机相关技术资料整理 https://github.com/EZLippi/practical-programming-books 编程书籍的整理和收集 https://github.com/KeKe-Li/book java 的书多一些 https://github.com/huangbaoquan/books 现在没太多时间读书，但可以整理一下，大家有好的链接不妨推荐一下放在这个博客中，方便以后有时间阅读]]></content>
-      <categories>
-        <category>read</category>
-      </categories>
-      <tags>
-        <tag>read</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[写在前面]]></title>
     <url>%2Fposts%2Fca8bfdf3%2F</url>
-    <content type="text"><![CDATA[你不能一直做一些烂事，然后自己后悔，好像后悔有用一样，你需要变好 往昔从高中蹦达出来，到了大学。从一无所知，到一无所知，总算有些进步，但却少了很多东西大一是短暂的，却给了我很多最最美好的经历，目前对我最重要的年份是2017没错了 现在搞学年鉴定？破事连篇感觉很烦，好吧，没有一天不是烦的生活总是乱七八糟的，尤其是像我这样喜欢胡思乱想的人希望自己能多给自己一些惊喜，少管些闲事，累了就休息，再也不失眠 未来还有三年时间希望自己能跟着大佬学点东西，不要别人一张嘴你就一头雾水、一脸尴尬课程很重，绩点、综测于我而言不是很重要了，希望自己多学点知识，然后做喜欢事情 寄语（鸡汤）没有不可治愈的伤痛，没有不能结束的沉沦，所有失去的，都会以另一种方式归来人生亦如逆旅，一切美好与温暖沉默如影，静立你的身后，不会迎头遇见，只要你不断走向远方，它便一路相随]]></content>
+    <content type="text"><![CDATA[你不能一直做一些烂事，然后自己后悔，好像后悔有用一样，你需要变好 想法 2017给了我很多最最美好的经历，目前对我最重要的年份是这一年,希望能继往开来希望自己能多给自己一些惊喜，少管些闲事，累了就休息，再也不失眠希望自己能跟着大佬学点东西，不要别人一张嘴你就一头雾水、一脸尴尬多看点书，学点东西，然后写一些对自己有用的博文 你要是无聊，它可以让你学不动，给你省了时间和金钱 计算机相关技术资料整理 https://github.com/EZLippi/practical-programming-books 编程书籍的整理和收集 https://github.com/KeKe-Li/book java 的书多一些 https://github.com/huangbaoquan/books 现在没太多时间读书，但可以整理一下，大家有好的链接不妨推荐一下放在这个博客中，方便以后有时间阅读寄语（鸡汤）没有不可治愈的伤痛，没有不能结束的沉沦，所有失去的，都会以另一种方式归来人生亦如逆旅，一切美好与温暖沉默如影，静立你的身后，不会迎头遇见，只要你不断走向远方，它便一路相随]]></content>
       <categories>
         <category>life</category>
       </categories>
@@ -54,10 +43,5 @@
       <tags>
         <tag>hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2Fposts%2F4a17b156%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
