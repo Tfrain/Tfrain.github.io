@@ -3,7 +3,7 @@
   <title>Thunderforrain&#39;s  Blog</title>
   
   <subtitle>实迷途其未远,觉今是而昨非</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://Thunderforrain.github.io/"/>
   <updated>2018-09-16T07:07:31.432Z</updated>
@@ -67,7 +67,7 @@
     
       &lt;h2 id=&quot;建议直接看最根本的东西&quot;&gt;&lt;a href=&quot;#建议直接看最根本的东西&quot; class=&quot;headerlink&quot; title=&quot; 建议直接看最根本的东西 &quot;&gt;&lt;/a&gt;&lt;strong&gt; 建议直接看最根本的东西 &lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;限于本人英语水平有限，建议大家直接到github上阅读相应的仓库获取最新知识，这样能避免很多错误，也不会被网上很多已经过时的东西影响。本人的版本：&lt;/p&gt;
 &lt;h3 id=&quot;Theme-version&quot;&gt;&lt;a href=&quot;#Theme-version&quot; class=&quot;headerlink&quot; title=&quot;Theme version&quot;&gt;&lt;/a&gt;Theme version&lt;/h3&gt;&lt;p&gt;version: 5.1.4&lt;/p&gt;
-&lt;h3 id=&quot;hexo-版本&quot;&gt;&lt;a href=&quot;#hexo-版本&quot; class=&quot;headerlink&quot; title=&quot;hexo 版本&quot;&gt;&lt;/a&gt;hexo 版本&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/posts/dde90a5c/选区_002.png&quot; alt=&quot;版本号&quot;&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&quot;hexo-版本&quot;&gt;&lt;a href=&quot;#hexo-版本&quot; class=&quot;headerlink&quot; title=&quot;hexo 版本&quot;&gt;&lt;/a&gt;hexo 版本&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/blog/posts/dde90a5c/选区_002.png&quot; alt=&quot;版本号&quot;&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -93,7 +93,7 @@
 &lt;li&gt;安装ubuntu和git（因为最近在学习用ubuntu，而且很多操作ubuntu上会更简单）&lt;/li&gt;
 &lt;li&gt;安装Node.js并拥有github账号&lt;/li&gt;
 &lt;li&gt;github上新建好一个专门的仓库，并最好熟悉github及其基本操作比如SSH密钥&lt;/li&gt;
-&lt;li&gt;以上知识网上有比较完善的信息，搜索关键字学习并进行必要的搭建前提已经完成下图：&lt;br&gt;&lt;img src=&quot;/posts/19acb239/hexo1.png&quot; alt=&quot;页面&quot;&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;li&gt;以上知识网上有比较完善的信息，搜索关键字学习并进行必要的搭建前提已经完成下图：&lt;br&gt;&lt;img src=&quot;/blog/posts/19acb239/hexo1.png&quot; alt=&quot;页面&quot;&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
