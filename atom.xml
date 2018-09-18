@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://thunderforrain.github.io/"/>
-  <updated>2018-09-16T07:07:31.432Z</updated>
+  <updated>2018-09-18T13:01:00.946Z</updated>
   <id>https://thunderforrain.github.io/</id>
   
   <author>
@@ -17,9 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>learn_java</title>
+    <link href="https://thunderforrain.github.io/2018/09/Java_further_study/"/>
+    <id>https://thunderforrain.github.io/2018/09/Java_further_study/</id>
+    <published>2018-09-18T10:04:44.000Z</published>
+    <updated>2018-09-18T13:01:00.946Z</updated>
+    
+    <summary type="html">
+    
+      nothing
+    
+    </summary>
+    
+      <category term="java" scheme="https://thunderforrain.github.io/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://thunderforrain.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>java入门学习</title>
-    <link href="https://thunderforrain.github.io/2018/09/learn+java/"/>
-    <id>https://thunderforrain.github.io/2018/09/learn+java/</id>
+    <link href="https://thunderforrain.github.io/2018/09/java_entry_learning/"/>
+    <id>https://thunderforrain.github.io/2018/09/java_entry_learning/</id>
     <published>2018-09-06T19:36:50.000Z</published>
     <updated>2018-09-16T07:07:31.432Z</updated>
     
@@ -83,7 +103,7 @@
     <link href="https://thunderforrain.github.io/2018/08/hexo+hithub_pages+nexT/"/>
     <id>https://thunderforrain.github.io/2018/08/hexo+hithub_pages+nexT/</id>
     <published>2018-08-25T02:00:54.000Z</published>
-    <updated>2018-08-31T08:25:22.591Z</updated>
+    <updated>2018-09-18T12:19:05.684Z</updated>
     
     <summary type="html">
     
