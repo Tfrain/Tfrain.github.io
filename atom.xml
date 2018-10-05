@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://thunderforrain.github.io/"/>
-  <updated>2018-09-30T13:51:55.942Z</updated>
+  <updated>2018-10-05T09:09:06.911Z</updated>
   <id>https://thunderforrain.github.io/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>群聊初步学习实现过程</title>
+    <link href="https://thunderforrain.github.io/2018/10/Thinking-of-Chat/"/>
+    <id>https://thunderforrain.github.io/2018/10/Thinking-of-Chat/</id>
+    <published>2018-10-05T08:48:15.000Z</published>
+    <updated>2018-10-05T09:09:06.911Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;看学习视频所得&quot;&gt;&lt;a href=&quot;#看学习视频所得&quot; class=&quot;headerlink&quot; title=&quot;看学习视频所得&quot;&gt;&lt;/a&gt;看学习视频所得&lt;/h2&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>百度云加速的一些方式</title>
