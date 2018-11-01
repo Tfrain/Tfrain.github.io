@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://thunderforrain.github.io/"/>
-  <updated>2018-10-06T00:45:20.216Z</updated>
+  <updated>2018-11-01T13:59:14.073Z</updated>
   <id>https://thunderforrain.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>servlet</title>
+    <link href="https://thunderforrain.github.io/2018/11/servlet/"/>
+    <id>https://thunderforrain.github.io/2018/11/servlet/</id>
+    <published>2018-11-01T13:40:13.000Z</published>
+    <updated>2018-11-01T13:59:14.073Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;http协议：超文本传输协议&quot;&gt;&lt;a href=&quot;#http协议：超文本传输协议&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="java,servlet" scheme="https://thunderforrain.github.io/categories/java-servlet/"/>
+    
+    
+      <category term="servlet" scheme="https://thunderforrain.github.io/tags/servlet/"/>
+    
+  </entry>
   
   <entry>
     <title>群聊初步学习实现过程</title>
@@ -143,7 +170,7 @@
     <link href="https://thunderforrain.github.io/2018/08/hexo+hithub_pages+nexT/"/>
     <id>https://thunderforrain.github.io/2018/08/hexo+hithub_pages+nexT/</id>
     <published>2018-08-25T02:00:54.000Z</published>
-    <updated>2018-10-14T09:02:43.849Z</updated>
+    <updated>2018-10-28T13:27:28.728Z</updated>
     
     <summary type="html">
     
