@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://thunderforrain.github.io/"/>
-  <updated>2018-11-02T01:29:58.213Z</updated>
+  <updated>2018-11-02T01:41:46.801Z</updated>
   <id>https://thunderforrain.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://thunderforrain.github.io/2018/11/servlet/"/>
     <id>https://thunderforrain.github.io/2018/11/servlet/</id>
     <published>2018-11-01T13:40:13.000Z</published>
-    <updated>2018-11-02T01:29:58.213Z</updated>
+    <updated>2018-11-02T01:41:46.801Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,9 @@
     
     </summary>
     
-      <category term="java,servlet" scheme="https://thunderforrain.github.io/categories/java-servlet/"/>
+      <category term="Java" scheme="https://thunderforrain.github.io/categories/Java/"/>
+    
+      <category term="servlet" scheme="https://thunderforrain.github.io/categories/servlet/"/>
     
     
       <category term="servlet" scheme="https://thunderforrain.github.io/tags/servlet/"/>
