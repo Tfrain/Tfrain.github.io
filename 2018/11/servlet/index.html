@@ -115,7 +115,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/Thunderforrain/picture/master/2018-11-07.12.10.47-1.04.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/Thunderforrain/picture/master/2018-11-07.16.50.41-1.05.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/Thunderforrain/picture/master/2018-11-07.17.22.24-1.06.png">
-<meta property="og:updated_time" content="2018-11-07T13:06:20.095Z">
+<meta property="og:updated_time" content="2018-11-07T13:09:56.691Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="servlet学习ing">
 <meta name="twitter:image" content="https://thunderforrain.github.io/2018/11/servlet/9.png">
@@ -2115,7 +2115,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5530ff;
+  background: #ab7fff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3700,7 +3700,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">字数统计:</span>
                 
                 <span title="字数统计">
-                  3,206
+                  3,216
                 </span>
               
 
@@ -3790,6 +3790,9 @@ pre .javascript .function {
 <h1 id="ServletConfig对象"><a href="#ServletConfig对象" class="headerlink" title="ServletConfig对象"></a>ServletConfig对象</h1><p>问题：使用ServletConfig对象可以获取web.xml中的全局配置文件，在web.xml中每个servlet也可以进行单独的配置，那么该怎么获取配置信息呢？<br>解决：使用ServletConfig对象<br>作用：ServletConfig对象是servlet的专属配置对象，每个servlet都单独拥有一个ServletConfig对象用来获取web.xml中的配置信息<br>使用：<br><img src="https://raw.githubusercontent.com/Thunderforrain/picture/master/2018-11-07.16.50.41-1.05.png" alt="2018-11-07.16.50.41-1.05.png"></p>
 <h1 id="web-xml文件"><a href="#web-xml文件" class="headerlink" title="web.xml文件"></a>web.xml文件</h1><p>作用：存储项目相关的配置信息，保护servlet。解耦一些数据对程序的依赖<br>使用位置：每个web项目中、tomcat服务器中（在服务器目录conf目录中）<br>区别：<br>web项目下的web.xml文件为局部配置，针对本项目的位置<br>tomcat下的web.xml文件为全局配置，配置公共信息<br>内容（核心组件）：全局上下文配置（全局配置参数）、servlet配置、过滤器配置、监听器配置<br>加载顺序：<br>web容器会按照ServletContext-&gt;context-param-&gt;listener-&gt;filter-&gt;servlet这个顺序加载组件，这些元素可配置在web.xml中的任意位置<br>加载时机：服务器启动时</p>
 <h1 id="server-xml文件"><a href="#server-xml文件" class="headerlink" title="server.xml文件"></a>server.xml文件</h1><p>问题：<br>浏览器发起请求后服务器根据请求在webapps目录下调用对应的servlet进行请求处理。那么为什么是webapps目录而不是其他的目录呢？<br>解决：了解server.xml文件的配置信息<br>server.xml文件核心组件：<br><img src="https://raw.githubusercontent.com/Thunderforrain/picture/master/2018-11-07.17.22.24-1.06.png" alt="2018-11-07.17.22.24-1.06.png"><br>热部署：<br></p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Context path="/Pet" reloadable="false" docBase="F:/PetWeb" /&gt;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<blockquote>
+<p>参考链接：<br><a href="https://www.bilibili.com/video/av33969622/?p=1" target="_blank" rel="noopener">B站</a><br><a href="http://www.runoob.com/servlet/servlet-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a></p>
+</blockquote>
 
       
     </div>
