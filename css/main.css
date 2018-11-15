@@ -1949,7 +1949,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9e6699;
+  background: #204ff6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3260,4 +3260,15 @@ pre .javascript .function {
 .post-body p a:hover {
   color: #0477ab;
   text-decoration: underline;
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("/images/65.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
+  #footer a {
+    color: #eee;
+  }
 }
