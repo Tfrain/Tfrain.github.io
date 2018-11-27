@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://thunderforrain.github.io/"/>
-  <updated>2018-11-07T13:09:56.691Z</updated>
+  <updated>2018-11-27T14:17:37.325Z</updated>
   <id>https://thunderforrain.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Struts2笔记</title>
+    <link href="https://thunderforrain.github.io/2018/11/Notes_of_Struts2/"/>
+    <id>https://thunderforrain.github.io/2018/11/Notes_of_Struts2/</id>
+    <published>2018-11-27T14:12:33.000Z</published>
+    <updated>2018-11-27T14:17:37.325Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;ServletAPI解藕方式&quot;&gt;&lt;a href=&quot;#ServletAPI解藕方式&quot; class=&quot;headerlink&quot; title=&quot;ServletAPI解藕方式&quot;&gt;&lt;/a&gt;ServletAPI解藕方式&lt;/h2&gt;&lt;p&gt; 为了避免与Servlet API耦合在一起，方便Action类做单元测试，Struts2对HttpServletRequest、 HttpSession和ServletContext进行了封装，构造了三个Map对象来替代这三种对象。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Struts2" scheme="https://thunderforrain.github.io/categories/Struts2/"/>
+    
+    
+      <category term="Struts2" scheme="https://thunderforrain.github.io/tags/Struts2/"/>
+    
+  </entry>
   
   <entry>
     <title>servlet学习ing</title>
