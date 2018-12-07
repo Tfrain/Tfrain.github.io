@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://thunderforrain.github.io/"/>
-  <updated>2018-12-03T08:53:02.336Z</updated>
+  <updated>2018-12-07T12:27:27.204Z</updated>
   <id>https://thunderforrain.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS盒模型及BFC</title>
+    <link href="https://thunderforrain.github.io/2018/12/CSS-Box-BFC/"/>
+    <id>https://thunderforrain.github.io/2018/12/CSS-Box-BFC/</id>
+    <published>2018-12-07T12:17:48.000Z</published>
+    <updated>2018-12-07T12:27:27.204Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt;确实是因为菜，感觉自己没什么东西可以写，最近被迫学习一些前端的东西，为了防止日后遗忘，方便有用之时再次学习并加深印象，就记录一些比较基础的东西。 &lt;/strong&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="CSS" scheme="https://thunderforrain.github.io/categories/CSS/"/>
+    
+    
+      <category term="CSS" scheme="https://thunderforrain.github.io/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>Struts2笔记</title>
