@@ -1949,7 +1949,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff6cf9;
+  background: #3e05c2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3266,7 +3266,8 @@ pre .javascript .function {
     background-image: url("/images/65.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 50% 50%;
+    background-position: 1%;
+    background-size: 100%;
   }
   #footer a {
     color: #eee;
