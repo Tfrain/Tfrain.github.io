@@ -104,7 +104,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -1199,24 +1199,20 @@ pre .javascript .function {
   margin: 10px;
 }
 .back-to-top {
-  box-sizing: border-box;
-  position: fixed;
-  bottom: -100px;
-  right: 30px;
-  z-index: 1050;
-  padding: 0 6px;
-  width: 24px;
-  background: #222;
+  display: none;
+  margin: 20px -10px -20px;
+  background: #eee;
   font-size: 12px;
   opacity: 0.6;
-  color: #fff;
   cursor: pointer;
   text-align: center;
   -webkit-transform: translateZ(0);
-  transition-property: bottom;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+}
+.back-to-top:hover {
+  opacity: 0.8;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .back-to-top {
@@ -1229,7 +1225,7 @@ pre .javascript .function {
   }
 }
 .back-to-top.back-to-top-on {
-  bottom: 30px;
+  display: block;
 }
 .header {
   background: transparent;
@@ -2091,7 +2087,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: #ffff0f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3743,18 +3739,6 @@ pre .javascript .function {
                     <a href="https://night-rain.site/" title="子非鱼" target="_blank">子非鱼</a>
                   </li>
                 
-                  <li class="links-of-blogroll-item">
-                    <a href="http://cubercsl.cn/links/" title="CSL's Blog" target="_blank">CSL's Blog</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://blog.lightina.cn/" title="jacklightChen's Blog" target="_blank">jacklightChen's Blog</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://wuxiaolong.me/friendslinks/index.html" title="吴小龙同學的博客" target="_blank">吴小龙同學的博客</a>
-                  </li>
-                
               </ul>
             </div>
           
@@ -3782,6 +3766,13 @@ pre .javascript .function {
       <!--/noindex-->
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -3842,11 +3833,6 @@ pre .javascript .function {
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
