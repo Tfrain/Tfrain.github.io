@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://thunderforrain.github.io/"/>
-  <updated>2018-12-07T12:27:27.204Z</updated>
+  <updated>2018-12-23T15:24:01.595Z</updated>
   <id>https://thunderforrain.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>科普</title>
+    <link href="https://thunderforrain.github.io/2018/12/learning/"/>
+    <id>https://thunderforrain.github.io/2018/12/learning/</id>
+    <published>2018-12-23T15:17:09.000Z</published>
+    <updated>2018-12-23T15:24:01.595Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt;专业名词学习 &lt;/strong&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="life" scheme="https://thunderforrain.github.io/categories/life/"/>
+    
+    
+      <category term="life" scheme="https://thunderforrain.github.io/tags/life/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS盒模型及BFC</title>
