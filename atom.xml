@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tfrain.github.io/"/>
-  <updated>2018-12-24T10:13:42.886Z</updated>
+  <updated>2018-12-29T05:53:14.831Z</updated>
   <id>https://tfrain.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Linux学习</title>
-    <link href="https://tfrain.github.io/2018/12/linux_learning/"/>
-    <id>https://tfrain.github.io/2018/12/linux_learning/</id>
+    <link href="https://tfrain.github.io/2018/12/linux_learning1/"/>
+    <id>https://tfrain.github.io/2018/12/linux_learning1/</id>
     <published>2018-12-23T15:17:09.000Z</published>
-    <updated>2018-12-24T10:13:42.886Z</updated>
+    <updated>2018-12-29T05:53:14.831Z</updated>
     
     <summary type="html">
     
@@ -29,10 +29,10 @@
     
     </summary>
     
-      <category term="linux" scheme="https://tfrain.github.io/categories/linux/"/>
+      <category term="Linux" scheme="https://tfrain.github.io/categories/Linux/"/>
     
     
-      <category term="linux" scheme="https://tfrain.github.io/tags/linux/"/>
+      <category term="Linux" scheme="https://tfrain.github.io/tags/Linux/"/>
     
   </entry>
   
