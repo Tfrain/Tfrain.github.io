@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tfrain.github.io/"/>
-  <updated>2018-12-29T05:53:14.831Z</updated>
+  <updated>2018-12-31T06:02:43.599Z</updated>
   <id>https://tfrain.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Linux学习</title>
+    <title>Linux学习2</title>
+    <link href="https://tfrain.github.io/2018/12/linux-learning2/"/>
+    <id>https://tfrain.github.io/2018/12/linux-learning2/</id>
+    <published>2018-12-31T05:47:45.000Z</published>
+    <updated>2018-12-31T06:02:43.599Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt;每天一个Linux命令（9-16）&lt;/strong&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://tfrain.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://tfrain.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux学习1</title>
     <link href="https://tfrain.github.io/2018/12/linux_learning1/"/>
     <id>https://tfrain.github.io/2018/12/linux_learning1/</id>
     <published>2018-12-23T15:17:09.000Z</published>
-    <updated>2018-12-29T05:53:14.831Z</updated>
+    <updated>2018-12-31T06:02:36.511Z</updated>
     
     <summary type="html">
     
