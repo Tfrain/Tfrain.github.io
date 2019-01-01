@@ -148,7 +148,7 @@
 
 
 
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css');loadCss('https://aimingoo.github.io/gitmint/style/default.css');</script><style>/* normalize.css v3.0.2 | MIT License | git.io/normalize */
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('https://cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css');loadCss('https://unpkg.com/gitalk/dist/gitalk.css');</script><style>/* normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -2095,7 +2095,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #951416;
+  background: #4f8a4b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2481,19 +2481,6 @@ pre .javascript .function {
   background-color: #78ace9 !important;
   border-color: #4cae4c !important;
 }
-#gitment-display-button {
-  display: inline-block;
-  padding: 0 15px;
-  color: #0a9caf;
-  cursor: pointer;
-  font-size: 14px;
-  border: 1px solid #0a9caf;
-  border-radius: 4px;
-}
-#gitment-display-button:hover {
-  color: #fff;
-  background: #0a9caf;
-}
 .post-spread {
   margin-top: 20px;
   text-align: center;
@@ -2640,6 +2627,14 @@ pre .javascript .function {
 .site-pv .busuanzi-value,
 .page-pv .busuanzi-value {
   margin: 0 5px;
+}
+.gt-header a,
+.gt-comments a,
+.gt-popup a {
+  border-bottom: none;
+}
+.gt-container .gt-popup .gt-action.is--active:before {
+  top: 0.7em;
 }
 .page-archive .archive-page-counter {
   position: relative;
@@ -3422,7 +3417,7 @@ pre .javascript .function {
 .main-inner {
   opacity: 0.9;
 }
-</style><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css"><link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css"></noscript></head>
+</style><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css"><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -3655,16 +3650,6 @@ pre .javascript .function {
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/Java_further_study/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/09/Java_further_study/" itemprop="commentsCount"></span>
-                </a>
-              </span>
             
           
 
@@ -3925,11 +3910,7 @@ color:#080808;
           
 
   
-    <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
-    </div>
+ <div id="gitalk-container"></div>
 
   
 
@@ -4269,22 +4250,14 @@ color:#080808;
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      
-    
 
 
 
+
+
+  
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   
 
 
 
@@ -4325,28 +4298,17 @@ color:#080808;
   }
 ;
 
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'Tfrain',
-            repo: 'Tfrain.github.io',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: 'ed48ff0e476b73189390709dc09a02246bb242b7',
-            
-                client_id: '493c97429ac2eb69c110'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      ;
+        var gitalk = new Gitalk({
+          clientID: '9dea84ab174d91e0b78e',
+          clientSecret: '4f87ec0f7588f49870f12b26c40d085d07ad1c19',
+          repo: 'https://tfrain.github.io/',
+          owner: 'tfrain',
+          admin: ['tfrain'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       ;
 
     // Popup Window;
     var isfetched = false;
