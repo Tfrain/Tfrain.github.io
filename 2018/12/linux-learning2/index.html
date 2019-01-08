@@ -82,18 +82,18 @@
 
 
 
-<meta name="description" content="每天一个Linux命令（9-16）">
+<meta name="description" content="文件目录操作命令(9-15）">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux学习2">
 <meta property="og:url" content="https://tfrain.github.io/2018/12/linux-learning2/index.html">
 <meta property="og:site_name" content="Tfrain's  Blog">
-<meta property="og:description" content="每天一个Linux命令（9-16）">
+<meta property="og:description" content="文件目录操作命令(9-15）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-31T06:02:43.599Z">
+<meta property="og:updated_time" content="2019-01-08T10:00:24.492Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux学习2">
-<meta name="twitter:description" content="每天一个Linux命令（9-16）">
+<meta name="twitter:description" content="文件目录操作命令(9-15）">
 
 
 
@@ -2086,7 +2086,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a6a8ff;
+  background: #becfff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3665,7 +3665,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">字数统计:</span>
                 
                 <span title="字数统计">
-                  4,160
+                  3,806
                 </span>
               
 
@@ -3681,7 +3681,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">阅读时长 ≈</span>
                 
                 <span title="阅读时长">
-                  16
+                  15
                 </span>
               
             </div>
@@ -3702,10 +3702,10 @@ pre .javascript .function {
       
 
       
-        <p></p><blockquote class="blockquote-center"><strong>每天一个Linux命令（9-16）</strong></blockquote><br><a id="more"></a><p></p>
+        <p></p><blockquote class="blockquote-center"><strong>文件目录操作命令(9-15）</strong></blockquote><br><a id="more"></a><p></p>
 <blockquote>
 <pre><code>编译：peida  
-链接：http://www.cnblogs.com/peida/archive/2012/10/23/2734829.html
+链接：https://www.cnblogs.com/peida/archive/2012/12/05/2803591.html
 </code></pre></blockquote>
 <h1 id="touch命令"><a href="#touch命令" class="headerlink" title="touch命令"></a>touch命令</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>linux的touch命令不常用，一般在使用make的时候可能会用到，用来修改文件时间戳，或者新建一个不存在的文件。</p>
 <h2 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h2><p>touch [选项]… 文件…</p>
@@ -3787,15 +3787,9 @@ q       退出more
 <p>[root@localhost ~]# ping 192.168.120.204 &gt; test.log &amp;<br>    [1] 11891[root@localhost ~]# tail -f test.log<br>    PING 192.168.120.204 (192.168.120.204) 56(84) bytes of data.<br>    64 bytes from 192.168.120.204: icmp_seq=1 ttl=64 time=0.038 ms<br>    64 bytes from 192.168.120.204: icmp_seq=2 ttl=64 time=0.036 ms<br>    64 bytes from 192.168.120.204: icmp_seq=3 ttl=64 time=0.033 ms<br>    64 bytes from 192.168.120.204: icmp_seq=4 ttl=64 time=0.027 ms<br>    64 bytes from 192.168.120.204: icmp_seq=5 ttl=64 time=0.032 ms<br>    64 bytes from 192.168.120.204: icmp_seq=6 ttl=64 time=0.026 ms<br>    64 bytes from 192.168.120.204: icmp_seq=7 ttl=64 time=0.030 ms<br>    64 bytes from 192.168.120.204: icmp_seq=8 ttl=64 time=0.029 ms<br>    64 bytes from 192.168.120.204: icmp_seq=9 ttl=64 time=0.044 ms<br>    64 bytes from 192.168.120.204: icmp_seq=10 ttl=64 time=0.033 ms<br>    64 bytes from 192.168.120.204: icmp_seq=11 ttl=64 time=0.027 ms<br>    [root@localhost ~]#</p>
 </blockquote>
 <p>说明：ping 192.168.120.204 &gt; test.log &amp; //在后台ping远程主机。并输出文件到test.log；这种做法也使用于一个以上的档案监视。用Ctrl＋c来终止。 </p>
-<h1 id="which命令"><a href="#which命令" class="headerlink" title="which命令"></a>which命令</h1><h2 id="概述-7"><a href="#概述-7" class="headerlink" title="概述"></a>概述</h2><p>我们经常在linux要查找某个文件，但不知道放在哪里了，可以使用下面的一些命令来搜索：<br>which查看可执行文件的位置<br>whereis查看文件的位置<br>locate配合数据库查看文件位置<br>find实际搜寻硬盘查询文件名称<br>which命令的作用是，在PATH变量指定的路径中，搜索某个系统命令的位置，并且返回第一个搜索结果。也就是说，使用which命令，就可以看到某个系统命令是否存在，以及执行的到底是哪一个位置的命令。</p>
-<h2 id="命令格式-7"><a href="#命令格式-7" class="headerlink" title="命令格式"></a>命令格式</h2><p>which 可执行文件名称 </p>
-<h2 id="命令功能-7"><a href="#命令功能-7" class="headerlink" title="命令功能"></a>命令功能</h2><p>which指令会在PATH变量指定的路径中，搜索某个系统命令的位置，并且返回第一个搜索结果。</p>
-<h2 id="命令参数-7"><a href="#命令参数-7" class="headerlink" title="命令参数"></a>命令参数</h2><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-n  指定文件名长度，指定的长度必须大于或等于所有文件中最长的文件名</span><br><span class="line">-p  与-n参数相同，但此处包含了文件的路径</span><br><span class="line">-w  指定输出时栏位的宽度</span><br><span class="line">-V  显示版本的信息</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="常用命令-7"><a href="#常用命令-7" class="headerlink" title="常用命令"></a>常用命令</h2><p>实例：用 which 去找出 which<br>命令：which which</p>
-<p>which 是根据使用者所配置的 PATH 变量内的目录去搜寻可运行档的！所以，不同的 PATH 配置内容所找到的命令当然不一样的！</p>
 <blockquote>
 <pre><code>编译：peida  
-链接：http://www.cnblogs.com/peida/archive/2012/10/23/2734829.html
+链接：https://www.cnblogs.com/peida/archive/2012/12/05/2803591.html
 </code></pre></blockquote>
 
       
@@ -3903,6 +3897,10 @@ color:#080808;
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/01/linux_learning3/" rel="prev" title="Linux学习3">
+                Linux学习3 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -3987,7 +3985,7 @@ abbrlink: 1
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -4077,7 +4075,7 @@ abbrlink: 1
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#touch命令"><span class="nav-number">1.</span> <span class="nav-text">touch命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式"><span class="nav-number">1.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数"><span class="nav-number">1.3.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能"><span class="nav-number">1.4.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">1.5.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">1.6.</span> <span class="nav-text">说明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#cat命令"><span class="nav-number">2.</span> <span class="nav-text">cat命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-1"><span class="nav-number">2.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-1"><span class="nav-number">2.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-1"><span class="nav-number">2.3.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-1"><span class="nav-number">2.4.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-1"><span class="nav-number">2.5.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#nl命令"><span class="nav-number">3.</span> <span class="nav-text">nl命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-2"><span class="nav-number">3.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-2"><span class="nav-number">3.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-2"><span class="nav-number">3.3.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-2"><span class="nav-number">3.4.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-2"><span class="nav-number">3.5.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#more命令"><span class="nav-number">4.</span> <span class="nav-text">more命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-3"><span class="nav-number">4.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-3"><span class="nav-number">4.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-3"><span class="nav-number">4.3.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-3"><span class="nav-number">4.4.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用操作命令"><span class="nav-number">4.5.</span> <span class="nav-text">常用操作命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-3"><span class="nav-number">4.6.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#less命令"><span class="nav-number">5.</span> <span class="nav-text">less命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-4"><span class="nav-number">5.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-4"><span class="nav-number">5.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-4"><span class="nav-number">5.3.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-4"><span class="nav-number">5.4.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-4"><span class="nav-number">5.5.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附加备注"><span class="nav-number">5.6.</span> <span class="nav-text">附加备注</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#全屏导航"><span class="nav-number">5.6.1.</span> <span class="nav-text">全屏导航</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单行导航"><span class="nav-number">5.6.2.</span> <span class="nav-text">单行导航</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其它导航"><span class="nav-number">5.6.3.</span> <span class="nav-text">其它导航</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其它有用的命令"><span class="nav-number">5.6.4.</span> <span class="nav-text">其它有用的命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标记导航"><span class="nav-number">5.6.5.</span> <span class="nav-text">标记导航</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#head命令"><span class="nav-number">6.</span> <span class="nav-text">head命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-5"><span class="nav-number">6.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-5"><span class="nav-number">6.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-5"><span class="nav-number">6.3.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-5"><span class="nav-number">6.4.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-5"><span class="nav-number">6.5.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#tail命令"><span class="nav-number">7.</span> <span class="nav-text">tail命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-6"><span class="nav-number">7.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-6"><span class="nav-number">7.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-6"><span class="nav-number">7.3.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-6"><span class="nav-number">7.4.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-6"><span class="nav-number">7.5.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#which命令"><span class="nav-number">8.</span> <span class="nav-text">which命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-7"><span class="nav-number">8.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-7"><span class="nav-number">8.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-7"><span class="nav-number">8.3.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-7"><span class="nav-number">8.4.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-7"><span class="nav-number">8.5.</span> <span class="nav-text">常用命令</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#touch命令"><span class="nav-number">1.</span> <span class="nav-text">touch命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式"><span class="nav-number">1.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数"><span class="nav-number">1.3.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能"><span class="nav-number">1.4.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">1.5.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">1.6.</span> <span class="nav-text">说明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#cat命令"><span class="nav-number">2.</span> <span class="nav-text">cat命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-1"><span class="nav-number">2.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-1"><span class="nav-number">2.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-1"><span class="nav-number">2.3.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-1"><span class="nav-number">2.4.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-1"><span class="nav-number">2.5.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#nl命令"><span class="nav-number">3.</span> <span class="nav-text">nl命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-2"><span class="nav-number">3.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-2"><span class="nav-number">3.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-2"><span class="nav-number">3.3.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-2"><span class="nav-number">3.4.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-2"><span class="nav-number">3.5.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#more命令"><span class="nav-number">4.</span> <span class="nav-text">more命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-3"><span class="nav-number">4.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-3"><span class="nav-number">4.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-3"><span class="nav-number">4.3.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-3"><span class="nav-number">4.4.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用操作命令"><span class="nav-number">4.5.</span> <span class="nav-text">常用操作命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-3"><span class="nav-number">4.6.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#less命令"><span class="nav-number">5.</span> <span class="nav-text">less命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-4"><span class="nav-number">5.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-4"><span class="nav-number">5.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-4"><span class="nav-number">5.3.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-4"><span class="nav-number">5.4.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-4"><span class="nav-number">5.5.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附加备注"><span class="nav-number">5.6.</span> <span class="nav-text">附加备注</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#全屏导航"><span class="nav-number">5.6.1.</span> <span class="nav-text">全屏导航</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单行导航"><span class="nav-number">5.6.2.</span> <span class="nav-text">单行导航</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其它导航"><span class="nav-number">5.6.3.</span> <span class="nav-text">其它导航</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其它有用的命令"><span class="nav-number">5.6.4.</span> <span class="nav-text">其它有用的命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标记导航"><span class="nav-number">5.6.5.</span> <span class="nav-text">标记导航</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#head命令"><span class="nav-number">6.</span> <span class="nav-text">head命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-5"><span class="nav-number">6.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-5"><span class="nav-number">6.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-5"><span class="nav-number">6.3.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-5"><span class="nav-number">6.4.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-5"><span class="nav-number">6.5.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#tail命令"><span class="nav-number">7.</span> <span class="nav-text">tail命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述-6"><span class="nav-number">7.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令格式-6"><span class="nav-number">7.2.</span> <span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令功能-6"><span class="nav-number">7.3.</span> <span class="nav-text">命令功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令参数-6"><span class="nav-number">7.4.</span> <span class="nav-text">命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令-6"><span class="nav-number">7.5.</span> <span class="nav-text">常用命令</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -4313,8 +4311,6 @@ abbrlink: 1
   
   <!--崩溃欺骗-->
   
- <!--人体时钟-->
- 
 
 
 <script type="text/javascript" src="/bundle.js"></script><script type="text/javascript">
