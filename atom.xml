@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tfrain.github.io/"/>
-  <updated>2019-01-08T10:04:31.226Z</updated>
+  <updated>2019-01-10T15:21:26.001Z</updated>
   <id>https://tfrain.github.io/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux学习4</title>
+    <link href="https://tfrain.github.io/2019/01/yuque/linux_learning4/"/>
+    <id>https://tfrain.github.io/2019/01/yuque/linux_learning4/</id>
+    <published>2019-01-10T11:23:45.000Z</published>
+    <updated>2019-01-10T15:21:26.001Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt;linux文件权限设置&lt;/strong&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Linux学习3</title>
@@ -41,7 +57,7 @@
     <link href="https://tfrain.github.io/2018/12/linux-learning2/"/>
     <id>https://tfrain.github.io/2018/12/linux-learning2/</id>
     <published>2018-12-31T05:47:45.000Z</published>
-    <updated>2019-01-08T10:00:24.492Z</updated>
+    <updated>2019-01-10T13:42:32.037Z</updated>
     
     <summary type="html">
     
