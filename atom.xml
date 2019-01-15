@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tfrain.github.io/"/>
-  <updated>2019-01-15T05:34:40.611Z</updated>
+  <updated>2019-01-15T06:09:19.159Z</updated>
   <id>https://tfrain.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/vim_skill/"/>
     <id>https://tfrain.github.io/2019/01/yuque/vim_skill/</id>
     <published>2019-01-15T03:45:00.000Z</published>
-    <updated>2019-01-15T05:34:40.611Z</updated>
+    <updated>2019-01-15T06:09:19.159Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,8 @@
     
     </summary>
     
+      <category term="Vim" scheme="https://tfrain.github.io/categories/Vim/"/>
     
-      <category term="Vim" scheme="https://tfrain.github.io/tags/Vim/"/>
     
   </entry>
   
@@ -39,7 +39,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/yuque_hexo/"/>
     <id>https://tfrain.github.io/2019/01/yuque/yuque_hexo/</id>
     <published>2019-01-13T11:13:09.000Z</published>
-    <updated>2019-01-15T05:34:40.611Z</updated>
+    <updated>2019-01-15T06:09:19.159Z</updated>
     
     <summary type="html">
     
@@ -47,8 +47,8 @@
     
     </summary>
     
+      <category term="Hexo" scheme="https://tfrain.github.io/categories/Hexo/"/>
     
-      <category term="Hexo" scheme="https://tfrain.github.io/tags/Hexo/"/>
     
   </entry>
   
@@ -57,7 +57,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/linux_learning5/"/>
     <id>https://tfrain.github.io/2019/01/yuque/linux_learning5/</id>
     <published>2019-01-11T07:10:08.000Z</published>
-    <updated>2019-01-15T05:34:40.611Z</updated>
+    <updated>2019-01-15T06:09:19.159Z</updated>
     
     <summary type="html">
     
@@ -65,8 +65,8 @@
     
     </summary>
     
+      <category term="Linux" scheme="https://tfrain.github.io/categories/Linux/"/>
     
-      <category term="Linux" scheme="https://tfrain.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -75,15 +75,15 @@
     <link href="https://tfrain.github.io/2019/01/yuque/18_19sum/"/>
     <id>https://tfrain.github.io/2019/01/yuque/18_19sum/</id>
     <published>2019-01-11T05:57:58.000Z</published>
-    <updated>2019-01-15T05:34:40.607Z</updated>
+    <updated>2019-01-15T06:09:19.155Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;tags: [life]&lt;br&gt;categories: life&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/jpeg/203310/1547209720049-89d1b9fc-70b0-4b8b-8a13-a3d3cf9408c9.jpeg#align=left&amp;amp;display=inline&amp;amp;height=236&amp;amp;linkTarget=_blank&amp;amp;name=%E5%AF%BC%E5%9B%BE1.jpg&amp;amp;originHeight=213&amp;amp;originWidth=625&amp;amp;size=49793&amp;amp;width=692&quot; alt=&quot;导图1.jpg&quot;&gt;&lt;br&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/jpeg/203310/1547209720049-89d1b9fc-70b0-4b8b-8a13-a3d3cf9408c9.jpeg#align=left&amp;amp;display=inline&amp;amp;height=236&amp;amp;linkTarget=_blank&amp;amp;name=%E5%AF%BC%E5%9B%BE1.jpg&amp;amp;originHeight=213&amp;amp;originWidth=625&amp;amp;size=49793&amp;amp;width=692&quot; alt=&quot;导图1.jpg&quot;&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="Life" scheme="https://tfrain.github.io/categories/Life/"/>
     
     
   </entry>
@@ -93,7 +93,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/linux_learning4/"/>
     <id>https://tfrain.github.io/2019/01/yuque/linux_learning4/</id>
     <published>2019-01-10T11:23:45.000Z</published>
-    <updated>2019-01-15T05:34:40.611Z</updated>
+    <updated>2019-01-15T06:09:19.159Z</updated>
     
     <summary type="html">
     
@@ -101,8 +101,8 @@
     
     </summary>
     
+      <category term="Linux" scheme="https://tfrain.github.io/categories/Linux/"/>
     
-      <category term="Linux" scheme="https://tfrain.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -253,7 +253,7 @@
     <link href="https://tfrain.github.io/2018/09/Baidu_cloud_acceleration/"/>
     <id>https://tfrain.github.io/2018/09/Baidu_cloud_acceleration/</id>
     <published>2018-09-30T13:24:36.000Z</published>
-    <updated>2018-12-07T14:21:22.877Z</updated>
+    <updated>2019-01-15T05:57:33.856Z</updated>
     
     <summary type="html">
     
@@ -261,10 +261,10 @@
     
     </summary>
     
-      <category term="life" scheme="https://tfrain.github.io/categories/life/"/>
+      <category term="Life" scheme="https://tfrain.github.io/categories/Life/"/>
     
     
-      <category term="life" scheme="https://tfrain.github.io/tags/life/"/>
+      <category term="Life" scheme="https://tfrain.github.io/tags/Life/"/>
     
   </entry>
   
@@ -313,7 +313,7 @@
     <link href="https://tfrain.github.io/2018/08/first_hexo/"/>
     <id>https://tfrain.github.io/2018/08/first_hexo/</id>
     <published>2018-08-31T07:18:01.000Z</published>
-    <updated>2018-09-16T06:49:54.658Z</updated>
+    <updated>2019-01-15T05:57:51.604Z</updated>
     
     <summary type="html">
     
@@ -321,10 +321,10 @@
     
     </summary>
     
-      <category term="life" scheme="https://tfrain.github.io/categories/life/"/>
+      <category term="Life" scheme="https://tfrain.github.io/categories/Life/"/>
     
     
-      <category term="life" scheme="https://tfrain.github.io/tags/life/"/>
+      <category term="Life" scheme="https://tfrain.github.io/tags/Life/"/>
     
   </entry>
   
