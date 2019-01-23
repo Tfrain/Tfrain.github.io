@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="Tfrain's  Blog">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548234526531-55a6e039-0091-4bf3-8dc7-09006770ce3c.png#align=left&amp;display=inline&amp;height=344&amp;linkTarget=_blank&amp;name=71.png&amp;originHeight=806&amp;originWidth=1750&amp;size=179467&amp;width=746">
-<meta property="og:updated_time" content="2019-01-23T13:19:50.299Z">
+<meta property="og:updated_time" content="2019-01-23T14:08:14.312Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="71简化路径">
 <meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548234526531-55a6e039-0091-4bf3-8dc7-09006770ce3c.png#align=left&amp;display=inline&amp;height=344&amp;linkTarget=_blank&amp;name=71.png&amp;originHeight=806&amp;originWidth=1750&amp;size=179467&amp;width=746">
@@ -2084,7 +2084,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6bbeff;
+  background: #f44;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3663,7 +3663,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">字数统计:</span>
                 
                 <span title="字数统计">
-                  440
+                  479
                 </span>
               
 
@@ -3701,10 +3701,10 @@ pre .javascript .function {
 
       
         <p><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1548234526531-55a6e039-0091-4bf3-8dc7-09006770ce3c.png#align=left&amp;display=inline&amp;height=344&amp;linkTarget=_blank&amp;name=71.png&amp;originHeight=806&amp;originWidth=1750&amp;size=179467&amp;width=746" alt="71.png"><br><a id="more"></a></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>以 Unix 风格给出一个文件的<strong>绝对路径</strong>，你需要简化它。或者换句话说，将其转换为规范路径。<br>在 Unix 风格的文件系统中，一个点（<code>.</code>）表示当前目录本身；此外，两个点 （<code>..</code>） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：<a href="https://blog.csdn.net/u011327334/article/details/50355600" target="_blank" rel="noopener">Linux / Unix中的绝对路径 vs 相对路径</a><br>请注意，返回的规范路径必须始终以斜杠 <code>/</code> 开头，并且两个目录名之间必须只有一个斜杠 <code>/</code>。最后一个目录名（如果存在）<strong>不能</strong>以 <code>/</code> 结尾。此外，规范路径必须是表示绝对路径的<strong>最短</strong>字符串。<br> <br><strong>示例 1：</strong><br><strong>输入：”</strong>/home/“输出：”<strong>/home”解释：</strong>注意，最后一个目录名后面没有斜杠。<strong>示例 2：</strong><br><strong>输入：”</strong>/../“输出：”<strong>/“解释：</strong>从根目录向上一级是不可行的，因为根是你可以到达的最高级。<strong>示例 3：</strong><br><strong>输入：”</strong>/home//foo/“输出：”<strong>/home/foo”解释：</strong>在规范路径中，多个连续斜杠需要用一个斜杠替换。<strong>示例 4：</strong><br><strong>输入：”</strong>/a/./b/../../c/“输出：”<strong>/c”</strong>示例 5：<strong>
-</strong>输入：”<strong>/a/../../b/../c//.//“输出：”</strong>/c”<strong>示例 6：</strong><br><strong>输入：”</strong>/a//b////c/d//././/..”输出：”**/a/b/c”## 参考代码<br></p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>{</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">simplifyPath</span><span class="params">(String path)</span> </span>{</span><br><span class="line">        Stack&lt;String&gt; stack = <span class="keyword">new</span> Stack&lt;&gt; ();</span><br><span class="line">        String[] p = path.split(<span class="string">"/"</span>);</span><br><span class="line">        <span class="keyword">for</span>(String t : p) {</span><br><span class="line">            <span class="keyword">if</span>(!stack.isEmpty() &amp;&amp; t.equals(<span class="string">".."</span>)) stack.pop();</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(!t.equals(<span class="string">"."</span>) &amp;&amp; !t.equals(<span class="string">".."</span>) &amp;&amp; !t.equals(<span class="string">""</span>)) stack.push(t);</span><br><span class="line">        }</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList(stack);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'/'</span> + String.join(<span class="string">"/"</span>, list);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。<br>在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix中的绝对路径 vs 相对路径<br>请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。<br>示例 1：<br>输入：”/home/“<br>输出：”/home”<br>解释：注意，最后一个目录名后面没有斜杠。<br>示例 2：<br>输入：”/../“<br>输出：”/“<br>解释：从根目录向上一级是不可行的，因为根是你可以到达的最高级。<br>示例 3：<br>输入：”/home//foo/“<br>输出：”/home/foo”<br>解释：在规范路径中，多个连续斜杠需要用一个斜杠替换。<br>示例 4：<br>输入：”/a/./b/../../c/“<br>输出：”/c”<br>示例 5：<br>输入：”/a/../../b/../c//.//“<br>输出：”/c”<br>示例 6：<br>输入：”/a//b////c/d//././/..”<br>输出：”/a/b/c”</p>
+<h2 id="参考代码"><a href="#参考代码" class="headerlink" title="参考代码"></a>参考代码</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>{</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">simplifyPath</span><span class="params">(String path)</span> </span>{</span><br><span class="line">        Stack&lt;String&gt; stack = <span class="keyword">new</span> Stack&lt;&gt; ();</span><br><span class="line">        String[] p = path.split(<span class="string">"/"</span>);</span><br><span class="line">        <span class="keyword">for</span>(String t : p) {</span><br><span class="line">            <span class="keyword">if</span>(!stack.isEmpty() &amp;&amp; t.equals(<span class="string">".."</span>)) stack.pop();</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(!t.equals(<span class="string">"."</span>) &amp;&amp; !t.equals(<span class="string">".."</span>) &amp;&amp; !t.equals(<span class="string">""</span>)) stack.push(t);</span><br><span class="line">        }</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList(stack);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'/'</span> + String.join(<span class="string">"/"</span>, list);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p># </p>
-<h2 id="思路及总结"><a href="#思路及总结" class="headerlink" title="思路及总结"></a>思路及总结</h2><p>主要是多利用了O(n)来进行字符串的分割，要考虑到栈为空和一系列边界条件和特殊情况</p>
+<h2 id="思路及总结"><a href="#思路及总结" class="headerlink" title="思路及总结"></a>思路及总结</h2><p>可以把路径看做是由一个或多个”/“分割开的众多子字符串，把它们分别提取出来一一处理即可<br>主要是多利用了O(n)来进行字符串的分割，要考虑到栈为空和一系列边界条件和特殊情况</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://www.cnblogs.com/grandyang/p/4347125.html" target="_blank" rel="noopener">http://www.cnblogs.com/grandyang/p/4347125.html</a></p>
 
       
@@ -3980,7 +3980,7 @@ abbrlink: 1
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#思路及总结"><span class="nav-number">2.</span> <span class="nav-text">思路及总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考代码"><span class="nav-number">2.</span> <span class="nav-text">参考代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#思路及总结"><span class="nav-number">3.</span> <span class="nav-text">思路及总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
