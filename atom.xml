@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tfrain.github.io/"/>
-  <updated>2019-01-22T08:47:34.611Z</updated>
+  <updated>2019-01-23T13:19:50.299Z</updated>
   <id>https://tfrain.github.io/</id>
   
   <author>
@@ -17,11 +17,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>71简化路径</title>
+    <link href="https://tfrain.github.io/2019/01/yuque/num_71/"/>
+    <id>https://tfrain.github.io/2019/01/yuque/num_71/</id>
+    <published>2019-01-23T08:27:26.000Z</published>
+    <updated>2019-01-23T13:19:50.299Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/203310/1548234526531-55a6e039-0091-4bf3-8dc7-09006770ce3c.png#align=left&amp;amp;display=inline&amp;amp;height=344&amp;amp;linkTarget=_blank&amp;amp;name=71.png&amp;amp;originHeight=806&amp;amp;originWidth=1750&amp;amp;size=179467&amp;amp;width=746&quot; alt=&quot;71.png&quot;&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="leetcode" scheme="https://tfrain.github.io/categories/leetcode/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>42接雨水</title>
+    <link href="https://tfrain.github.io/2019/01/yuque/num_42/"/>
+    <id>https://tfrain.github.io/2019/01/yuque/num_42/</id>
+    <published>2019-01-22T09:28:12.000Z</published>
+    <updated>2019-01-23T13:19:50.299Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/203310/1548166999619-b552223a-453b-45be-a8fd-1b36fae8c0e8.png#align=left&amp;amp;display=inline&amp;amp;height=394&amp;amp;linkTarget=_blank&amp;amp;name=carbon.png&amp;amp;originHeight=1058&amp;amp;originWidth=2004&amp;amp;size=228645&amp;amp;width=746&quot; alt=&quot;carbon.png&quot;&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="leetcode" scheme="https://tfrain.github.io/categories/leetcode/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Vim实用技巧</title>
     <link href="https://tfrain.github.io/2019/01/yuque/vim_skill/"/>
     <id>https://tfrain.github.io/2019/01/yuque/vim_skill/</id>
     <published>2019-01-15T03:45:00.000Z</published>
-    <updated>2019-01-22T08:47:34.611Z</updated>
+    <updated>2019-01-23T13:19:50.295Z</updated>
     
     <summary type="html">
     
@@ -39,7 +75,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/yuque_hexo/"/>
     <id>https://tfrain.github.io/2019/01/yuque/yuque_hexo/</id>
     <published>2019-01-13T11:13:09.000Z</published>
-    <updated>2019-01-22T08:47:34.615Z</updated>
+    <updated>2019-01-23T13:19:50.295Z</updated>
     
     <summary type="html">
     
@@ -57,11 +93,11 @@
     <link href="https://tfrain.github.io/2019/01/yuque/linux_learning5/"/>
     <id>https://tfrain.github.io/2019/01/yuque/linux_learning5/</id>
     <published>2019-01-11T07:10:08.000Z</published>
-    <updated>2019-01-22T08:47:34.615Z</updated>
+    <updated>2019-01-23T13:19:50.299Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt;linux文件权限设置&lt;/strong&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt;网络命令&lt;/strong&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -75,7 +111,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/18_19sum/"/>
     <id>https://tfrain.github.io/2019/01/yuque/18_19sum/</id>
     <published>2019-01-11T05:57:58.000Z</published>
-    <updated>2019-01-22T08:47:34.615Z</updated>
+    <updated>2019-01-23T13:19:50.299Z</updated>
     
     <summary type="html">
     
@@ -93,7 +129,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/linux_learning4/"/>
     <id>https://tfrain.github.io/2019/01/yuque/linux_learning4/</id>
     <published>2019-01-10T11:23:45.000Z</published>
-    <updated>2019-01-22T08:47:34.615Z</updated>
+    <updated>2019-01-23T13:19:50.299Z</updated>
     
     <summary type="html">
     
