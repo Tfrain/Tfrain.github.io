@@ -69,7 +69,7 @@
 
 
 
-  <meta name="keywords" content="Java,">
+  <meta name="keywords" content="记录耕耘">
 
 
 
@@ -82,18 +82,16 @@
 
 
 
-<meta name="description" content="看学习视频所得">
-<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="群聊初步学习实现过程">
-<meta property="og:url" content="https://tfrain.github.io/2018/10/Thinking-of-Chat/index.html">
+<meta property="og:title" content="215数组中的第K个最大元素">
+<meta property="og:url" content="https://tfrain.github.io/2019/01/yuque/num_215/index.html">
 <meta property="og:site_name" content="Tfrain's  Blog">
-<meta property="og:description" content="看学习视频所得">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-21T14:05:17.097Z">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548506060055-118e8488-7b24-4981-8a99-75880675fde5.png#align=left&amp;display=inline&amp;height=411&amp;linkTarget=_blank&amp;name=215.png&amp;originHeight=806&amp;originWidth=1464&amp;size=153252&amp;width=746">
+<meta property="og:updated_time" content="2019-01-26T14:02:40.320Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="群聊初步学习实现过程">
-<meta name="twitter:description" content="看学习视频所得">
+<meta name="twitter:title" content="215数组中的第K个最大元素">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548506060055-118e8488-7b24-4981-8a99-75880675fde5.png#align=left&amp;display=inline&amp;height=411&amp;linkTarget=_blank&amp;name=215.png&amp;originHeight=806&amp;originWidth=1464&amp;size=153252&amp;width=746">
 
 
 
@@ -123,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://tfrain.github.io/2018/10/Thinking-of-Chat/">
+  <link rel="canonical" href="https://tfrain.github.io/2019/01/yuque/num_215/">
 
 
 
 
 
-  <title>群聊初步学习实现过程 | Tfrain's  Blog</title>
+  <title>215数组中的第K个最大元素 | Tfrain's  Blog</title>
   
 
 
@@ -3582,7 +3580,7 @@ pre .javascript .function {
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tfrain.github.io/2018/10/Thinking-of-Chat/">
+    <link itemprop="mainEntityOfPage" href="https://tfrain.github.io/2019/01/yuque/num_215/">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tfrain">
@@ -3599,7 +3597,7 @@ pre .javascript .function {
 
         
         
-          <h1 class="post-title" itemprop="name headline">群聊初步学习实现过程</h1>
+          <h1 class="post-title" itemprop="name headline">215数组中的第K个最大元素</h1>
         
 
         <div class="post-meta">
@@ -3611,8 +3609,8 @@ pre .javascript .function {
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-05T16:48:15+08:00">
-                2018-10-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-26T20:27:39+08:00">
+                2019-01-26
               </time>
             
 
@@ -3634,8 +3632,8 @@ pre .javascript .function {
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
+                  <a href="/categories/leetcode/" itemprop="url" rel="index">
+                    <span itemprop="name">leetcode</span>
                   </a>
                 </span>
 
@@ -3665,7 +3663,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">字数统计:</span>
                 
                 <span title="字数统计">
-                  658
+                  299
                 </span>
               
 
@@ -3681,7 +3679,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">阅读时长 ≈</span>
                 
                 <span title="阅读时长">
-                  2
+                  1
                 </span>
               
             </div>
@@ -3702,24 +3700,13 @@ pre .javascript .function {
       
 
       
-        <p><strong> 看学习视频所得 </strong></p>
-<a id="more"></a>
-<p>Chat0.1:<br>客户端：先写一个简易的窗口，采用extends Frame</p>
-<p>Chat0.2:<br>客户端：给窗口添加TextArea在BorderLayout北面，添加TextField在BorderLayout南面，注意pack()、add();</p>
-<p>Chat0.3:<br>客户端：匿名类改写windowClosing()使其System.exit(0)（可以关闭）</p>
-<p>Chat0.4:<br>客户端：使用内部类给框架添加监听事件，改写actionPerformed(ActionEvent e)使Field内容显示到Area中，清空Field</p>
-<p>Chat0.5:<br>客户端：不变<br>服务器端：建立ServerSocket serverSocket = new ServerSocket(8088);当有连接时Socket s = serverSocket.accept();</p>
-<p>Chat0.6:<br>客户端：设置connect函数建立 socket = new Socket(“127.0.0.1”, 8088);连接，connect()置于launchFrame()框架建立同时连接上端口号<br>服务器端：不变</p>
-<p>Chat0.7:<br>客户端：利用DataOutputStream dos = new DataOutputStream(s.getOutputStream()); dos.writeUTF(str);将输入内容写入流中，内容储存在流中方便通信。<br>服务器端：利用 DataInputStream dis = new DataInputStream(s.getInputStream()); Stringstr; dis.readUTF(); System.out.println(str);将内容接收过来并在控制台打印出来</p>
-<p>Chat0.8:<br>客户端：将DataOutputStream设为全局变量,设置disconnect函数,当关闭窗口时应断开连接<br>服务器端：不变</p>
-<p>Chat0.9:<br>客户端：不变<br>服务器端：增加容错性，添加BindException、EOFException、以及finally判断来关闭Socket和DataInputStream，出现<br>EOFException表示前面有客户端占用端口，所以应当写出提示语句最后在finally中关闭之前的占用</p>
-<p>Chat1.0:<br>客户端：不变<br>服务器端：使用内部类增加多线程Client，重写run()、创建函数start(),main()函数中只有一句话，在start()中创建端口使其监听好，设置started为true，并设置BindException，再接收端口，调用Client类构造函数接受到流中的内容并bConnected = true;最后生成新的线程（在run()中进行）来读取流中的内容并打印出来，初步实现多客户端的功能</p>
-<p>Chat1.1:<br>客户端：不变<br>服务器端：将客户端的信息通过服务端存储并发给每个客户端,但客户端没有接收</p>
-<p>Chat1.2:<br>客户端：利用多线程来接收发过来的字符串,后面再打印在TextArea上<br>服务器端：不变</p>
-<p>Chat1.3:<br>客户端：不变<br>服务器端：修正关闭一个客户端报错的问题,应当将去除的客户端从集合中删去,这时候移除的客户端应当是要发送的那个线程的客户端,此时客户端也就不会接收到信息,而不是当前客户端,删去的客户端应当要注意区分</p>
-<blockquote>
-<p>学习的代码–&gt;<a href="https://github.com/Thunderforrain/For-Java/tree/master/chat" target="_blank" rel="noopener">源文件</a><br>日后有机会将逐步完善</p>
-</blockquote>
+        <p><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1548506060055-118e8488-7b24-4981-8a99-75880675fde5.png#align=left&amp;display=inline&amp;height=411&amp;linkTarget=_blank&amp;name=215.png&amp;originHeight=806&amp;originWidth=1464&amp;size=153252&amp;width=746" alt="215.png"><br><a id="more"></a></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>在未排序的数组中找到第 <strong>k</strong> 个最大的元素。请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。<br><strong>示例 1:</strong><br><strong>输入:</strong> </p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[3,2,1,5,6,4] 和</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p> k = 2<br><strong>输出:</strong> 5<strong>示例 2:</strong><br><strong>输入:</strong> </p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[3,2,3,1,2,4,5,5,6] 和</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p> k = 4<br><strong>输出:</strong> 4<strong>说明:</strong><br>你可以假设 k 总是有效的，且 1 ≤ k ≤ 数组的长度。</p>
+<h2 id="参考代码"><a href="#参考代码" class="headerlink" title="参考代码"></a>参考代码</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>{</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">findKthLargest</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k)</span> </span>{</span><br><span class="line">		PriorityQueue&lt;Integer&gt; priorityQueue = <span class="keyword">new</span> PriorityQueue&lt;&gt;();</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> num :nums) {</span><br><span class="line">           priorityQueue.add(num);</span><br><span class="line">           <span class="keyword">if</span>(priorityQueue.size() &gt; k) {</span><br><span class="line">               priorityQueue.poll();</span><br><span class="line">           }</span><br><span class="line">       }</span><br><span class="line">       <span class="keyword">return</span> priorityQueue.peek();</span><br><span class="line">   }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="思路及总结"><a href="#思路及总结" class="headerlink" title="思路及总结"></a>思路及总结</h2><p>主要思路就是通过各种方式将数组从大到小有序化（各种排序算法，由大到小更容易判断k的位置），利用优先队列PriorityQueue从大到小排列，想象一个二叉树，在第k个之后的内容没有意义，在添加进去的同时便可以删去，减少了调用add()函数的时间，将所有数添加完毕，处于peek的数既是数组中第k个最大元素。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.kancloud.cn/maliming/leetcode/844880" target="_blank" rel="noopener">https://www.kancloud.cn/maliming/leetcode/844880</a></p>
 
       
     </div>
@@ -3788,7 +3775,7 @@ color:#080808;
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://tfrain.github.io/2018/10/Thinking-of-Chat/" title="群聊初步学习实现过程">https://tfrain.github.io/2018/10/Thinking-of-Chat/</a>
+    <a href="https://tfrain.github.io/2019/01/yuque/num_215/" title="215数组中的第K个最大元素">https://tfrain.github.io/2019/01/yuque/num_215/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -3801,12 +3788,6 @@ color:#080808;
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i>Java</a>
-          
-        </div>
-      
 
       
       
@@ -3816,8 +3797,8 @@ color:#080808;
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/Baidu_cloud_acceleration/" rel="next" title="百度云加速的一些方式">
-                <i class="fa fa-chevron-left"></i> 百度云加速的一些方式
+              <a href="/2019/01/yuque/num_11/" rel="next" title="11盛最多水的容器">
+                <i class="fa fa-chevron-left"></i> 11盛最多水的容器
               </a>
             
           </div>
@@ -3825,10 +3806,6 @@ color:#080808;
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/servlet/" rel="prev" title="servlet学习ing">
-                servlet学习ing <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -3887,8 +3864,17 @@ abbrlink: 1
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -3985,6 +3971,22 @@ abbrlink: 1
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考代码"><span class="nav-number">2.</span> <span class="nav-text">参考代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#思路及总结"><span class="nav-number">3.</span> <span class="nav-text">思路及总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
