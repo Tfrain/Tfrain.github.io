@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[15. 三数之和]]></title>
+    <url>%2F2019%2F01%2Fyuque%2Fnum_15%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个包含 _n_ 个整数的数组 nums，判断 nums 中是否存在三个元素 _a，b，c ，_a + b + c = _0 ？找出所有满足条件且不重复的三元组。注意：答案中不可以包含重复的三元组。例如, 给定数组 nums = [-1, 0, 1, 2, -1, -4]， 满足要求的三元组集合为：[ [-1, 0, 1], [-1, -1, 2]] 参考代码123456789101112131415161718192021222324252627282930class Solution &#123; public List&lt;List&lt;Integer&gt;&gt; threeSum(int[] nums) &#123; List&lt;List&lt;Integer&gt;&gt; result = new ArrayList&lt;List&lt;Integer&gt;&gt;(); Arrays.sort(nums); for(int i = 0;i &lt; nums.length - 2;i++) &#123; int left = i + 1; int right = nums.length - 1; if(i &gt; 0 &amp;&amp; nums[i] == nums[i - 1]) continue;//从left去重，减少了一轮比较 while (left &lt; right) &#123; int sum = nums[left] + nums[right] + nums[i]; if(sum == 0) &#123; result.add(Arrays.asList(new Integer[] &#123;nums[i], nums[left], nums[right]&#125;)); while (left &lt; right &amp;&amp; nums[left] == nums[left + 1]) &#123; left++;//从i去重，去除左边的 &#125; while (left &lt; right &amp;&amp; nums[right] == nums[right -1]) &#123; right--;//从i去重，去除右边的 &#125; left++; right--; &#125; else if (sum &gt; 0) &#123; right--;//由小到大排序，sum较大则右侧左移 &#125; else &#123; left++;//同理 &#125; &#125; &#125; return result; &#125;&#125; 思路及总结先进行排序，然后利用双指针将最后一个数字一直作为三数之一，开始进行比较，最难的地方在于查重并舍去重复，外层可能由左边产生重复，则比较下一组数字，内层左右都有可能重复，重复则舍弃当前数字，比较下一个数字。 参考https://www.cnblogs.com/Xieyang-blog/p/8242900.html]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[215数组中的第K个最大元素]]></title>
     <url>%2F2019%2F01%2Fyuque%2Fnum_215%2F</url>
     <content type="text"><![CDATA[题目描述在未排序的数组中找到第 k 个最大的元素。请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。示例 1:输入: 1[3,2,1,5,6,4] 和 k = 2输出: 5示例 2:输入: 1[3,2,3,1,2,4,5,5,6] 和 k = 4输出: 4说明:你可以假设 k 总是有效的，且 1 ≤ k ≤ 数组的长度。 参考代码123456789101112class Solution &#123; public static int findKthLargest(int[] nums, int k) &#123; PriorityQueue&lt;Integer&gt; priorityQueue = new PriorityQueue&lt;&gt;(); for(int num :nums) &#123; priorityQueue.add(num); if(priorityQueue.size() &gt; k) &#123; priorityQueue.poll(); &#125; &#125; return priorityQueue.peek(); &#125;&#125; 思路及总结主要思路就是通过各种方式将数组从大到小有序化（各种排序算法，由大到小更容易判断k的位置），利用优先队列PriorityQueue从大到小排列，想象一个二叉树，在第k个之后的内容没有意义，在添加进去的同时便可以删去，减少了调用add()函数的时间，将所有数添加完毕，处于peek的数既是数组中第k个最大元素。 参考https://www.kancloud.cn/maliming/leetcode/844880]]></content>
