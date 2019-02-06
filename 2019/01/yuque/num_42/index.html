@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548166999619-b552223a-453b-45be-a8fd-1b36fae8c0e8.png#align=left&amp;display=inline&amp;height=394&amp;linkTarget=_blank&amp;name=carbon.png&amp;originHeight=1058&amp;originWidth=2004&amp;size=228645&amp;width=746">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548164527171-46538220-f3c3-458f-8372-cbd190cc824a.png#align=left&amp;display=inline&amp;height=161&amp;linkTarget=_blank&amp;originHeight=161&amp;originWidth=412&amp;size=0&amp;width=412">
-<meta property="og:updated_time" content="2019-02-03T15:21:41.834Z">
+<meta property="og:updated_time" content="2019-02-06T03:37:32.320Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="42. 接雨水">
 <meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548166999619-b552223a-453b-45be-a8fd-1b36fae8c0e8.png#align=left&amp;display=inline&amp;height=394&amp;linkTarget=_blank&amp;name=carbon.png&amp;originHeight=1058&amp;originWidth=2004&amp;size=228645&amp;width=746">
@@ -2085,7 +2085,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb9b9;
+  background: #87ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3664,7 +3664,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">字数统计:</span>
                 
                 <span title="字数统计">
-                  499
+                  511
                 </span>
               
 
@@ -3702,7 +3702,7 @@ pre .javascript .function {
 
       
         <p><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1548166999619-b552223a-453b-45be-a8fd-1b36fae8c0e8.png#align=left&amp;display=inline&amp;height=394&amp;linkTarget=_blank&amp;name=carbon.png&amp;originHeight=1058&amp;originWidth=2004&amp;size=228645&amp;width=746" alt="carbon.png"><br><a id="more"></a></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定 _n_ 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。<br><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1548164527171-46538220-f3c3-458f-8372-cbd190cc824a.png#align=left&amp;display=inline&amp;height=161&amp;linkTarget=_blank&amp;originHeight=161&amp;originWidth=412&amp;size=0&amp;width=412" alt=""><br>上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。 <strong>感谢 Marcos</strong> 贡献此图。<br><strong>示例:</strong><br><strong>输入:</strong>输出:** 6</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定 _n_ 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。<br><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1548164527171-46538220-f3c3-458f-8372-cbd190cc824a.png#align=left&amp;display=inline&amp;height=161&amp;linkTarget=_blank&amp;originHeight=161&amp;originWidth=412&amp;size=0&amp;width=412" alt=""><br>上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。 <strong>感谢 Marcos</strong> 贡献此图。<br><strong>示例:</strong><br><strong>输入:</strong> [0,1,0,2,1,0,1,3,2,1,2,1]<br><strong>输出:</strong> 6</p>
 <h2 id="参考代码"><a href="#参考代码" class="headerlink" title="参考代码"></a>参考代码</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>{</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">trap</span><span class="params">(<span class="keyword">int</span>[] height)</span> </span>{</span><br><span class="line">    Stack&lt;Integer&gt; stack = <span class="keyword">new</span> Stack&lt;Integer&gt;();</span><br><span class="line">    <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; height.length; i++) {</span><br><span class="line">      <span class="keyword">if</span> (!stack.isEmpty() &amp;&amp; height[i] &lt; height[stack.peek()]) stack.push(i);</span><br><span class="line">      <span class="keyword">else</span> {</span><br><span class="line">        <span class="keyword">while</span> (!stack.isEmpty() &amp;&amp; height[i] &gt; height[stack.peek()]) {</span><br><span class="line">          <span class="keyword">int</span> pre = stack.pop();</span><br><span class="line">          <span class="keyword">if</span> (!stack.isEmpty()) {</span><br><span class="line">            res += (Math.min(height[i],height[stack.peek()]) - height[pre]) * (i - stack.peek() - <span class="number">1</span>);</span><br><span class="line">          }</span><br><span class="line">        }</span><br><span class="line">        stack.push(i);</span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h2 id="思路及总结"><a href="#思路及总结" class="headerlink" title="思路及总结"></a>思路及总结</h2><p>利用堆栈，如果当前高度比堆栈顶端的高度小，则当前下标进栈，且累加积水面积；如果当前高度比堆栈顶端的高度大，则出栈，且累加积水面积，如此循环。如[2, 1, 0, 1, 2]，2入栈，1入栈，0入栈，下一个1大于栈顶元素0，则计算此处的雨水量加入res，此过程中0从栈中弹出，1入栈，到下一个2，先弹出1，由于之前还有一个1在栈中，所以计算时高度的因数相减为0，雨水量为0，res无变化，继续pop出栈中的元素，也就是之前的1，此时stack中仍有元素2，说明左边还有边，继续计算底层高度为1，两个值为2的边之间的水量，加入res。<br>注意点：一、stack.peek()返回的是数组下标，整个栈中存储的都是数组中的下标。二、举例情况栈中2112高度的时候通过数组的定位成功计算了21012在1的上方的三个单位雨水。</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://segmentfault.com/a/1190000004594606" target="_blank" rel="noopener">https://segmentfault.com/a/1190000004594606</a><br><a href="https://blog.csdn.net/nlgshw/article/details/43410329" target="_blank" rel="noopener">https://blog.csdn.net/nlgshw/article/details/43410329</a></p>
@@ -3894,7 +3894,7 @@ abbrlink: 1
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

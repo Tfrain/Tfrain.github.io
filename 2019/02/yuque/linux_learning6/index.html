@@ -90,7 +90,7 @@
 <meta property="og:description" content="文件和目录属性">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1549101208779-3e78a392-e781-434d-bb01-588504ab5836.png#align=left&amp;display=inline&amp;height=432&amp;linkTarget=_blank&amp;name=image.png&amp;originHeight=432&amp;originWidth=488&amp;size=57239&amp;width=488">
-<meta property="og:updated_time" content="2019-02-03T15:21:41.838Z">
+<meta property="og:updated_time" content="2019-02-06T03:37:32.324Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux学习6">
 <meta name="twitter:description" content="文件和目录属性">
@@ -2087,7 +2087,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb9b9;
+  background: #87ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3708,7 +3708,7 @@ pre .javascript .function {
 <pre><code>编译：peida     
 链接：https://www.cnblogs.com/peida/archive/2012/12/05/2803591.html
 </code></pre></blockquote>
-<h1 id="Linux目录结构"><a href="#Linux目录结构" class="headerlink" title="Linux目录结构"></a>Linux目录结构</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>对于每一个Linux学习者来说，了解Linux文件系统的目录结构，是学号Linux的至关重要的一步，深入了解Linux文件目录结构的标准和每个目录的详细功能，对于我们用好Linux系统至关重要，下面我们就开始了解Linux目录结构的相关知识。<br>当在使用Linux的时候，如果您通过ls -l/ 就会发现，在/下包含很多的目录，比如etc、usr、var、bin…等目录，而在这些目录中，我们进去看看，发现也有很多的目录或文件。文件系统在Linux下看上去就像树形结构，所以我们可以把文件新系统的结构形象称为树形结构。<br>文件系统是用力啊组织和排列文件存取的，所以他是可见的，在Linux中，我们可以通过ls等工具来查看其结构，在Linux系统中，我们见到的都是树形结构；比如操作系统安装在一个文件系统中，他表现为由/起始的树形结构。Linux文件系统的最顶端是/，我们称/为Linux的root，也就是Linux操作系统的文件系统。Linux的文件系统的入口就是/，所有的目录、文件、设备都在/之下，/就是Linux文件系统的组织者，也是上级的领导者。<br>由于Linux是开放源代码，各大公司和团体根据Linux的核心代码做各自的操作，编程。这样就造成在根下的目录的不同。这样就造成个人不能使用他人的linux系统的pc。因为你根本不知道一些基本的配置，文件在哪里。。这就造成了混乱。这就是FHS(Filesystem Hierarchy Standard )机构诞生对的原因。该机构是Linux爱好者自发组成的一个团体，主要是对Linux做一些基本的要求，不至于是操作者换一台主机就成了Linux的“文盲”。<br>根据FHS(<a href="http://www.pathname.com/fhs/)的官方文件指出，他们的主要目的是希望让使用者可以了解发哦已安装软件通常放置于哪个目录下，所以他们希望独立的软件开发上、操作系统制作者、以及想要维护系统的用户，都能遵循FHS的标准。也就是说，FHS的重点在于规范每个特定的目录下应该要放置什么样子的数据而已。这样做的好处非常多，因为Linux操作系统就能够与在既有的面貌下(目录架构不变)发展出开发者想要的独特风格。" target="_blank" rel="noopener">http://www.pathname.com/fhs/)的官方文件指出，他们的主要目的是希望让使用者可以了解发哦已安装软件通常放置于哪个目录下，所以他们希望独立的软件开发上、操作系统制作者、以及想要维护系统的用户，都能遵循FHS的标准。也就是说，FHS的重点在于规范每个特定的目录下应该要放置什么样子的数据而已。这样做的好处非常多，因为Linux操作系统就能够与在既有的面貌下(目录架构不变)发展出开发者想要的独特风格。</a><br>事实上，FHS是根据过去的经验一直再持续的改版的，FHS依据文件系统使用的频繁与否与是否允许使用者随意更动，而将目录定义成为四种交互作用的形态，用表格来说有点像底下这样：</p>
+<h1 id="Linux目录结构"><a href="#Linux目录结构" class="headerlink" title="Linux目录结构"></a>Linux目录结构</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>对于每一个Linux学习者来说，了解Linux文件系统的目录结构，是学号Linux的至关重要的一步，深入了解Linux文件目录结构的标准和每个目录的详细功能，对于我们用好Linux系统至关重要，下面我们就开始了解Linux目录结构的相关知识。<br>当在使用Linux的时候，如果您通过ls -l/ 就会发现，在/下包含很多的目录，比如etc、usr、var、bin…等目录，而在这些目录中，我们进去看看，发现也有很多的目录或文件。文件系统在Linux下看上去就像树形结构，所以我们可以把文件新系统的结构形象称为树形结构。<br>文件系统是用力啊组织和排列文件存取的，所以他是可见的，在Linux中，我们可以通过ls等工具来查看其结构，在Linux系统中，我们见到的都是树形结构；比如操作系统安装在一个文件系统中，他表现为由/起始的树形结构。Linux文件系统的最顶端是/，我们称/为Linux的root，也就是Linux操作系统的文件系统。Linux的文件系统的入口就是/，所有的目录、文件、设备都在/之下，/就是Linux文件系统的组织者，也是上级的领导者。<br>由于Linux是开放源代码，各大公司和团体根据Linux的核心代码做各自的操作，编程。这样就造成在根下的目录的不同。这样就造成个人不能使用他人的linux系统的pc。因为你根本不知道一些基本的配置，文件在哪里。。这就造成了混乱。这就是FHS(Filesystem Hierarchy Standard )机构诞生对的原因。该机构是Linux爱好者自发组成的一个团体，主要是对Linux做一些基本的要求，不至于是操作者换一台主机就成了Linux的“文盲”。<br>根据FHS (<a href="http://www.pathname.com/fhs/" target="_blank" rel="noopener">http://www.pathname.com/fhs/</a>) 的官方文件指出，他们的主要目的是希望让使用者可以了解发哦已安装软件通常放置于哪个目录下，所以他们希望独立的软件开发上、操作系统制作者、以及想要维护系统的用户，都能遵循FHS的标准。也就是说，FHS的重点在于规范每个特定的目录下应该要放置什么样子的数据而已。这样做的好处非常多，因为Linux操作系统就能够与在既有的面貌下(目录架构不变)发展出开发者想要的独特风格。<br>事实上，FHS是根据过去的经验一直再持续的改版的，FHS依据文件系统使用的频繁与否与是否允许使用者随意更动，而将目录定义成为四种交互作用的形态，用表格来说有点像底下这样：</p>
 <table>
 <thead>
 <tr>
@@ -4040,6 +4040,10 @@ color:#080808;
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/02/yuque/num_944/" rel="prev" title="860. Lemonade Change">
+                860. Lemonade Change <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -4124,7 +4128,7 @@ abbrlink: 1
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
