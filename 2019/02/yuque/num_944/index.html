@@ -82,17 +82,16 @@
 
 
 
-<meta name="description" content="…">
 <meta property="og:type" content="article">
 <meta property="og:title" content="860. Lemonade Change">
 <meta property="og:url" content="https://tfrain.github.io/2019/02/yuque/num_944/index.html">
 <meta property="og:site_name" content="Tfrain's  Blog">
-<meta property="og:description" content="…">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-06T15:21:03.609Z">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1549696398291-854a329e-11c0-4f90-9fa5-5c55e05dfaa1.png#align=left&amp;display=inline&amp;height=997&amp;linkTarget=_blank&amp;name=860.png&amp;originHeight=997&amp;originWidth=554&amp;size=79027&amp;width=554">
+<meta property="og:updated_time" content="2019-02-09T14:27:40.690Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="860. Lemonade Change">
-<meta name="twitter:description" content="…">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1549696398291-854a329e-11c0-4f90-9fa5-5c55e05dfaa1.png#align=left&amp;display=inline&amp;height=997&amp;linkTarget=_blank&amp;name=860.png&amp;originHeight=997&amp;originWidth=554&amp;size=79027&amp;width=554">
 
 
 
@@ -2085,7 +2084,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0028ff;
+  background: #1d50ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3664,7 +3663,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">字数统计:</span>
                 
                 <span title="字数统计">
-                  273
+                  465
                 </span>
               
 
@@ -3680,7 +3679,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">阅读时长 ≈</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -3701,13 +3700,15 @@ pre .javascript .function {
       
 
       
-        <p>…<br><a id="more"></a></p>
+        <p><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1549696398291-854a329e-11c0-4f90-9fa5-5c55e05dfaa1.png#align=left&amp;display=inline&amp;height=997&amp;linkTarget=_blank&amp;name=860.png&amp;originHeight=997&amp;originWidth=554&amp;size=79027&amp;width=554" alt="860.png"><br><a id="more"></a></p>
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>At a lemonade stand, each lemonade costs <code>$5</code>. <br>Customers are standing in a queue to buy from you, and order one at a time (in the order specified by <code>bills</code>).<br>Each customer will only buy one lemonade and pay with either a <code>$5</code>, <code>$10</code>, or <code>$20</code> bill.  You must provide the correct change to each customer, so that the net transaction is that the customer pays $5.<br>Note that you don’t have any change in hand at first.<br>Return <code>true</code> if and only if you can provide every customer with correct change.<br> <br><strong>Example 1:</strong><br><strong>Input: </strong>[5,5,5,10,20]<br><strong>Output: </strong>true<br><strong>Explanation: </strong><br>From the first 3 customers, we collect three $5 bills in order.<br>From the fourth customer, we collect a $10 bill and give back a $5.<br>From the fifth customer, we give a $10 bill and a $5 bill.<br>Since all customers got correct change, we output true.<strong>Example 2:</strong><br><strong>Input: </strong>[5,5,10]<br><strong>Output: </strong>true<strong>Example 3:</strong><br><strong>Input: </strong>[10,10]<br><strong>Output: </strong>false<strong>Example 4:</strong><br><strong>Input: </strong>[5,5,10,10,20]<br><strong>Output: </strong>false<br><strong>Explanation: </strong><br>From the first two customers in order, we collect two $5 bills.<br>For the next two customers in order, we collect a $10 bill and give back a $5 bill.<br>For the last customer, we can’t give change of $15 back because we only have two $10 bills.<br>Since not every customer received correct change, the answer is false. <br><strong>Note:</strong></p>
 <ul>
 <li><code>0 &lt;= bills.length &lt;= 10000</code></li>
 <li><code>bills[i]</code> will be either <code>5</code>, <code>10</code>, or <code>20</code>.<h2 id="参考代码"><a href="#参考代码" class="headerlink" title="参考代码"></a>参考代码</h2></li>
 </ul>
-<h2 id="思路及总结"><a href="#思路及总结" class="headerlink" title="思路及总结"></a>思路及总结</h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.smwenku.com/a/5bb2d3692b71770e645e1c2b/zh-cn/" target="_blank" rel="noopener">https://www.smwenku.com/a/5bb2d3692b71770e645e1c2b/zh-cn/</a></p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>{</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">lemonadeChange</span><span class="params">(<span class="keyword">int</span>[] bills)</span> </span>{</span><br><span class="line">        <span class="keyword">if</span> (bills[<span class="number">0</span>] != <span class="number">5</span>) {<span class="comment">//若第一个不是5，则返回false</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">else</span> {</span><br><span class="line">            <span class="keyword">int</span> five = <span class="number">1</span>,ten = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">int</span> length = bills.length;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i &lt; length;i++) {<span class="comment">//从第二个数据开始</span></span><br><span class="line">                <span class="keyword">if</span>(bills[i] == <span class="number">5</span>) {</span><br><span class="line">                    five++;</span><br><span class="line">                }</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(bills[i] == <span class="number">10</span>){</span><br><span class="line">                    <span class="keyword">if</span>(five == <span class="number">0</span>) {</span><br><span class="line">                        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                    }</span><br><span class="line">                    <span class="keyword">else</span> {<span class="comment">//进行相应的加减</span></span><br><span class="line">                        five--;</span><br><span class="line">                        ten++;</span><br><span class="line">                    }</span><br><span class="line">                    </span><br><span class="line">                }</span><br><span class="line">                <span class="keyword">else</span> {</span><br><span class="line">                    <span class="keyword">if</span>(five == <span class="number">0</span>) {</span><br><span class="line">                        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                    }</span><br><span class="line">                    <span class="keyword">else</span> <span class="keyword">if</span>(ten != <span class="number">0</span>) {<span class="comment">//10、5的情况</span></span><br><span class="line">                        five--;</span><br><span class="line">                        ten--;</span><br><span class="line">                    }</span><br><span class="line">                    <span class="keyword">else</span> {</span><br><span class="line">                        <span class="keyword">if</span>(five &gt;= <span class="number">3</span>) {<span class="comment">//5,5,5的情况</span></span><br><span class="line">                            five -= <span class="number">3</span>;</span><br><span class="line">                        }</span><br><span class="line">                        <span class="keyword">else</span> {</span><br><span class="line">                            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                        }</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="思路及总结"><a href="#思路及总结" class="headerlink" title="思路及总结"></a>思路及总结</h2><p>感觉这个题目没有体现所谓贪心算法的思想，只是一些if else的语句，以及需要考虑一些边界问题。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.smwenku.com/a/5bb2d3692b71770e645e1c2b/zh-cn/" target="_blank" rel="noopener">https://www.smwenku.com/a/5bb2d3692b71770e645e1c2b/zh-cn/</a></p>
 
       
     </div>
@@ -3896,7 +3897,7 @@ abbrlink: 1
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
