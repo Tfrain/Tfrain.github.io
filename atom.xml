@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tfrain.github.io/"/>
-  <updated>2019-02-09T14:27:40.710Z</updated>
+  <updated>2019-02-11T14:12:08.360Z</updated>
   <id>https://tfrain.github.io/</id>
   
   <author>
@@ -17,15 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>4. Median of Two Sorted Arrays</title>
+    <link href="https://tfrain.github.io/2019/02/yuque/num_4/"/>
+    <id>https://tfrain.github.io/2019/02/yuque/num_4/</id>
+    <published>2019-02-10T10:09:45.000Z</published>
+    <updated>2019-02-11T14:12:08.360Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;TODO&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="leetcode" scheme="https://tfrain.github.io/categories/leetcode/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>2. Add Two Numbers</title>
     <link href="https://tfrain.github.io/2019/02/yuque/num_2/"/>
     <id>https://tfrain.github.io/2019/02/yuque/num_2/</id>
     <published>2019-02-09T08:28:55.000Z</published>
-    <updated>2019-02-09T14:27:40.710Z</updated>
+    <updated>2019-02-11T14:12:08.356Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;，，，&lt;br&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/png/203310/1549785197064-d8534b88-345b-42a3-b91c-2e016c8e60a6.png#align=left&amp;amp;display=inline&amp;amp;height=1034&amp;amp;linkTarget=_blank&amp;amp;name=2.png&amp;amp;originHeight=1034&amp;amp;originWidth=665&amp;amp;size=108078&amp;amp;width=665&quot; alt=&quot;2.png&quot;&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -39,7 +57,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/shell_learning1/"/>
     <id>https://tfrain.github.io/2019/02/yuque/shell_learning1/</id>
     <published>2019-02-07T15:21:13.000Z</published>
-    <updated>2019-02-09T14:27:40.714Z</updated>
+    <updated>2019-02-11T14:12:08.360Z</updated>
     
     <summary type="html">
     
@@ -57,7 +75,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/wikipedia_algorithm/"/>
     <id>https://tfrain.github.io/2019/02/yuque/wikipedia_algorithm/</id>
     <published>2019-02-04T13:25:54.000Z</published>
-    <updated>2019-02-09T14:27:40.686Z</updated>
+    <updated>2019-02-11T14:12:08.364Z</updated>
     
     <summary type="html">
     
@@ -75,7 +93,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/num_944/"/>
     <id>https://tfrain.github.io/2019/02/yuque/num_944/</id>
     <published>2019-02-03T15:30:32.000Z</published>
-    <updated>2019-02-09T14:27:40.690Z</updated>
+    <updated>2019-02-11T14:12:08.360Z</updated>
     
     <summary type="html">
     
@@ -93,7 +111,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/linux_learning6/"/>
     <id>https://tfrain.github.io/2019/02/yuque/linux_learning6/</id>
     <published>2019-02-02T06:09:14.000Z</published>
-    <updated>2019-02-09T14:27:40.694Z</updated>
+    <updated>2019-02-11T14:12:08.364Z</updated>
     
     <summary type="html">
     
@@ -111,7 +129,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/num_264/"/>
     <id>https://tfrain.github.io/2019/02/yuque/num_264/</id>
     <published>2019-02-01T03:57:23.000Z</published>
-    <updated>2019-02-09T14:27:40.698Z</updated>
+    <updated>2019-02-11T14:12:08.360Z</updated>
     
     <summary type="html">
     
@@ -129,7 +147,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/linux_learning5/"/>
     <id>https://tfrain.github.io/2019/01/yuque/linux_learning5/</id>
     <published>2019-01-28T14:24:23.000Z</published>
-    <updated>2019-02-09T14:27:40.698Z</updated>
+    <updated>2019-02-11T14:12:08.360Z</updated>
     
     <summary type="html">
     
@@ -147,7 +165,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/num_155/"/>
     <id>https://tfrain.github.io/2019/01/yuque/num_155/</id>
     <published>2019-01-28T06:16:10.000Z</published>
-    <updated>2019-02-09T14:27:40.698Z</updated>
+    <updated>2019-02-11T14:12:08.356Z</updated>
     
     <summary type="html">
     
@@ -165,7 +183,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/num_15/"/>
     <id>https://tfrain.github.io/2019/01/yuque/num_15/</id>
     <published>2019-01-27T10:36:04.000Z</published>
-    <updated>2019-02-09T14:27:40.698Z</updated>
+    <updated>2019-02-11T14:12:08.356Z</updated>
     
     <summary type="html">
     
@@ -183,7 +201,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/num_215/"/>
     <id>https://tfrain.github.io/2019/01/yuque/num_215/</id>
     <published>2019-01-26T12:27:39.000Z</published>
-    <updated>2019-02-09T14:27:40.702Z</updated>
+    <updated>2019-02-11T14:12:08.356Z</updated>
     
     <summary type="html">
     
@@ -201,7 +219,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/num_11/"/>
     <id>https://tfrain.github.io/2019/01/yuque/num_11/</id>
     <published>2019-01-24T13:02:11.000Z</published>
-    <updated>2019-02-09T14:27:40.702Z</updated>
+    <updated>2019-02-11T14:12:08.356Z</updated>
     
     <summary type="html">
     
@@ -219,7 +237,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/num_23/"/>
     <id>https://tfrain.github.io/2019/01/yuque/num_23/</id>
     <published>2019-01-24T11:03:16.000Z</published>
-    <updated>2019-02-09T14:27:40.706Z</updated>
+    <updated>2019-02-11T14:12:08.356Z</updated>
     
     <summary type="html">
     
@@ -237,7 +255,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/num_71/"/>
     <id>https://tfrain.github.io/2019/01/yuque/num_71/</id>
     <published>2019-01-23T08:27:26.000Z</published>
-    <updated>2019-02-09T14:27:40.706Z</updated>
+    <updated>2019-02-11T14:12:08.360Z</updated>
     
     <summary type="html">
     
@@ -255,7 +273,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/num_42/"/>
     <id>https://tfrain.github.io/2019/01/yuque/num_42/</id>
     <published>2019-01-22T09:28:12.000Z</published>
-    <updated>2019-02-09T14:27:40.706Z</updated>
+    <updated>2019-02-11T14:12:08.360Z</updated>
     
     <summary type="html">
     
@@ -273,7 +291,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/vim_skill/"/>
     <id>https://tfrain.github.io/2019/01/yuque/vim_skill/</id>
     <published>2019-01-15T03:45:00.000Z</published>
-    <updated>2019-02-09T14:27:40.710Z</updated>
+    <updated>2019-02-11T14:12:08.360Z</updated>
     
     <summary type="html">
     
@@ -291,7 +309,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/yuque_hexo/"/>
     <id>https://tfrain.github.io/2019/01/yuque/yuque_hexo/</id>
     <published>2019-01-13T11:13:09.000Z</published>
-    <updated>2019-02-09T14:27:40.710Z</updated>
+    <updated>2019-02-11T14:12:08.360Z</updated>
     
     <summary type="html">
     
@@ -309,7 +327,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/18_19sum/"/>
     <id>https://tfrain.github.io/2019/01/yuque/18_19sum/</id>
     <published>2019-01-11T05:57:58.000Z</published>
-    <updated>2019-02-09T14:27:40.710Z</updated>
+    <updated>2019-02-11T14:12:08.356Z</updated>
     
     <summary type="html">
     
@@ -327,7 +345,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/linux_learning4/"/>
     <id>https://tfrain.github.io/2019/01/yuque/linux_learning4/</id>
     <published>2019-01-10T11:23:45.000Z</published>
-    <updated>2019-02-09T14:27:40.710Z</updated>
+    <updated>2019-02-11T14:12:08.360Z</updated>
     
     <summary type="html">
     
@@ -350,26 +368,6 @@
     <summary type="html">
     
       &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt; 文件查找命令&lt;/strong&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Linux" scheme="https://tfrain.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://tfrain.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux学习2</title>
-    <link href="https://tfrain.github.io/2018/12/linux-learning2/"/>
-    <id>https://tfrain.github.io/2018/12/linux-learning2/</id>
-    <published>2018-12-31T05:47:45.000Z</published>
-    <updated>2019-01-21T14:05:16.017Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt;文件目录操作命令(9-15）&lt;/strong&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
