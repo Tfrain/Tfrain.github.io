@@ -82,17 +82,19 @@
 
 
 
-<meta name="description" content="TODO">
+<meta name="description" content="&amp;lt;!– more – 题目描述There are two sorted arrays nums1 and nums2 of size m and n respectively.Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).You may assu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="4. Median of Two Sorted Arrays">
 <meta property="og:url" content="https://tfrain.github.io/2019/02/yuque/num_4/index.html">
 <meta property="og:site_name" content="Tfrain's  Blog">
-<meta property="og:description" content="TODO">
+<meta property="og:description" content="&amp;lt;!– more – 题目描述There are two sorted arrays nums1 and nums2 of size m and n respectively.Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).You may assu">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-11T14:35:31.550Z">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1549985856512-cc0b2a9d-65c8-4bcf-8e58-8056ef01fcb1.png#align=left&amp;display=inline&amp;height=835&amp;linkTarget=_blank&amp;name=2..png&amp;originHeight=835&amp;originWidth=724&amp;size=131928&amp;width=724">
+<meta property="og:updated_time" content="2019-02-12T15:37:59.054Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="4. Median of Two Sorted Arrays">
-<meta name="twitter:description" content="TODO">
+<meta name="twitter:description" content="&amp;lt;!– more – 题目描述There are two sorted arrays nums1 and nums2 of size m and n respectively.Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).You may assu">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1549985856512-cc0b2a9d-65c8-4bcf-8e58-8056ef01fcb1.png#align=left&amp;display=inline&amp;height=835&amp;linkTarget=_blank&amp;name=2..png&amp;originHeight=835&amp;originWidth=724&amp;size=131928&amp;width=724">
 
 
 
@@ -2085,7 +2087,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2fa3a2;
+  background: #b3bfd5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3664,7 +3666,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">字数统计:</span>
                 
                 <span title="字数统计">
-                  16
+                  302
                 </span>
               
 
@@ -3680,7 +3682,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">阅读时长 ≈</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -3701,8 +3703,14 @@ pre .javascript .function {
       
 
       
-        <p>TODO<br><a id="more"></a></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><h2 id="参考代码"><a href="#参考代码" class="headerlink" title="参考代码"></a>参考代码</h2><h2 id="思路及总结"><a href="#思路及总结" class="headerlink" title="思路及总结"></a>思路及总结</h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2>
+        <p><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1549985856512-cc0b2a9d-65c8-4bcf-8e58-8056ef01fcb1.png#align=left&amp;display=inline&amp;height=835&amp;linkTarget=_blank&amp;name=2..png&amp;originHeight=835&amp;originWidth=724&amp;size=131928&amp;width=724" alt="2..png"><br>&lt;!– more –</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>There are two sorted arrays <strong>nums1</strong> and <strong>nums2</strong> of size m and n respectively.<br>Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).<br>You may assume <strong>nums1</strong> and <strong>nums2</strong> cannot be both empty.<br><strong>Example 1:</strong><br>nums1 = [1, 3]<br>nums2 = [2]</p>
+<p>The median is 2.0<br><strong>Example 2:</strong><br>nums1 = [1, 2]<br>nums2 = [3, 4]</p>
+<p>The median is (2 + 3)/2 = 2.5</p>
+<h2 id="参考代码"><a href="#参考代码" class="headerlink" title="参考代码"></a>参考代码</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>{</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">findMedianSortedArrays</span><span class="params">(<span class="keyword">int</span>[] nums1, <span class="keyword">int</span>[] nums2)</span> </span>{</span><br><span class="line">        <span class="keyword">int</span> m = nums1.length;</span><br><span class="line">        <span class="keyword">int</span> n = nums2.length;</span><br><span class="line">        <span class="keyword">if</span> (m &gt; n) {</span><br><span class="line">            <span class="keyword">int</span>[] tmp = nums1; nums1 = nums2; nums2 = tmp;</span><br><span class="line">            <span class="keyword">int</span> temp = m; m = n; n = temp;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">int</span> iMin = <span class="number">0</span>, iMax = m, halfLen = (m + n + <span class="number">1</span>) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">while</span> (iMin &lt;= iMax) {</span><br><span class="line">            <span class="keyword">int</span> i = (iMin + iMax) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">int</span> j = halfLen - i;</span><br><span class="line">            <span class="keyword">if</span> (i &lt; iMax &amp;&amp; nums2[j-<span class="number">1</span>] &gt; nums1[i]) {</span><br><span class="line">                iMin = i + <span class="number">1</span>;</span><br><span class="line">            }</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (i &gt; iMin &amp;&amp; nums1[i-<span class="number">1</span>] &gt; nums2[j]) {</span><br><span class="line">                iMax = i - <span class="number">1</span>;</span><br><span class="line">            }</span><br><span class="line">            <span class="keyword">else</span> {</span><br><span class="line">                <span class="keyword">int</span> maxLeft = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">if</span> (i == <span class="number">0</span>) { maxLeft = nums2[j-<span class="number">1</span>];}</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span> (j == <span class="number">0</span>) {maxLeft = nums1[i-<span class="number">1</span>];}</span><br><span class="line">                <span class="keyword">else</span> { maxLeft = Math.max(nums1[i-<span class="number">1</span>], nums2[j-<span class="number">1</span>]); }</span><br><span class="line">                <span class="keyword">if</span> ( (m + n) % <span class="number">2</span> == <span class="number">1</span>) { <span class="keyword">return</span> maxLeft; }</span><br><span class="line">                </span><br><span class="line">                <span class="keyword">int</span> minRight = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">if</span> (i == m) { minRight = nums2[j]; }</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span> (j == n) {minRight = nums1[i]; }</span><br><span class="line">                <span class="keyword">else</span> { minRight = Math.min(nums2[j], nums1[i]); }</span><br><span class="line">                </span><br><span class="line">                <span class="keyword">return</span> (maxLeft + minRight) / <span class="number">2.0</span>;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0.0</span>;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="思路及总结"><a href="#思路及总结" class="headerlink" title="思路及总结"></a>思路及总结</h2><p>还是官方解答最能给你它考察以及提升什么的方向.</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/solution/" target="_blank" rel="noopener">https://leetcode.com/problems/median-of-two-sorted-arrays/solution/</a></p>
+
       
     </div>
     
@@ -3886,7 +3894,7 @@ abbrlink: 1
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -3897,7 +3905,7 @@ abbrlink: 1
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>

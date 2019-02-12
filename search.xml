@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[4. Median of Two Sorted Arrays]]></title>
     <url>%2F2019%2F02%2Fyuque%2Fnum_4%2F</url>
-    <content type="text"><![CDATA[TODO 题目描述参考代码思路及总结参考]]></content>
+    <content type="text"><![CDATA[&lt;!– more – 题目描述There are two sorted arrays nums1 and nums2 of size m and n respectively.Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).You may assume nums1 and nums2 cannot be both empty.Example 1:nums1 = [1, 3]nums2 = [2] The median is 2.0Example 2:nums1 = [1, 2]nums2 = [3, 4] The median is (2 + 3)/2 = 2.5 参考代码123456789101112131415161718192021222324252627282930313233343536class Solution &#123; public double findMedianSortedArrays(int[] nums1, int[] nums2) &#123; int m = nums1.length; int n = nums2.length; if (m &gt; n) &#123; int[] tmp = nums1; nums1 = nums2; nums2 = tmp; int temp = m; m = n; n = temp; &#125; int iMin = 0, iMax = m, halfLen = (m + n + 1) / 2; while (iMin &lt;= iMax) &#123; int i = (iMin + iMax) / 2; int j = halfLen - i; if (i &lt; iMax &amp;&amp; nums2[j-1] &gt; nums1[i]) &#123; iMin = i + 1; &#125; else if (i &gt; iMin &amp;&amp; nums1[i-1] &gt; nums2[j]) &#123; iMax = i - 1; &#125; else &#123; int maxLeft = 0; if (i == 0) &#123; maxLeft = nums2[j-1];&#125; else if (j == 0) &#123;maxLeft = nums1[i-1];&#125; else &#123; maxLeft = Math.max(nums1[i-1], nums2[j-1]); &#125; if ( (m + n) % 2 == 1) &#123; return maxLeft; &#125; int minRight = 0; if (i == m) &#123; minRight = nums2[j]; &#125; else if (j == n) &#123;minRight = nums1[i]; &#125; else &#123; minRight = Math.min(nums2[j], nums1[i]); &#125; return (maxLeft + minRight) / 2.0; &#125; &#125; return 0.0; &#125;&#125; 思路及总结还是官方解答最能给你它考察以及提升什么的方向. 参考https://leetcode.com/problems/median-of-two-sorted-arrays/solution/]]></content>
       <categories>
         <category>leetcode</category>
       </categories>
@@ -19,7 +19,7 @@
   <entry>
     <title><![CDATA[shell脚本学习]]></title>
     <url>%2F2019%2F02%2Fyuque%2Fshell_learning1%2F</url>
-    <content type="text"><![CDATA[shell脚本初步 前言寒假在家不如学习一下shell的基本语法，也只能怪我看springboot的视频很容易睡觉，寒假准备为这个寒冬做准备学学springboot，结果老师的安排的东西我现在还没看，springboot也是看了个什么都不会的程度。总而言之，就是在滚蛋的边缘疯狂的试探？shell脚本和Python脚本都有学习的必要，如果往后端方向发展，shell和Python都要涉猎，当然主语言还是Java，shell脚本对自动化部署有很大的帮助，有利于我学习一些Linux知识。 语雀上有shell脚本的资料链接：https://www.yuque.com/allenlei/ia7uhw/edyrfz bilibili视频学习链接：https://www.bilibili.com/video/av17384556 实验楼实战操作链接：https://www.shiyanlou.com/courses/944 Linux温习实验楼上同样有相应的基础学习教程Linux命令实例练习 Linux 基础入门（新版）]]></content>
+    <content type="text"><![CDATA[shell脚本初步 前言寒假在家不如学习一下shell的基本语法，也只能怪我看springboot的视频很容易睡觉，寒假准备为这个寒冬做准备学学springboot，结果老师的安排的东西我现在还没看，springboot也是看了个什么都不会的程度。总而言之，就是在滚蛋的边缘疯狂的试探？shell脚本和Python脚本都有学习的必要，如果往后端方向发展，shell和Python都要涉猎，当然主语言还是Java，shell脚本对自动化部署有很大的帮助，有利于我学习一些Linux知识。 语雀上有shell脚本的资料链接：https://www.yuque.com/allenlei/ia7uhw/edyrfz bilibili视频学习链接：https://www.bilibili.com/video/av17384556 实验楼实战操作链接：https://www.shiyanlou.com/courses/944文档: https://www.shiyanlou.com/courses/944/labs/3558/document Linux温习实验楼上同样有相应的基础学习教程Linux命令实例练习 Linux 基础入门（新版）]]></content>
       <categories>
         <category>Linux</category>
       </categories>
@@ -73,14 +73,6 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[15. 三数之和]]></title>
-    <url>%2F2019%2F01%2Fyuque%2Fnum_15%2F</url>
-    <content type="text"><![CDATA[题目描述给定一个包含 _n_ 个整数的数组 nums，判断 nums 中是否存在三个元素 _a，b，c ，_a + b + c = _0 ？找出所有满足条件且不重复的三元组。注意：答案中不可以包含重复的三元组。例如, 给定数组 nums = [-1, 0, 1, 2, -1, -4]， 满足要求的三元组集合为：[ [-1, 0, 1], [-1, -1, 2]] 参考代码123456789101112131415161718192021222324252627282930class Solution &#123; public List&lt;List&lt;Integer&gt;&gt; threeSum(int[] nums) &#123; List&lt;List&lt;Integer&gt;&gt; result = new ArrayList&lt;List&lt;Integer&gt;&gt;(); Arrays.sort(nums); for(int i = 0;i &lt; nums.length - 2;i++) &#123; int left = i + 1; int right = nums.length - 1; if(i &gt; 0 &amp;&amp; nums[i] == nums[i - 1]) continue;//从left去重，减少了一轮比较 while (left &lt; right) &#123; int sum = nums[left] + nums[right] + nums[i]; if(sum == 0) &#123; result.add(Arrays.asList(new Integer[] &#123;nums[i], nums[left], nums[right]&#125;)); while (left &lt; right &amp;&amp; nums[left] == nums[left + 1]) &#123; left++;//从i去重，去除左边的 &#125; while (left &lt; right &amp;&amp; nums[right] == nums[right -1]) &#123; right--;//从i去重，去除右边的 &#125; left++; right--; &#125; else if (sum &gt; 0) &#123; right--;//由小到大排序，sum较大则右侧左移 &#125; else &#123; left++;//同理 &#125; &#125; &#125; return result; &#125;&#125; 思路及总结先进行排序，然后利用双指针将最后一个数字一直作为三数之一，开始进行比较，最难的地方在于查重并舍去重复，外层可能由左边产生重复，则比较下一组数字，内层左右都有可能重复，重复则舍弃当前数字，比较下一个数字。 参考https://www.cnblogs.com/Xieyang-blog/p/8242900.html]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[215. 数组中的第K个最大元素]]></title>
     <url>%2F2019%2F01%2Fyuque%2Fnum_215%2F</url>
     <content type="text"><![CDATA[题目描述在未排序的数组中找到第 k 个最大的元素。请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。示例 1:输入: 1[3,2,1,5,6,4] 和 k = 2输出: 5示例 2:输入: 1[3,2,3,1,2,4,5,5,6] 和 k = 4输出: 4说明:你可以假设 k 总是有效的，且 1 ≤ k ≤ 数组的长度。 参考代码123456789101112class Solution &#123; public static int findKthLargest(int[] nums, int k) &#123; PriorityQueue&lt;Integer&gt; priorityQueue = new PriorityQueue&lt;&gt;(); for(int num :nums) &#123; priorityQueue.add(num); if(priorityQueue.size() &gt; k) &#123; priorityQueue.poll(); &#125; &#125; return priorityQueue.peek(); &#125;&#125; 思路及总结主要思路就是通过各种方式将数组从大到小有序化（各种排序算法，由大到小更容易判断k的位置），利用优先队列PriorityQueue从大到小排列，想象一个二叉树，在第k个之后的内容没有意义，在添加进去的同时便可以删去，减少了调用add()函数的时间，将所有数添加完毕，处于peek的数既是数组中第k个最大元素。 参考https://www.kancloud.cn/maliming/leetcode/844880]]></content>
@@ -97,51 +89,11 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[23. 合并K个排序链表]]></title>
-    <url>%2F2019%2F01%2Fyuque%2Fnum_23%2F</url>
-    <content type="text"><![CDATA[题目描述合并 k 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。示例:输入:[ 1-&gt;4-&gt;5, 1-&gt;3-&gt;4, 2-&gt;6]输出: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6 参考代码123456789101112131415161718192021222324252627282930313233343536373839404142/** * Definition for singly-linked list. * public class ListNode &#123; * int val; * ListNode next; * ListNode(int x) &#123; val = x; &#125; * &#125; */class Solution &#123; //排除表为空的情况 public ListNode mergeKLists(ListNode[] lists) &#123; if(lists == null || lists.length == 0) &#123; return null; &#125; return MSort(lists,0,lists.length - 1); &#125; //利用二分法的思想将相邻的两个链表有序合并 public ListNode MSort(ListNode[] lists, int low, int high) &#123; if(low &lt; high) &#123; int mid = (low + high) / 2; ListNode left = MSort(lists, low, mid); ListNode right = MSort(lists, mid + 1, high); return MergeTwoLists(left, right); &#125; return lists[low]; &#125; //合并的具体过程 public ListNode MergeTwoLists(ListNode l1,ListNode l2) &#123; ListNode res = null; if(l1 == null) return l2; else if(l2 == null) return l1; else if(l1.val &lt; l2.val) &#123; res = l1; l1.next = MergeTwoLists(l1.next,l2); &#125; else &#123; res = l2; l2.next = MergeTwoLists(l1,l2.next); &#125; return res; &#125;&#125; 思路及总结本题利用二分法和递归的思想。利用二分法的思想将相邻的两个差距不大的链表进行排序，利用递归的思想层层进行推进，边界问题一是考虑表为空的情况，二是考虑表头的数量是单数（即low==high）的时候记得return lists[low]. 参考https://blog.csdn.net/nsjlive/article/details/82433101]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[71. 简化路径]]></title>
-    <url>%2F2019%2F01%2Fyuque%2Fnum_71%2F</url>
-    <content type="text"><![CDATA[题目描述以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix中的绝对路径 vs 相对路径请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。示例 1：输入：”/home/“输出：”/home”解释：注意，最后一个目录名后面没有斜杠。示例 2：输入：”/../“输出：”/“解释：从根目录向上一级是不可行的，因为根是你可以到达的最高级。示例 3：输入：”/home//foo/“输出：”/home/foo”解释：在规范路径中，多个连续斜杠需要用一个斜杠替换。示例 4：输入：”/a/./b/../../c/“输出：”/c”示例 5：输入：”/a/../../b/../c//.//“输出：”/c”示例 6：输入：”/a//b////c/d//././/..”输出：”/a/b/c” 参考代码123456789101112class Solution &#123; public String simplifyPath(String path) &#123; Stack&lt;String&gt; stack = new Stack&lt;&gt; (); String[] p = path.split("/"); for(String t : p) &#123; if(!stack.isEmpty() &amp;&amp; t.equals("..")) stack.pop(); else if(!t.equals(".") &amp;&amp; !t.equals("..") &amp;&amp; !t.equals("")) stack.push(t); &#125; List&lt;String&gt; list = new ArrayList(stack); return '/' + String.join("/", list); &#125;&#125; # 思路及总结可以把路径看做是由一个或多个”/“分割开的众多子字符串，把它们分别提取出来一一处理即可主要是多利用了O(n)来进行字符串的分割，要考虑到栈为空和一系列边界条件和特殊情况 参考http://www.cnblogs.com/grandyang/p/4347125.html]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[42. 接雨水]]></title>
-    <url>%2F2019%2F01%2Fyuque%2Fnum_42%2F</url>
-    <content type="text"><![CDATA[题目描述给定 _n_ 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。 感谢 Marcos 贡献此图。示例:输入: [0,1,0,2,1,0,1,3,2,1,2,1]输出: 6 参考代码12345678910111213141516171819public class Solution &#123; public int trap(int[] height) &#123; Stack&lt;Integer&gt; stack = new Stack&lt;Integer&gt;(); int res = 0; for (int i = 0; i &lt; height.length; i++) &#123; if (!stack.isEmpty() &amp;&amp; height[i] &lt; height[stack.peek()]) stack.push(i); else &#123; while (!stack.isEmpty() &amp;&amp; height[i] &gt; height[stack.peek()]) &#123; int pre = stack.pop(); if (!stack.isEmpty()) &#123; res += (Math.min(height[i],height[stack.peek()]) - height[pre]) * (i - stack.peek() - 1); &#125; &#125; stack.push(i); &#125; &#125; return res; &#125;&#125; 思路及总结利用堆栈，如果当前高度比堆栈顶端的高度小，则当前下标进栈，且累加积水面积；如果当前高度比堆栈顶端的高度大，则出栈，且累加积水面积，如此循环。如[2, 1, 0, 1, 2]，2入栈，1入栈，0入栈，下一个1大于栈顶元素0，则计算此处的雨水量加入res，此过程中0从栈中弹出，1入栈，到下一个2，先弹出1，由于之前还有一个1在栈中，所以计算时高度的因数相减为0，雨水量为0，res无变化，继续pop出栈中的元素，也就是之前的1，此时stack中仍有元素2，说明左边还有边，继续计算底层高度为1，两个值为2的边之间的水量，加入res。注意点：一、stack.peek()返回的是数组下标，整个栈中存储的都是数组中的下标。二、举例情况栈中2112高度的时候通过数组的定位成功计算了21012在1的上方的三个单位雨水。 参考https://segmentfault.com/a/1190000004594606https://blog.csdn.net/nlgshw/article/details/43410329]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[Vim实用技巧]]></title>
     <url>%2F2019%2F01%2Fyuque%2Fvim_skill%2F</url>
     <content type="text"><![CDATA[寒假阅读]]></content>
       <categories>
         <category>Vim</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[推荐用语雀进行创作]]></title>
-    <url>%2F2019%2F01%2Fyuque%2Fyuque_hexo%2F</url>
-    <content type="text"><![CDATA[建议使用语雀来作为博客的编辑器原本我写博客的方式： remarkble+Yosor使用语雀进行写作 语雀语雀是了解的极为优秀的知识创作与分享工具，让知识能得以记录和传播。界面和功能都非常优秀，而且有蚂蚁金服团队进行维护，所以我觉得这是写博客的不二选择之地。语雀简介) 语雀同步到hexo的更为方便的方式（支持手动部署和自动部署）教程地址)]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[咸鱼学年总结]]></title>
-    <url>%2F2019%2F01%2Fyuque%2F18_19sum%2F</url>
-    <content type="text"><![CDATA[学期总结这一年眨眼也就结束了，原本以为之前的自己就已经开阔了眼界，结果发现自己是最好奇、最无知的。朋友在发现一些新奇的东西，大都很少有兴奋的状态，我知道他们是大佬，他们早就已经经历过了这种心跳的时刻，我还是太稚嫩，没有做到能安静下来做自己的事情。成绩方面也就努力去学习，并没有挂科的迹象，毕竟相较于懒惰和匆忙，我既没又大佬的真正意义的忙，也没有想去办重修等一系列事件短浅的懒惰之心，只是在求稳的过程中，少了点真正的计划和毅力，不够投入。其实大学可以先放下一些东西，去专心作比较重要的，但我还是不适应，可能有情绪的波动吧，现在愈发觉得，朋友圈的无意义的分享的确是在浪费时间，在这一年我看到了太多优秀却又非常努力的人，他们很低调，但很有效率，这才是我应有的追求。项目倒是什么都没做成，只是做了很多浅薄的东西，一个方面的体系，我感觉自己完全没有接触到，只是冰山一角吧，但根据幸存者原理，我还是比较幸运的一个，毕竟我可以计划，并且我相信一切还都不晚。 寒假计划读书最重要的，可以看看vim实用技巧，算法经典入门，鸟哥的私房菜，当然是看重点，然后尽量学以致用，再者就是自己搞懂老师给的代码，多和老师交流交流，hexo可以了解一下前端，考虑做一个独一无二的页面，当然主要是为了玩，可以整理一下自己的书签，感兴趣的东西那么多，还是要浏览一下自己的书签，才能具体部署自己的任务，希望能尽(bi)力(bu)完(ke)成(neng)。 来年之计计划多读一些专业书，抽时间离开手机找个安静的地方阅读，博客也越来越方便，养成边学边记录的习惯吧 一些感想了解到现在大三的人很慌，没有人说准备充足的情况，我决定还是要早点在某一个方面下手多学点东西，毕竟现在自己非常水，因为只是了解到一些浅薄的知识，但是并不知道各个方向深入下去的具体情况。一个学期下来，大佬在不断进步，我不能一味停滞不前。尤其是接触的更多，觉得有很多高中生都有一技之长，而自己还一直是一个混子，接下来还是要多花时间看书，然后不停地进步，要停止庸人自扰，凡事要注意自己的判断。 学习效率一直觉得自己的学习效率不佳，主要的原因可能就是自己不能深入去做事情，只在很浅的地方徘徊，希望自己能咬定青山不放松，能会点真正有用的东西。因为自己还是太菜，接下来我可能还要扛起来一些责任，所以就很慌张，篮球需要练，自己的技术还要高，前路还有很多肉眼可见的问题等着我去解决，希望自己不要浪费每一分每一秒吧 人际见闻这一学期还是开阔了眼界，了解的越多，越是哑口无言，因为自己还是太菜，接下来我可能还要扛起来一些责任，所以就很慌张，篮球需要练，自己的技术还要提高，尽量多和大佬交流，多向他们学习吧]]></content>
-      <categories>
-        <category>Life</category>
       </categories>
   </entry>
   <entry>
