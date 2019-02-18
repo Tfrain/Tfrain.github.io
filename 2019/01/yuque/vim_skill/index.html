@@ -90,7 +90,7 @@
 <meta property="og:description" content="寒假阅读">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/jpeg/203310/1547523970324-ad085afb-d91a-4b7a-bc5e-07c6133eeca7.jpeg#align=left&amp;display=inline&amp;height=614&amp;linkTarget=_blank&amp;originHeight=693&amp;originWidth=552&amp;size=0&amp;width=489">
-<meta property="og:updated_time" content="2019-02-17T14:33:02.085Z">
+<meta property="og:updated_time" content="2019-02-18T14:58:13.146Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vim实用技巧">
 <meta name="twitter:description" content="寒假阅读">
@@ -2087,7 +2087,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ecd6ec;
+  background: #ffecec;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3666,7 +3666,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">字数统计:</span>
                 
                 <span title="字数统计">
-                  4
+                  793
                 </span>
               
 
@@ -3682,7 +3682,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">阅读时长 ≈</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -3705,7 +3705,42 @@ pre .javascript .function {
       
         <p></p><blockquote class="blockquote-center"><strong>寒假阅读</strong></blockquote><br><a id="more"></a><p></p>
 <p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/203310/1547523970324-ad085afb-d91a-4b7a-bc5e-07c6133eeca7.jpeg#align=left&amp;display=inline&amp;height=614&amp;linkTarget=_blank&amp;originHeight=693&amp;originWidth=552&amp;size=0&amp;width=489" alt=""></p>
-
+<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p> 学习Vim，最难受的就是它对新手出名的不友好，网上一大堆乱七八糟的东西，还是自己进行学习对自己的帮助最大。建议首先学习 :vimtutor 入门vim学习。最好会盲打，自己看了这本 vim 实用技巧。</p>
+<h1 id="第一章-Vim解决问题的方式"><a href="#第一章-Vim解决问题的方式" class="headerlink" title="第一章 Vim解决问题的方式"></a>第一章 Vim解决问题的方式</h1><p>{char} 是指任意字符<br><cr> 指<enter><br>cw会删除光标位置到当前词位置结尾处的文本，并进入插入模式<br>&gt;G是首行缩进<br>C=c$ 删除到行尾再插入<br>o=A<cr>下一行插入<br>s删除光标处再插入<br>@：重复命令行命令<br>&amp;重复替换命令<br>f{char} 搜索，; 下一个字符，, 上一个字符<br>* 可以查看当前光标下的单词<br>理想模式：用一个键移动，另一键执行。又称为 “.范式”。</cr></enter></cr></p>
+<h1 id="第二章-普通模式"><a href="#第二章-普通模式" class="headerlink" title="第二章 普通模式"></a>第二章 普通模式</h1><p>b 把光标移动到单词开头<br>daw 在单词末尾也能删除<br><c-a> 在数字上执行加一，不在数字上，在当前行正向查找一个数字，10<c-a><br><c-x> 在数字上执行减一<br>最好不要用数字 d2w 这样，因为 . 能很好代替，但是 c3w 有用，行中间来快速进行修改<br>g~ 反转大小写，gu 转成小写，gU转成大写。gUap 将一段转换为大写，g 当成操作符前缀<br>gc{motion} 切换为注释状态，gcap 切换当前段落的注释状态。gcG 当前行到文件结尾间的所有内容注释掉，gcc 注释当前行，gg=G 自动缩进整个文件。</c-x></c-a></c-a></p>
+<h1 id="第三章-插入模式"><a href="#第三章-插入模式" class="headerlink" title="第三章 插入模式"></a>第三章 插入模式</h1><p>在输入错误时，专业打字员会建议先删除整个单词，然后再重新输入一遍。<br><c-h> 删除前一个字符（同退格键）<c-w> 删除前一个单词<c-u> 删至行首。<br>&lt;c-[&gt;切换到普通模式，<c-o> 切换到插入-普通模式。在此模式中，可以执行一个普通模式命令，执行完后，马上又返回到插入模式</c-o></c-u></c-w></c-h></p>
+<table>
+<thead>
+<tr>
+<th>按键操作</th>
+<th>缓冲区内容</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>yt,</td>
+<td>Practical Vim, by Drew Neil<br>Read Drew Neil’s</td>
+<td></td>
+</tr>
+<tr>
+<td>jA␣</td>
+<td>Practical Vim, by Drew Neil<br>Read Drew Neil’s</td>
+<td></td>
+</tr>
+<tr>
+<td><c-r>0</c-r></td>
+<td>Practical Vim, by Drew Neil<br>Read Drew Neil’s Practical Vim</td>
+<td></td>
+</tr>
+<tr>
+<td>.<esc></esc></td>
+<td>Practical Vim, by Drew Neil<br>Read Drew Neil’s Practical Vim.</td>
+</tr>
+</tbody>
+</table>
+<p>yt, 命令把“Practical Vim”复制到复制专用寄存器中,<c-r>0 把刚才复制的文本粘贴到光<br>标所在位置<br>= 符号指明使用表达式寄存器,<c-r>=6*35<cr>，将执行结果插入到文档的当前位置<br><c-v>{code}根据字符编码插入字符，{code} 是要插入字符的编码，<c-v>065插入A<br><c-v>u{1234} 以十六进制字符编码插入字符<br>ga 分别以十进制和十六进制的形式显示出其字符编码<br><c-k>{char1}{char2} 插入以<strong>二合字母</strong>{char1}{char2}表示的字符，<c-k>?I 表示的“¿”字符，二合字母 12 指1⁄2<br>R 命令可以由普通模式进入替换模式，“,␣b” 替换原有的“. ␣ B”字符<br>gR 进入虚拟替换模式(Virtual Replace mode)，把制表符当成一组空格进行处理，输入制表符占据的最后一个字符，该字符会替换制表符。</c-k></c-k></c-v></c-v></c-v></cr></c-r></c-r></p>
+<h1 id="第四章-可视模式"><a href="#第四章-可视模式" class="headerlink" title="第四章 可视模式"></a>第四章 可视模式</h1>
       
     </div>
     
@@ -3805,8 +3840,8 @@ color:#080808;
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/yuque/num_11/" rel="prev" title="11. 盛最多水的容器">
-                11. 盛最多水的容器 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/01/yuque/num_11/" rel="prev" title="11. Container With Most Water">
+                11. Container With Most Water <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -3866,8 +3901,17 @@ abbrlink: 1
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -3968,6 +4012,22 @@ abbrlink: 1
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第一章-Vim解决问题的方式"><span class="nav-number">2.</span> <span class="nav-text">第一章 Vim解决问题的方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二章-普通模式"><span class="nav-number">3.</span> <span class="nav-text">第二章 普通模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-插入模式"><span class="nav-number">4.</span> <span class="nav-text">第三章 插入模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第四章-可视模式"><span class="nav-number">5.</span> <span class="nav-text">第四章 可视模式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

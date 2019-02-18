@@ -97,9 +97,9 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[11. 盛最多水的容器]]></title>
+    <title><![CDATA[11. Container With Most Water]]></title>
     <url>%2F2019%2F01%2Fyuque%2Fnum_11%2F</url>
-    <content type="text"><![CDATA[题目描述给定 n 个非负整数 a1，a2，…，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。说明：你不能倾斜容器，且 n 的值至少为 2。图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。示例:输入: [1,8,6,2,5,4,8,3,7]输出: 49 参考代码123456789101112131415class Solution &#123; public int maxArea(int[] height) &#123; int max = 0; boolean temp; for(int i = 0,j = height.length - 1;i &lt; j;) &#123; int h = (height[i] &gt; height[j]) ? height[j] : height[i]; if(h * (j - i)&gt;max) max = h * (j - i); temp = (height[i] &lt; height[j]) ? true : false; if(temp) i++; else j--; &#125; return max; &#125;&#125; 思路及总结较为简单的思路就是采用双指针，从两边往中间逼近，并没有什么边界问题，主要是注意在寻找最多水的容器过程中要一直把较深的一边留下，即沿着较小的边界进行移动（因为较小的边界不可能再产生更多的水）。 参考https://blog.csdn.net/qq_40435621/article/details/84790436]]></content>
+    <content type="text"><![CDATA[题目描述Given _n_ non-negative integers _a_, _a_, …, _a_, where each represents a point at coordinate (_i_, _a_). _n_ vertical lines are drawn such that the two endpoints of line _i_ is at (_i_, _a_) and (_i_, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.Note: You may not slant the container and _n_ is at least 2. The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49. Example:Input: [1,8,6,2,5,4,8,3,7]Output: 49 参考代码123456789101112131415class Solution &#123; public int maxArea(int[] height) &#123; int max = 0; boolean temp; for(int i = 0,j = height.length - 1;i &lt; j;) &#123; int h = (height[i] &gt; height[j]) ? height[j] : height[i]; if(h * (j - i)&gt;max) max = h * (j - i); temp = (height[i] &lt; height[j]) ? true : false; if(temp) i++; else j--; &#125; return max; &#125;&#125; 思路及总结较为简单的思路就是采用双指针，从两边往中间逼近，并没有什么边界问题，主要是注意在寻找最多水的容器过程中要一直把较深的一边留下，即沿着较小的边界进行移动（因为较小的边界不可能再产生更多的水）。 参考https://blog.csdn.net/qq_40435621/article/details/84790436]]></content>
       <categories>
         <category>leetcode</category>
       </categories>
@@ -107,7 +107,7 @@
   <entry>
     <title><![CDATA[Vim实用技巧]]></title>
     <url>%2F2019%2F01%2Fyuque%2Fvim_skill%2F</url>
-    <content type="text"><![CDATA[寒假阅读]]></content>
+    <content type="text"><![CDATA[寒假阅读 概述 学习Vim，最难受的就是它对新手出名的不友好，网上一大堆乱七八糟的东西，还是自己进行学习对自己的帮助最大。建议首先学习 :vimtutor 入门vim学习。最好会盲打，自己看了这本 vim 实用技巧。 第一章 Vim解决问题的方式{char} 是指任意字符 指cw会删除光标位置到当前词位置结尾处的文本，并进入插入模式&gt;G是首行缩进C=c$ 删除到行尾再插入o=A下一行插入s删除光标处再插入@：重复命令行命令&amp;重复替换命令f{char} 搜索，; 下一个字符，, 上一个字符* 可以查看当前光标下的单词理想模式：用一个键移动，另一键执行。又称为 “.范式”。 第二章 普通模式b 把光标移动到单词开头daw 在单词末尾也能删除 在数字上执行加一，不在数字上，在当前行正向查找一个数字，10 在数字上执行减一最好不要用数字 d2w 这样，因为 . 能很好代替，但是 c3w 有用，行中间来快速进行修改g~ 反转大小写，gu 转成小写，gU转成大写。gUap 将一段转换为大写，g 当成操作符前缀gc{motion} 切换为注释状态，gcap 切换当前段落的注释状态。gcG 当前行到文件结尾间的所有内容注释掉，gcc 注释当前行，gg=G 自动缩进整个文件。 第三章 插入模式在输入错误时，专业打字员会建议先删除整个单词，然后再重新输入一遍。 删除前一个字符（同退格键） 删除前一个单词 删至行首。&lt;c-[&gt;切换到普通模式， 切换到插入-普通模式。在此模式中，可以执行一个普通模式命令，执行完后，马上又返回到插入模式 按键操作 缓冲区内容 yt, Practical Vim, by Drew NeilRead Drew Neil’s jA␣ Practical Vim, by Drew NeilRead Drew Neil’s 0 Practical Vim, by Drew NeilRead Drew Neil’s Practical Vim . Practical Vim, by Drew NeilRead Drew Neil’s Practical Vim. yt, 命令把“Practical Vim”复制到复制专用寄存器中,0 把刚才复制的文本粘贴到光标所在位置= 符号指明使用表达式寄存器,=6*35，将执行结果插入到文档的当前位置{code}根据字符编码插入字符，{code} 是要插入字符的编码，065插入Au{1234} 以十六进制字符编码插入字符ga 分别以十进制和十六进制的形式显示出其字符编码{char1}{char2} 插入以二合字母{char1}{char2}表示的字符，?I 表示的“¿”字符，二合字母 12 指1⁄2R 命令可以由普通模式进入替换模式，“,␣b” 替换原有的“. ␣ B”字符gR 进入虚拟替换模式(Virtual Replace mode)，把制表符当成一组空格进行处理，输入制表符占据的最后一个字符，该字符会替换制表符。 第四章 可视模式]]></content>
       <categories>
         <category>Vim</category>
       </categories>

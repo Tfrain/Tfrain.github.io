@@ -83,15 +83,15 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="11. 盛最多水的容器">
+<meta property="og:title" content="11. Container With Most Water">
 <meta property="og:url" content="https://tfrain.github.io/2019/01/yuque/num_11/index.html">
 <meta property="og:site_name" content="Tfrain's  Blog">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548413561701-4da063ec-2c59-45b0-8b3d-2e876a9be112.png">
-<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/jpeg/203310/1548334977726-e16052d8-8021-4891-9992-d0c59d57a23b.jpeg#align=left&amp;display=inline&amp;height=287&amp;linkTarget=_blank&amp;originHeight=383&amp;originWidth=801&amp;size=0&amp;width=600">
-<meta property="og:updated_time" content="2019-02-17T14:33:02.081Z">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/jpeg/203310/1550501812423-3cf8d9bb-dbe9-4829-817f-e4e20fc81e24.jpeg#align=left&amp;display=inline&amp;height=287&amp;linkTarget=_blank&amp;originHeight=383&amp;originWidth=801&amp;size=0&amp;width=600">
+<meta property="og:updated_time" content="2019-02-18T14:58:13.146Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="11. 盛最多水的容器">
+<meta name="twitter:title" content="11. Container With Most Water">
 <meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548413561701-4da063ec-2c59-45b0-8b3d-2e876a9be112.png">
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>11. 盛最多水的容器 | Tfrain's  Blog</title>
+  <title>11. Container With Most Water | Tfrain's  Blog</title>
   
 
 
@@ -2085,7 +2085,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ecd6ec;
+  background: #ffecec;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3598,7 +3598,7 @@ pre .javascript .function {
 
         
         
-          <h1 class="post-title" itemprop="name headline">11. 盛最多水的容器</h1>
+          <h1 class="post-title" itemprop="name headline">11. Container With Most Water</h1>
         
 
         <div class="post-meta">
@@ -3664,7 +3664,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">字数统计:</span>
                 
                 <span title="字数统计">
-                  341
+                  296
                 </span>
               
 
@@ -3680,7 +3680,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">阅读时长 ≈</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -3701,9 +3701,8 @@ pre .javascript .function {
       
 
       
-        <p><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1548413561701-4da063ec-2c59-45b0-8b3d-2e876a9be112.png" alt=""></p>
-<a id="more"></a>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定 n 个非负整数 a1，a2，…，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。<br>说明：你不能倾斜容器，且 n 的值至少为 2。<br><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/203310/1548334977726-e16052d8-8021-4891-9992-d0c59d57a23b.jpeg#align=left&amp;display=inline&amp;height=287&amp;linkTarget=_blank&amp;originHeight=383&amp;originWidth=801&amp;size=0&amp;width=600" alt=""><br>图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。<br>示例:<br>输入: [1,8,6,2,5,4,8,3,7]<br>输出: 49</p>
+        <p><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1548413561701-4da063ec-2c59-45b0-8b3d-2e876a9be112.png" alt=""><br><a id="more"></a></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Given _n_ non-negative integers _a_, _a_, …, _a_, where each represents a point at coordinate (_i_, _a_). _n_ vertical lines are drawn such that the two endpoints of line _i_ is at (_i_, _a_) and (_i_, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.<br><strong>Note: </strong>You may not slant the container and _n_ is at least 2.<br> <br><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/203310/1550501812423-3cf8d9bb-dbe9-4829-817f-e4e20fc81e24.jpeg#align=left&amp;display=inline&amp;height=287&amp;linkTarget=_blank&amp;originHeight=383&amp;originWidth=801&amp;size=0&amp;width=600" alt=""><br>The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.<br> <br><strong>Example:</strong><br><strong>Input:</strong> [1,8,6,2,5,4,8,3,7]<br><strong>Output:</strong> 49</p>
 <h2 id="参考代码"><a href="#参考代码" class="headerlink" title="参考代码"></a>参考代码</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>{</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxArea</span><span class="params">(<span class="keyword">int</span>[] height)</span> </span>{</span><br><span class="line">        <span class="keyword">int</span> max = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">boolean</span> temp;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>,j = height.length - <span class="number">1</span>;i &lt; j;) {</span><br><span class="line">            <span class="keyword">int</span> h = (height[i] &gt; height[j]) ? height[j] : height[i];</span><br><span class="line">            <span class="keyword">if</span>(h * (j - i)&gt;max) max = h * (j - i);</span><br><span class="line">            temp = (height[i] &lt; height[j]) ? <span class="keyword">true</span> : <span class="keyword">false</span>;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span>(temp) i++;</span><br><span class="line">            <span class="keyword">else</span> j--;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> max;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h2 id="思路及总结"><a href="#思路及总结" class="headerlink" title="思路及总结"></a>思路及总结</h2><p>较为简单的思路就是采用双指针，从两边往中间逼近，并没有什么边界问题，主要是注意在寻找最多水的容器过程中要一直把较深的一边留下，即沿着较小的边界进行移动（因为较小的边界不可能再产生更多的水）。</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/qq_40435621/article/details/84790436" target="_blank" rel="noopener">https://blog.csdn.net/qq_40435621/article/details/84790436</a></p>
@@ -3775,7 +3774,7 @@ color:#080808;
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://tfrain.github.io/2019/01/yuque/num_11/" title="11. 盛最多水的容器">https://tfrain.github.io/2019/01/yuque/num_11/</a>
+    <a href="https://tfrain.github.io/2019/01/yuque/num_11/" title="11. Container With Most Water">https://tfrain.github.io/2019/01/yuque/num_11/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
