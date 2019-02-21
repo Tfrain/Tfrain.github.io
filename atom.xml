@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tfrain.github.io/"/>
-  <updated>2019-02-19T09:51:13.660Z</updated>
+  <updated>2019-02-21T14:42:41.769Z</updated>
   <id>https://tfrain.github.io/</id>
   
   <author>
@@ -17,11 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>17. Letter Combinations of a Phone Number</title>
+    <link href="https://tfrain.github.io/2019/02/yuque/num_17/"/>
+    <id>https://tfrain.github.io/2019/02/yuque/num_17/</id>
+    <published>2019-02-21T09:35:44.000Z</published>
+    <updated>2019-02-21T14:42:41.769Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;初步了解回溯算法&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="leetcode" scheme="https://tfrain.github.io/categories/leetcode/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>小的尝试</title>
     <link href="https://tfrain.github.io/2019/02/yuque/try_test1/"/>
     <id>https://tfrain.github.io/2019/02/yuque/try_test1/</id>
     <published>2019-02-19T09:06:15.000Z</published>
-    <updated>2019-02-19T09:51:13.660Z</updated>
+    <updated>2019-02-21T14:42:41.777Z</updated>
     
     <summary type="html">
     
@@ -39,7 +57,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/num_10/"/>
     <id>https://tfrain.github.io/2019/02/yuque/num_10/</id>
     <published>2019-02-17T08:19:15.000Z</published>
-    <updated>2019-02-19T09:51:13.656Z</updated>
+    <updated>2019-02-21T14:42:41.769Z</updated>
     
     <summary type="html">
     
@@ -57,7 +75,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/num_5/"/>
     <id>https://tfrain.github.io/2019/02/yuque/num_5/</id>
     <published>2019-02-15T10:01:56.000Z</published>
-    <updated>2019-02-19T09:51:13.656Z</updated>
+    <updated>2019-02-21T14:42:41.773Z</updated>
     
     <summary type="html">
     
@@ -75,7 +93,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/num_4/"/>
     <id>https://tfrain.github.io/2019/02/yuque/num_4/</id>
     <published>2019-02-10T10:09:45.000Z</published>
-    <updated>2019-02-19T09:51:13.656Z</updated>
+    <updated>2019-02-21T14:42:41.773Z</updated>
     
     <summary type="html">
     
@@ -93,7 +111,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/num_2/"/>
     <id>https://tfrain.github.io/2019/02/yuque/num_2/</id>
     <published>2019-02-09T08:28:55.000Z</published>
-    <updated>2019-02-19T09:51:13.656Z</updated>
+    <updated>2019-02-21T14:42:41.773Z</updated>
     
     <summary type="html">
     
@@ -111,7 +129,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/shell_learning1/"/>
     <id>https://tfrain.github.io/2019/02/yuque/shell_learning1/</id>
     <published>2019-02-07T15:21:13.000Z</published>
-    <updated>2019-02-19T09:51:13.656Z</updated>
+    <updated>2019-02-21T14:42:41.773Z</updated>
     
     <summary type="html">
     
@@ -129,7 +147,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/wikipedia_algorithm/"/>
     <id>https://tfrain.github.io/2019/02/yuque/wikipedia_algorithm/</id>
     <published>2019-02-04T13:25:54.000Z</published>
-    <updated>2019-02-19T09:51:13.660Z</updated>
+    <updated>2019-02-21T14:42:41.777Z</updated>
     
     <summary type="html">
     
@@ -147,7 +165,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/num_944/"/>
     <id>https://tfrain.github.io/2019/02/yuque/num_944/</id>
     <published>2019-02-03T15:30:32.000Z</published>
-    <updated>2019-02-19T09:51:13.656Z</updated>
+    <updated>2019-02-21T14:42:41.773Z</updated>
     
     <summary type="html">
     
@@ -165,7 +183,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/linux_learning6/"/>
     <id>https://tfrain.github.io/2019/02/yuque/linux_learning6/</id>
     <published>2019-02-02T06:09:14.000Z</published>
-    <updated>2019-02-19T09:51:13.660Z</updated>
+    <updated>2019-02-21T14:42:41.777Z</updated>
     
     <summary type="html">
     
@@ -183,7 +201,7 @@
     <link href="https://tfrain.github.io/2019/02/yuque/num_264/"/>
     <id>https://tfrain.github.io/2019/02/yuque/num_264/</id>
     <published>2019-02-01T03:57:23.000Z</published>
-    <updated>2019-02-19T09:51:13.656Z</updated>
+    <updated>2019-02-21T14:42:41.773Z</updated>
     
     <summary type="html">
     
@@ -201,7 +219,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/linux_learning5/"/>
     <id>https://tfrain.github.io/2019/01/yuque/linux_learning5/</id>
     <published>2019-01-28T14:24:23.000Z</published>
-    <updated>2019-02-19T09:51:13.660Z</updated>
+    <updated>2019-02-21T14:42:41.777Z</updated>
     
     <summary type="html">
     
@@ -219,7 +237,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/num_155/"/>
     <id>https://tfrain.github.io/2019/01/yuque/num_155/</id>
     <published>2019-01-28T06:16:10.000Z</published>
-    <updated>2019-02-19T09:51:13.656Z</updated>
+    <updated>2019-02-21T14:42:41.769Z</updated>
     
     <summary type="html">
     
@@ -237,7 +255,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/num_215/"/>
     <id>https://tfrain.github.io/2019/01/yuque/num_215/</id>
     <published>2019-01-26T12:27:39.000Z</published>
-    <updated>2019-02-19T09:51:13.656Z</updated>
+    <updated>2019-02-21T14:42:41.773Z</updated>
     
     <summary type="html">
     
@@ -255,7 +273,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/num_11/"/>
     <id>https://tfrain.github.io/2019/01/yuque/num_11/</id>
     <published>2019-01-24T13:02:11.000Z</published>
-    <updated>2019-02-19T09:51:13.656Z</updated>
+    <updated>2019-02-21T14:42:41.769Z</updated>
     
     <summary type="html">
     
@@ -273,7 +291,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/vim_skill/"/>
     <id>https://tfrain.github.io/2019/01/yuque/vim_skill/</id>
     <published>2019-01-15T03:45:00.000Z</published>
-    <updated>2019-02-19T09:51:13.660Z</updated>
+    <updated>2019-02-21T14:42:41.777Z</updated>
     
     <summary type="html">
     
@@ -291,7 +309,7 @@
     <link href="https://tfrain.github.io/2019/01/yuque/linux_learning4/"/>
     <id>https://tfrain.github.io/2019/01/yuque/linux_learning4/</id>
     <published>2019-01-10T11:23:45.000Z</published>
-    <updated>2019-02-19T09:51:13.660Z</updated>
+    <updated>2019-02-21T14:42:41.773Z</updated>
     
     <summary type="html">
     
@@ -361,26 +379,6 @@
     
     
       <category term="Linux" scheme="https://tfrain.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS盒模型及BFC</title>
-    <link href="https://tfrain.github.io/2018/12/CSS-Box-BFC/"/>
-    <id>https://tfrain.github.io/2018/12/CSS-Box-BFC/</id>
-    <published>2018-12-07T12:17:48.000Z</published>
-    <updated>2019-01-21T14:05:17.621Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt;确实是因为菜，感觉自己没什么东西可以写，最近被迫学习一些前端的东西，为了防止日后遗忘，方便有用之时再次学习并加深印象，就记录一些比较基础的东西。 &lt;/strong&gt;&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="CSS" scheme="https://tfrain.github.io/categories/CSS/"/>
-    
-    
-      <category term="CSS" scheme="https://tfrain.github.io/tags/CSS/"/>
     
   </entry>
   
