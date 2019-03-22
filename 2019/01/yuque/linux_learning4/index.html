@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Tfrain's  Blog">
 <meta property="og:description" content="linux文件权限设置">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-14T15:05:58.844Z">
+<meta property="og:updated_time" content="2019-03-22T03:58:39.465Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux学习4">
 <meta name="twitter:description" content="linux文件权限设置">
@@ -2085,7 +2085,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d4758b;
+  background: #c9347f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3706,44 +3706,63 @@ pre .javascript .function {
 <pre><code>编译：peida     
 链接：https://www.cnblogs.com/peida/archive/2012/12/05/2803591.html
 </code></pre></blockquote>
-<h1 id="chmod命令"><a href="#chmod命令" class="headerlink" title="chmod命令"></a>chmod命令</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>chmod命令用于改变linux系统文件或目录的访问权限。用它控制文件或目录的访问权限。该命令有两种用法。一种是包含字母和操作符表达式的文字设定法；另一种是包含数字的数字设定法。<br><br>Linux系统中的每个文件和目录都有访问许可权限，用它来确定谁可以通过何种方式对文件和目录进行访问和操作。<br><br>　　文件或目录的访问权限分为只读，只写和可执行三种。以文件为例，只读权限表示只允许读其内容，而禁止对其做任何的更改操作。可执行权限表示允许将该文件作为一个程序执行。文件被创建时，文件所有者自动拥有对该文件的读、写和可执行权限，以便于对文件的阅读和修改。用户也可根据需要把访问权限设置为需要的任何组合。<br><br>　　有三种不同类型的用户可对文件或目录进行访问：文件所有者，同组用户、其他用户。所有者一般是文件的创建者。所有者可以允许同组用户有权访问文件，还可以将文件的访问权限赋予系统中的其他用户。在这种情况下，系统中每一位用户都能访问该用户拥有的文件或目录。<br><br>　　每一文件或目录的访问权限都有三组，每组用三位表示，分别为文件属主的读、写和执行权限；与属主同组的用户的读、写和执行权限；系统中其他用户的读、写和执行权限。当用ls -l命令显示文件或目录的详细信息时，最左边的一列为文件的访问权限。</p>
+<p><a name="7058608c"></a></p>
+<h1 id="chmod命令"><a href="#chmod命令" class="headerlink" title="chmod命令"></a>chmod命令</h1><p><a name="a4d3b02a"></a></p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>chmod命令用于改变linux系统文件或目录的访问权限。用它控制文件或目录的访问权限。该命令有两种用法。一种是包含字母和操作符表达式的文字设定法；另一种是包含数字的数字设定法。<br><br>Linux系统中的每个文件和目录都有访问许可权限，用它来确定谁可以通过何种方式对文件和目录进行访问和操作。<br><br>　　文件或目录的访问权限分为只读，只写和可执行三种。以文件为例，只读权限表示只允许读其内容，而禁止对其做任何的更改操作。可执行权限表示允许将该文件作为一个程序执行。文件被创建时，文件所有者自动拥有对该文件的读、写和可执行权限，以便于对文件的阅读和修改。用户也可根据需要把访问权限设置为需要的任何组合。<br><br>　　有三种不同类型的用户可对文件或目录进行访问：文件所有者，同组用户、其他用户。所有者一般是文件的创建者。所有者可以允许同组用户有权访问文件，还可以将文件的访问权限赋予系统中的其他用户。在这种情况下，系统中每一位用户都能访问该用户拥有的文件或目录。<br><br>　　每一文件或目录的访问权限都有三组，每组用三位表示，分别为文件属主的读、写和执行权限；与属主同组的用户的读、写和执行权限；系统中其他用户的读、写和执行权限。当用ls -l命令显示文件或目录的详细信息时，最左边的一列为文件的访问权限。</p>
 <blockquote>
 <p>-rw-r–r– 1 root root 296K 11-13 06:03 log2012.log</p>
 </blockquote>
-<p>第一列共有10个位置，第一个字符指定了文件类型。在通常意义上，一个目录也是一个文件。如果第一个字符是横线，表示是一个非目录的文件。如果是d，表示是一个目录。从第二个字符开始到第十个共9个字符，3个字符一组，分别表示了3组用户对文件或者目录的权限。权限字符用横线代表空许可，r代表只读，w代表写，x代表可执行。<br><br>确定了一个文件的访问权限后，用户可以利用Linux系统提供的chmod命令来重新设定不同的访问权限。也可以利用chown命令来更改某个文件或目录的所有者。利用chgrp命令来更改某个文件或目录的用户组。<br><br>chmod命令是非常重要的，用于改变文件或目录的访问权限。用户用它控制文件或目录的访问权限。</p>
-<h2 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h2><p>chmod [-cfvR] [–help] [–version] mode file</p>
-<h2 id="命令功能"><a href="#命令功能" class="headerlink" title="命令功能"></a>命令功能</h2><p>用于改变文件或目录的访问权限，用它控制文件或目录的访问权限。</p>
-<h2 id="命令参数"><a href="#命令参数" class="headerlink" title="命令参数"></a>命令参数</h2><h3 id="必要参数"><a href="#必要参数" class="headerlink" title="必要参数"></a>必要参数</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-c 当发生改变时，报告处理信息</span><br><span class="line">-f 错误信息不输出</span><br><span class="line">-R 处理指定目录以及其子目录下的所有文件</span><br><span class="line">-v 运行时显示详细处理信息</span><br></pre></td></tr></tbody></table></figure>
+<p>第一列共有10个位置，第一个字符指定了文件类型。在通常意义上，一个目录也是一个文件。如果第一个字符是横线，表示是一个非目录的文件。如果是d，表示是一个目录。从第二个字符开始到第十个共9个字符，3个字符一组，分别表示了3组用户对文件或者目录的权限。权限字符用横线代表空许可，r代表只读，w代表写，x代表可执行。<br><br>确定了一个文件的访问权限后，用户可以利用Linux系统提供的chmod命令来重新设定不同的访问权限。也可以利用chown命令来更改某个文件或目录的所有者。利用chgrp命令来更改某个文件或目录的用户组。<br><br>chmod命令是非常重要的，用于改变文件或目录的访问权限。用户用它控制文件或目录的访问权限。<br><a name="7a2b6560"></a></p>
+<h2 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h2><p>chmod [-cfvR] [–help] [–version] mode file<br><a name="3b76d0fc"></a></p>
+<h2 id="命令功能"><a href="#命令功能" class="headerlink" title="命令功能"></a>命令功能</h2><p>用于改变文件或目录的访问权限，用它控制文件或目录的访问权限。<br><a name="abba4775"></a></p>
+<h2 id="命令参数"><a href="#命令参数" class="headerlink" title="命令参数"></a>命令参数</h2><p><a name="2e355f9f"></a></p>
+<h3 id="必要参数"><a href="#必要参数" class="headerlink" title="必要参数"></a>必要参数</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-c 当发生改变时，报告处理信息</span><br><span class="line">-f 错误信息不输出</span><br><span class="line">-R 处理指定目录以及其子目录下的所有文件</span><br><span class="line">-v 运行时显示详细处理信息</span><br></pre></td></tr></tbody></table></figure>
+<p><a name="4e59ad1a"></a></p>
 <h3 id="选择参数"><a href="#选择参数" class="headerlink" title="选择参数"></a>选择参数</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">--reference=&lt;目录或者文件&gt; 设置成具有指定目录或者文件具有相同的权限</span><br><span class="line">--version 显示版本信息</span><br><span class="line">&lt;权限范围&gt;+&lt;权限设置&gt; 使权限范围内的目录或者文件具有指定的权限</span><br><span class="line">&lt;权限范围&gt;-&lt;权限设置&gt; 删除权限范围的目录或者文件的指定权限</span><br><span class="line">&lt;权限范围&gt;=&lt;权限设置&gt; 设置权限范围内的目录或者文件的权限为指定的值</span><br></pre></td></tr></tbody></table></figure>
+<p><a name="23dc722b"></a></p>
 <h3 id="权限范围"><a href="#权限范围" class="headerlink" title="权限范围"></a>权限范围</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">u ：目录或者文件的当前的用户</span><br><span class="line">g ：目录或者文件的当前的群组</span><br><span class="line">o ：除了目录或者文件的当前用户或群组之外的用户或者群组</span><br><span class="line">a ：所有的用户及群组</span><br></pre></td></tr></tbody></table></figure>
+<p><a name="78e7c696"></a></p>
 <h3 id="权限代号"><a href="#权限代号" class="headerlink" title="权限代号"></a>权限代号</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">r ：读权限，用数字4表示</span><br><span class="line">w ：写权限，用数字2表示</span><br><span class="line">x ：执行权限，用数字1表示</span><br><span class="line">- ：删除权限，用数字0表示</span><br><span class="line">s ：特殊权限 </span><br><span class="line">该命令有两种用法。一种是包含字母和操作符表达式的文字设定法；另一种是包含数字的数字设定法。</span><br></pre></td></tr></tbody></table></figure>
+<p><a name="9bbcd103"></a></p>
 <h3 id="文字设定法"><a href="#文字设定法" class="headerlink" title="文字设定法"></a>文字设定法</h3><blockquote>
 <p>chmod ［who］ ［+ | - | =］ ［mode］ 文件名</p>
 </blockquote>
+<p><a name="6b78d67c"></a></p>
 <h3 id="数字设定法"><a href="#数字设定法" class="headerlink" title="数字设定法"></a>数字设定法</h3><p>我们必须首先了解用数字表示的属性的含义：0表示没有权限，1表示可执行权限，2表示可写权限，4表示可读权限，然后将其相加。所以数字属性的格式应为3个从0到7的八进制数，其顺序是（u）（g）（o）</p>
 <blockquote>
 <p>chmod ［mode］ 文件名</p>
 </blockquote>
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>实例：增加文件所有用户组可执行权限<br><br>命令：chmod a+x log2012.log<br><br>说明：即设定文件log2012.log的属性为：文件属主（u） 增加执行权限；与文件属主同组用户（g） 增加执行权限；其他用户（o） 增加执行权限。<br>实例：同时修改不同用户权限<br><br>命令：chmod ug+w,o-x log2012.log<br>实例：删除文件权限<br><br>命令：chmod a-x log2012.log<br>实例：使用“=”设置权限<br><br>命令：chmod u=x log2012.log<br><br>说明：撤销原来所有的权限，然后使拥有者具有可读权限<br>实例：对一个目录及其子目录所有文件添加权限<br><br>命令：chmod -R u+x test4<br><br>说明：递归地给test4目录下所有文件和子目录的属主分配权限<br>命令：<br><br>chmod 751 file<br><br>chmod u=rwx,g=rx,o=x file<br><br>说明：给file的属主分配读、写、执行(7)的权限，给file的所在组分配读、执行(5)的权限，给其他用户分配执行(1)的权限<br>命令:<br><br>chmod =r file<br><br>chmod 444 file<br><br>chmod a-wx,a+r   file<br><br>说明：所有用户分配读权限</p>
-<h1 id="chgrp命令"><a href="#chgrp命令" class="headerlink" title="chgrp命令"></a>chgrp命令</h1><h2 id="概述-1"><a href="#概述-1" class="headerlink" title="概述"></a>概述</h2><p>在Linux系统里，文件或目录的权限掌控以拥有者及所诉群组来管理。可以使用chgrp指令去变更文件与目录所属群组，这种方式采用群组名称或群组识别码都可以。chgrp命令就是change group的缩写！要被改变的组名必须要在/etc/group文件内才行。</p>
-<h2 id="命令格式-1"><a href="#命令格式-1" class="headerlink" title="命令格式"></a>命令格式</h2><p>chgrp [选项] [组] [文件]</p>
-<h2 id="命令功能-1"><a href="#命令功能-1" class="headerlink" title="命令功能"></a>命令功能</h2><p>chgrp命令可采用群组名称或群组识别码的方式改变文件或目录的所属群组。使用权限是超级用户。</p>
-<h2 id="命令参数-1"><a href="#命令参数-1" class="headerlink" title="命令参数"></a>命令参数</h2><h3 id="必要参数-1"><a href="#必要参数-1" class="headerlink" title="必要参数"></a>必要参数</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-c 当发生改变时输出调试信息</span><br><span class="line">-f 不显示错误信息</span><br><span class="line">-R 处理指定目录以及其子目录下的所有文件</span><br><span class="line">-v 运行时显示详细的处理信息</span><br><span class="line">--dereference 作用于符号链接的指向，而不是符号链接本身</span><br><span class="line">--no-dereference 作用于符号链接本身</span><br></pre></td></tr></tbody></table></figure>
+<p><a name="0dfbe902"></a></p>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>实例：增加文件所有用户组可执行权限<br><br>命令：chmod a+x log2012.log<br><br>说明：即设定文件log2012.log的属性为：文件属主（u） 增加执行权限；与文件属主同组用户（g） 增加执行权限；其他用户（o） 增加执行权限。<br>实例：同时修改不同用户权限<br><br>命令：chmod ug+w,o-x log2012.log<br>实例：删除文件权限<br><br>命令：chmod a-x log2012.log<br>实例：使用“=”设置权限<br><br>命令：chmod u=x log2012.log<br><br>说明：撤销原来所有的权限，然后使拥有者具有可读权限<br>实例：对一个目录及其子目录所有文件添加权限<br><br>命令：chmod -R u+x test4<br><br>说明：递归地给test4目录下所有文件和子目录的属主分配权限<br>命令：<br><br>chmod 751 file<br><br>chmod u=rwx,g=rx,o=x file<br><br>说明：给file的属主分配读、写、执行(7)的权限，给file的所在组分配读、执行(5)的权限，给其他用户分配执行(1)的权限<br>命令:<br><br>chmod =r file<br><br>chmod 444 file<br><br>chmod a-wx,a+r   file<br><br>说明：所有用户分配读权限<br><a name="3e2f0954"></a></p>
+<h1 id="chgrp命令"><a href="#chgrp命令" class="headerlink" title="chgrp命令"></a>chgrp命令</h1><p><a name="a4d3b02a"></a></p>
+<h2 id="概述-1"><a href="#概述-1" class="headerlink" title="概述"></a>概述</h2><p>在Linux系统里，文件或目录的权限掌控以拥有者及所诉群组来管理。可以使用chgrp指令去变更文件与目录所属群组，这种方式采用群组名称或群组识别码都可以。chgrp命令就是change group的缩写！要被改变的组名必须要在/etc/group文件内才行。<br><a name="7a2b6560"></a></p>
+<h2 id="命令格式-1"><a href="#命令格式-1" class="headerlink" title="命令格式"></a>命令格式</h2><p>chgrp [选项] [组] [文件]<br><a name="3b76d0fc"></a></p>
+<h2 id="命令功能-1"><a href="#命令功能-1" class="headerlink" title="命令功能"></a>命令功能</h2><p>chgrp命令可采用群组名称或群组识别码的方式改变文件或目录的所属群组。使用权限是超级用户。<br><a name="abba4775"></a></p>
+<h2 id="命令参数-1"><a href="#命令参数-1" class="headerlink" title="命令参数"></a>命令参数</h2><p><a name="2e355f9f"></a></p>
+<h3 id="必要参数-1"><a href="#必要参数-1" class="headerlink" title="必要参数"></a>必要参数</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-c 当发生改变时输出调试信息</span><br><span class="line">-f 不显示错误信息</span><br><span class="line">-R 处理指定目录以及其子目录下的所有文件</span><br><span class="line">-v 运行时显示详细的处理信息</span><br><span class="line">--dereference 作用于符号链接的指向，而不是符号链接本身</span><br><span class="line">--no-dereference 作用于符号链接本身</span><br></pre></td></tr></tbody></table></figure>
+<p><a name="4e59ad1a"></a></p>
 <h3 id="选择参数-1"><a href="#选择参数-1" class="headerlink" title="选择参数"></a>选择参数</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">--reference=&lt;文件或者目录&gt;</span><br><span class="line">--help 显示帮助信息</span><br><span class="line">--version 显示版本信息</span><br></pre></td></tr></tbody></table></figure>
+<p><a name="0dfbe902"></a></p>
 <h2 id="常用命令-1"><a href="#常用命令-1" class="headerlink" title="常用命令"></a>常用命令</h2><p>实例：改变文件的群组属性<br><br>命令：chgrp -v bin log2012.log<br><br>说明：将log2012.log文件由root群组改为bin群组<br></p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost test]# ll</span><br><span class="line">---xrw-r-- 1 root root 302108 11-13 06:03 log2012.log</span><br><span class="line">[root@localhost test]# chgrp -v bin log2012.log</span><br><span class="line">“log2012.log” 的所属组已更改为 bin</span><br><span class="line">[root@localhost test]# ll</span><br><span class="line">---xrw-r-- 1 root bin  302108 11-13 06:03 log2012.log</span><br></pre></td></tr></tbody></table></figure><p></p>
-<p>实例：根据指定文件改变文件的群组属性<br><br>命令：chgrp –reference=log2012.log log2013.log<br><br>说明：改变文件log2013.log 的群组属性，使得文件log2013.log的群组属性和参考文件log2012.log的群组属性相同<br>实例：改变指定目录以及其子目录下的所有文件的群组属性<br><br>命令：chgrp -R bin test6<br><br>说明：改变指定目录以及其子目录下的所有文件的群组属性<br>实例4：通过群组识别码改变文件群组属性<br><br>命令：chgrp -R 100 test6<br><br>说明：通过群组识别码改变文件群组属性，100为users群组的识别码，具体群组和群组识别码可以去/etc/group文件中查看</p>
-<h1 id="chown命令"><a href="#chown命令" class="headerlink" title="chown命令"></a>chown命令</h1><h2 id="概述-2"><a href="#概述-2" class="headerlink" title="概述"></a>概述</h2><p>chown将指定文件的拥有者改为指定的用户或组，用户可以是用户名或者用户ID；组可以使组名或者组ID；文件是以空格分开的要改变权限的文件列表，支持通配符。系统管理员经常使用chown命令，在将问价拷贝到另一个用户的名录下之后，让用户拥有使用该文件的权限。</p>
-<h2 id="命令格式-2"><a href="#命令格式-2" class="headerlink" title="命令格式"></a>命令格式</h2><p>chown [选项]… [所有者][:[组]] 文件…</p>
-<h2 id="命令功能-2"><a href="#命令功能-2" class="headerlink" title="命令功能"></a>命令功能</h2><p>通过chown改变文件的拥有组和群组。在更改文件的所有者或所属群组时，可以使用用户名称和用户识别码设置。普通用户不能将自己的文件改变成其他的拥有者，其操作权限一般为管理员。</p>
-<h2 id="命令参数-2"><a href="#命令参数-2" class="headerlink" title="命令参数"></a>命令参数</h2><h3 id="必要参数-2"><a href="#必要参数-2" class="headerlink" title="必要参数"></a>必要参数</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-c 显示更改的部分的信息</span><br><span class="line">-f 忽略错误信息</span><br><span class="line">-h 修复符号链接</span><br><span class="line">-R 处理指定目录以及其子目录下的所有文件</span><br><span class="line">-v 显示详细的处理信息</span><br><span class="line">-deference 作用于符号链接的指向，而不是链接文件本身</span><br></pre></td></tr></tbody></table></figure>
+<p>实例：根据指定文件改变文件的群组属性<br><br>命令：chgrp –reference=log2012.log log2013.log<br><br>说明：改变文件log2013.log 的群组属性，使得文件log2013.log的群组属性和参考文件log2012.log的群组属性相同<br>实例：改变指定目录以及其子目录下的所有文件的群组属性<br><br>命令：chgrp -R bin test6<br><br>说明：改变指定目录以及其子目录下的所有文件的群组属性<br>实例4：通过群组识别码改变文件群组属性<br><br>命令：chgrp -R 100 test6<br><br>说明：通过群组识别码改变文件群组属性，100为users群组的识别码，具体群组和群组识别码可以去/etc/group文件中查看<br><a name="fe65b2cf"></a></p>
+<h1 id="chown命令"><a href="#chown命令" class="headerlink" title="chown命令"></a>chown命令</h1><p><a name="a4d3b02a"></a></p>
+<h2 id="概述-2"><a href="#概述-2" class="headerlink" title="概述"></a>概述</h2><p>chown将指定文件的拥有者改为指定的用户或组，用户可以是用户名或者用户ID；组可以使组名或者组ID；文件是以空格分开的要改变权限的文件列表，支持通配符。系统管理员经常使用chown命令，在将问价拷贝到另一个用户的名录下之后，让用户拥有使用该文件的权限。<br><a name="7a2b6560"></a></p>
+<h2 id="命令格式-2"><a href="#命令格式-2" class="headerlink" title="命令格式"></a>命令格式</h2><p>chown [选项]… [所有者][:[组]] 文件…<br><a name="3b76d0fc"></a></p>
+<h2 id="命令功能-2"><a href="#命令功能-2" class="headerlink" title="命令功能"></a>命令功能</h2><p>通过chown改变文件的拥有组和群组。在更改文件的所有者或所属群组时，可以使用用户名称和用户识别码设置。普通用户不能将自己的文件改变成其他的拥有者，其操作权限一般为管理员。<br><a name="abba4775"></a></p>
+<h2 id="命令参数-2"><a href="#命令参数-2" class="headerlink" title="命令参数"></a>命令参数</h2><p><a name="2e355f9f"></a></p>
+<h3 id="必要参数-2"><a href="#必要参数-2" class="headerlink" title="必要参数"></a>必要参数</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-c 显示更改的部分的信息</span><br><span class="line">-f 忽略错误信息</span><br><span class="line">-h 修复符号链接</span><br><span class="line">-R 处理指定目录以及其子目录下的所有文件</span><br><span class="line">-v 显示详细的处理信息</span><br><span class="line">-deference 作用于符号链接的指向，而不是链接文件本身</span><br></pre></td></tr></tbody></table></figure>
+<p><a name="4e59ad1a"></a></p>
 <h3 id="选择参数-2"><a href="#选择参数-2" class="headerlink" title="选择参数"></a>选择参数</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">--reference=&lt;目录或文件&gt; 把指定的目录/文件作为参考，把操作的文件/目录设置成参考文件/目录相同拥有者和群组</span><br><span class="line">--from=&lt;当前用户：当前群组&gt; 只有当前用户和群组跟指定的用户和群组相同时才进行改变</span><br><span class="line">--help 显示帮助信息</span><br><span class="line">--version 显示版本信息</span><br></pre></td></tr></tbody></table></figure>
+<p><a name="0dfbe902"></a></p>
 <h2 id="常用命令-2"><a href="#常用命令-2" class="headerlink" title="常用命令"></a>常用命令</h2><p><strong>实例：改变拥有者和群组</strong><br><strong>命令：</strong>chown mail:mail log2012.log</p>
 <p>实例：改变文件拥有者和群组<br>命令：chown root: log2012.log</p>
 <p>实例：改变文件群组<br>命令：chown :mail log2012.log</p>
 <p>实例：改变指定目录以及其子目录下的所有文件的拥有者和群组<br>命令：chown -R -v root:mail test6</p>
-<h1 id="etc-group文件详解"><a href="#etc-group文件详解" class="headerlink" title="/etc/group文件详解"></a>/etc/group文件详解</h1><h2 id="概述-3"><a href="#概述-3" class="headerlink" title="概述"></a>概述</h2><p>Linux /etc/group文件与/etc/passwd和/etc/shadow文件都是有关于系统管理员对用户和用户组管理时相关的文件。linux /etc/group文件是有关于系统管理员对用户和用户组管理的文件,linux用户组的所有信息都存放在/etc/group文件中。具有某种共同特征的用户集合起来就是用户组（Group）。用户组（Group）配置文件主要有 /etc/group和/etc/gshadow，其中/etc/gshadow是/etc/group的加密信息文件。<br>将用户分组是LInux系统中对用户进行管理及控制访问权限的一种手段。每个用户都属于某个用户组；一个组可以有多个用户，一个用户也可以属于不同的组。当一个用户同时是多个组中成员时，在/etc/passwd文件中记录的是用户所属的主组，也就是登录时所属的默认组，而其他组称为附加组。</p>
+<p><a name="5c67538b"></a></p>
+<h1 id="etc-group文件详解"><a href="#etc-group文件详解" class="headerlink" title="/etc/group文件详解"></a>/etc/group文件详解</h1><p><a name="a4d3b02a"></a></p>
+<h2 id="概述-3"><a href="#概述-3" class="headerlink" title="概述"></a>概述</h2><p>Linux /etc/group文件与/etc/passwd和/etc/shadow文件都是有关于系统管理员对用户和用户组管理时相关的文件。linux /etc/group文件是有关于系统管理员对用户和用户组管理的文件,linux用户组的所有信息都存放在/etc/group文件中。具有某种共同特征的用户集合起来就是用户组（Group）。用户组（Group）配置文件主要有 /etc/group和/etc/gshadow，其中/etc/gshadow是/etc/group的加密信息文件。<br>将用户分组是LInux系统中对用户进行管理及控制访问权限的一种手段。每个用户都属于某个用户组；一个组可以有多个用户，一个用户也可以属于不同的组。当一个用户同时是多个组中成员时，在/etc/passwd文件中记录的是用户所属的主组，也就是登录时所属的默认组，而其他组称为附加组。<br><a name="e3127cc1"></a></p>
 <h2 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h2><p>用户组的所有信息都存放在/etc/group文件中。此文件的格式是由冒号(:)隔开若干个字段，这些字段具体如下<br></p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">组名:口令:组标识号:组内用户列表</span><br></pre></td></tr></tbody></table></figure><p></p>
-<p>组名：组名是用户组的名称，由字母或数字构成。与/etc/passwd中的登录名一样，组名不应重复。<br>口令：口令字段存放的是用户加密后的口令字。一般LInux系统的用户组都没有口令，即这个字段一般为空，或者是*。<br>组标识号：组标识号与用户表示号类似，也是一个整数，被系统内部用来标识组，别称GID<br>组内用户列表：是属于这个组的所有用户的列表，不同的用户之间用逗号(,)分隔。这个用户组可能是用户的主组，也可能是附加组。</p>
+<p>组名：组名是用户组的名称，由字母或数字构成。与/etc/passwd中的登录名一样，组名不应重复。<br>口令：口令字段存放的是用户加密后的口令字。一般LInux系统的用户组都没有口令，即这个字段一般为空，或者是*。<br>组标识号：组标识号与用户表示号类似，也是一个整数，被系统内部用来标识组，别称GID<br>组内用户列表：是属于这个组的所有用户的列表，不同的用户之间用逗号(,)分隔。这个用户组可能是用户的主组，也可能是附加组。<br><a name="83a25e35"></a></p>
 <h2 id="使用实例"><a href="#使用实例" class="headerlink" title="使用实例"></a>使用实例</h2><p>[root@localhost test6]# cat /etc/group<br><br>root:x:0:root,linuxsir<br><br>bin:x:1:root,bin,daemon<br><br>daemon:x:2:root,bin,daemon<br><br>sys:x:3:root,bin<br>说明：我们以root:x:0:root,linuxsir 为例： 用户组root，x是密码段，表示没有设置密码，GID是0,root用户组下包括root、linuxsir以及GID为0的其它用户。</p>
 <blockquote>
 <pre><code>编译：peida
@@ -3937,7 +3956,7 @@ abbrlink: 1
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">33</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

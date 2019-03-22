@@ -87,12 +87,12 @@
 <meta property="og:url" content="https://tfrain.github.io/2019/01/yuque/num_155/index.html">
 <meta property="og:site_name" content="Tfrain's  Blog">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548684459282-96ae33fe-d713-417e-beb2-dbf9a2e6a76c.png#align=left&amp;display=inline&amp;height=763&amp;linkTarget=_blank&amp;name=155.png&amp;originHeight=763&amp;originWidth=622&amp;size=105378&amp;width=622">
-<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548684031905-32a04870-a970-4d7c-ab23-65964876cfbc.png#align=left&amp;display=inline&amp;height=1535&amp;linkTarget=_blank&amp;name=image.png&amp;originHeight=1535&amp;originWidth=2733&amp;size=1480656&amp;width=2733">
-<meta property="og:updated_time" content="2019-03-14T15:05:58.840Z">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548684459282-96ae33fe-d713-417e-beb2-dbf9a2e6a76c.png#align=left&amp;display=inline&amp;height=763&amp;name=155.png&amp;originHeight=763&amp;originWidth=622&amp;size=105378&amp;width=622">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548684031905-32a04870-a970-4d7c-ab23-65964876cfbc.png#align=left&amp;display=inline&amp;height=1535&amp;name=image.png&amp;originHeight=1535&amp;originWidth=2733&amp;size=1480656&amp;width=2733">
+<meta property="og:updated_time" content="2019-03-22T03:58:39.461Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="155. Min Stack">
-<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548684459282-96ae33fe-d713-417e-beb2-dbf9a2e6a76c.png#align=left&amp;display=inline&amp;height=763&amp;linkTarget=_blank&amp;name=155.png&amp;originHeight=763&amp;originWidth=622&amp;size=105378&amp;width=622">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1548684459282-96ae33fe-d713-417e-beb2-dbf9a2e6a76c.png#align=left&amp;display=inline&amp;height=763&amp;name=155.png&amp;originHeight=763&amp;originWidth=622&amp;size=105378&amp;width=622">
 
 
 
@@ -2085,7 +2085,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d4758b;
+  background: #c9347f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3701,7 +3701,7 @@ pre .javascript .function {
       
 
       
-        <p><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1548684459282-96ae33fe-d713-417e-beb2-dbf9a2e6a76c.png#align=left&amp;display=inline&amp;height=763&amp;linkTarget=_blank&amp;name=155.png&amp;originHeight=763&amp;originWidth=622&amp;size=105378&amp;width=622" alt="155.png"><br><a id="more"></a></p>
+        <p><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1548684459282-96ae33fe-d713-417e-beb2-dbf9a2e6a76c.png#align=left&amp;display=inline&amp;height=763&amp;name=155.png&amp;originHeight=763&amp;originWidth=622&amp;size=105378&amp;width=622" alt="155.png"><br><a id="more"></a><br><a name="273a27cc"></a></p>
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.</p>
 <ul>
 <li>push(x) – Push element x onto stack.</li>
@@ -3709,9 +3709,10 @@ pre .javascript .function {
 <li>top() – Get the top element.</li>
 <li>getMin() – Retrieve the minimum element in the stack.</li>
 </ul>
-<p><strong>Example:</strong><br><br>MinStack minStack = new MinStack();<br>minStack.push(-2);<br>minStack.push(0);<br>minStack.push(-3);<br>minStack.getMin();   –&gt; Returns -3.<br>minStack.pop();<br>minStack.top();      –&gt; Returns 0.<br>minStack.getMin();   –&gt; Returns -2.</p>
+<p><strong>Example:</strong><br><br>MinStack minStack = new MinStack();<br>minStack.push(-2);<br>minStack.push(0);<br>minStack.push(-3);<br>minStack.getMin();   –&gt; Returns -3.<br>minStack.pop();<br>minStack.top();      –&gt; Returns 0.<br>minStack.getMin();   –&gt; Returns -2.<br><a name="36967e2c"></a></p>
 <h2 id="参考代码"><a href="#参考代码" class="headerlink" title="参考代码"></a>参考代码</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MinStack</span> </span>{</span><br><span class="line">        <span class="keyword">private</span> Stack&lt;Integer&gt; stackData;</span><br><span class="line">        <span class="keyword">private</span> Stack&lt;Integer&gt; stackMin;</span><br><span class="line">    <span class="comment">/** initialize your data structure here. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MinStack</span><span class="params">()</span> </span>{ </span><br><span class="line">        stackData = <span class="keyword">new</span> Stack&lt;Integer&gt;();</span><br><span class="line">        stackMin = <span class="keyword">new</span> Stack&lt;Integer&gt;();</span><br><span class="line">    }</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">int</span> x)</span> </span>{</span><br><span class="line">        stackData.push(x);</span><br><span class="line">        <span class="keyword">if</span>(stackMin.isEmpty() || x &lt;= stackMin.peek()) {<span class="comment">//最小值栈的为空或这最小值小于等于</span></span><br><span class="line">            stackMin.push(x);</span><br><span class="line">        } </span><br><span class="line">    }</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">pop</span><span class="params">()</span> </span>{</span><br><span class="line">        Integer num = stackData.pop();</span><br><span class="line">        <span class="keyword">if</span>(num.equals(stackMin.peek())) {<span class="comment">//要用equals函数</span></span><br><span class="line">            stackMin.pop();</span><br><span class="line">        }</span><br><span class="line">        </span><br><span class="line">    }</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">top</span><span class="params">()</span> </span>{</span><br><span class="line">            <span class="keyword">return</span> stackData.peek();</span><br><span class="line">    }</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getMin</span><span class="params">()</span> </span>{</span><br><span class="line">            <span class="keyword">return</span> stackMin.peek();</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your MinStack object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * MinStack obj = new MinStack();</span></span><br><span class="line"><span class="comment"> * obj.push(x);</span></span><br><span class="line"><span class="comment"> * obj.pop();</span></span><br><span class="line"><span class="comment"> * int param_3 = obj.top();</span></span><br><span class="line"><span class="comment"> * int param_4 = obj.getMin();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></tbody></table></figure>
-<h2 id="思路及总结"><a href="#思路及总结" class="headerlink" title="思路及总结"></a>思路及总结</h2><p>利用两个栈，一个代表最小值，一个代表普通情况。注意最小值栈要依靠普通栈，普通栈中最小值出栈，最小值栈的最小值也要出栈。另外自己基础太差，wrong answer的时候一直没发现要用equals才能进行更合理的比较。希望自己以后更深入的时候能有更好的理解。<br><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1548684031905-32a04870-a970-4d7c-ab23-65964876cfbc.png#align=left&amp;display=inline&amp;height=1535&amp;linkTarget=_blank&amp;name=image.png&amp;originHeight=1535&amp;originWidth=2733&amp;size=1480656&amp;width=2733" alt="image.png"></p>
+<p><a name="d7d37168"></a></p>
+<h2 id="思路及总结"><a href="#思路及总结" class="headerlink" title="思路及总结"></a>思路及总结</h2><p>利用两个栈，一个代表最小值，一个代表普通情况。注意最小值栈要依靠普通栈，普通栈中最小值出栈，最小值栈的最小值也要出栈。另外自己基础太差，wrong answer的时候一直没发现要用equals才能进行更合理的比较。希望自己以后更深入的时候能有更好的理解。<br><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1548684031905-32a04870-a970-4d7c-ab23-65964876cfbc.png#align=left&amp;display=inline&amp;height=1535&amp;name=image.png&amp;originHeight=1535&amp;originWidth=2733&amp;size=1480656&amp;width=2733" alt="image.png"><br><a name="d17a0f0b"></a></p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/loophome/article/details/83749444" target="_blank" rel="noopener">https://blog.csdn.net/loophome/article/details/83749444</a><br><a href="https://blog.csdn.net/returnzhang/article/details/78608898" target="_blank" rel="noopener">https://blog.csdn.net/returnzhang/article/details/78608898</a></p>
 
       
@@ -3901,7 +3902,7 @@ abbrlink: 1
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">33</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
