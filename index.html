@@ -2084,7 +2084,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c9ffe0;
+  background: #cb04ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3581,6 +3581,164 @@ pre .javascript .function {
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://tfrain.github.io/2019/03/yuque/rcibso/">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tfrain">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tfrain's  Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/yuque/rcibso/" itemprop="url">shell 周会分享</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-24T20:35:59+08:00">
+                2019-03-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article:</span>
+                
+                <span title="Words count in article">
+                  279
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time ≈</span>
+                
+                <span title="Reading time">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>c#、一键执行 git、黑客、bash、fish、底层、云服务器、举出信安和程、vim、投屏回放、需要什么功能去学什么功能、你稍了解的东西都已经这么有用，更别说外国更多的好东西，主要是我们无知，开源的东西都在那里，却没有动力。git的功能是为真的写代码的人设计的。shell的bash和fish的冲突、</p>
+<p>fish:<a href="http://www.ruanyifeng.com/blog/2017/05/fish_shell.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2017/05/fish_shell.html</a><br>从windows的麻烦之处介绍shell，一键执行 alias，对于目录可以用alias或者nl，推荐alias，</p>
+<p>永久生效：<a href="https://blog.51cto.com/feihan21/1212954" target="_blank" rel="noopener">https://blog.51cto.com/feihan21/1212954</a><br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">alias</span> sudo=<span class="string">'sudo '</span></span><br><span class="line"><span class="built_in">alias</span> ll=<span class="string">'ls -alF'</span></span><br><span class="line"><span class="built_in">alias</span> la=<span class="string">'ls -A'</span></span><br><span class="line"><span class="built_in">alias</span> l=<span class="string">'ls -CF'</span></span><br><span class="line"><span class="built_in">alias</span> l.=<span class="string">'ls -d .* --color=auto'</span></span><br><span class="line"><span class="built_in">alias</span> nis=<span class="string">"npm install --save "</span></span><br><span class="line"><span class="built_in">alias</span> svim=<span class="string">'sudo nvim'</span></span><br><span class="line"><span class="built_in">alias</span> mkcd=<span class="string">'foo(){ mkdir -p "$1"; cd "$1" }; foo '</span></span><br><span class="line"><span class="built_in">alias</span> install=<span class="string">'sudo apt get install'</span></span><br><span class="line"><span class="built_in">alias</span> update=<span class="string">'sudo apt-get update; sudo apt-get upgrade'</span></span><br><span class="line"><span class="built_in">alias</span> ..=<span class="string">"cd .."</span></span><br><span class="line"><span class="built_in">alias</span> ...=<span class="string">"cd ..; cd .."</span></span><br><span class="line"><span class="built_in">alias</span> h=<span class="string">'history'</span></span><br><span class="line"><span class="built_in">alias</span> ports=<span class="string">'netstat -tulanp'</span></span><br><span class="line"><span class="built_in">alias</span> rm=<span class="string">'rm -I --preserve-root'</span></span><br><span class="line"><span class="built_in">alias</span> grep=<span class="string">"grep --color"</span></span><br><span class="line"><span class="built_in">alias</span> grepp=<span class="string">"grep -P --color"</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>alias 即可显示设置的命令，和git一个道理<br>vim ~/.bash_aliases 加入适合的alias命令</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+      <div>
+    
+      </div>
+ 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://tfrain.github.io/2019/03/yuque/ubuntu/">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -3666,7 +3824,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">Words count in article:</span>
                 
                 <span title="Words count in article">
-                  1,197
+                  1,211
                 </span>
               
 
@@ -5197,187 +5355,6 @@ pre .javascript .function {
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tfrain.github.io/2019/02/yuque/shell_learning1/">
-
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Tfrain">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tfrain's  Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/yuque/shell_learning1/" itemprop="url">shell脚本学习</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-07T23:21:13+08:00">
-                2019-02-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article:</span>
-                
-                <span title="Words count in article">
-                  253
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time ≈</span>
-                
-                <span title="Reading time">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p></p><blockquote class="blockquote-center"><strong>shell脚本初步</strong></blockquote><br><p></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/02/yuque/shell_learning1/#more" rel="contents">
-              Read more »
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-      <div>
-    
-      </div>
- 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -5434,7 +5411,7 @@ abbrlink: 1
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
