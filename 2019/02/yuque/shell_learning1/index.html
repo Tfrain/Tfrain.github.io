@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Tfrain's  Blog">
 <meta property="og:description" content="shell脚本初步">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-30T03:09:32.588Z">
+<meta property="og:updated_time" content="2019-03-31T09:50:00.785Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="shell脚本学习">
 <meta name="twitter:description" content="shell脚本初步">
@@ -2085,7 +2085,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5b03ff;
+  background: #3dc8e9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3664,7 +3664,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">Words count in article:</span>
                 
                 <span title="Words count in article">
-                  253
+                  764
                 </span>
               
 
@@ -3680,7 +3680,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">Reading time ≈</span>
                 
                 <span title="Reading time">
-                  1
+                  3
                 </span>
               
             </div>
@@ -3704,8 +3704,29 @@ pre .javascript .function {
         <p></p><blockquote class="blockquote-center"><strong>shell脚本初步</strong></blockquote><br><a id="more"></a><p></p>
 <p><a name="df368884"></a></p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>寒假在家不如学习一下shell的基本语法，也只能怪我看springboot的视频很容易睡觉，寒假准备为这个寒冬做准备学学springboot，结果老师的安排的东西我现在还没看，springboot也是看了个什么都不会的程度。<br>总而言之，就是在滚蛋的边缘疯狂的试探？shell脚本和Python脚本都有学习的必要，如果往后端方向发展，shell和Python都要涉猎，当然主语言还是Java，shell脚本对自动化部署有很大的帮助，有利于我学习一些Linux知识。</p>
-<p><a name="5c41b3a6"></a></p>
-<h2 id="语雀上有shell脚本的资料"><a href="#语雀上有shell脚本的资料" class="headerlink" title="语雀上有shell脚本的资料"></a>语雀上有shell脚本的资料</h2><p>链接：<a href="https://www.yuque.com/allenlei/ia7uhw/edyrfz" target="_blank" rel="noopener">https://www.yuque.com/allenlei/ia7uhw/edyrfz</a></p>
+<p><a name="74f8ec1b"></a></p>
+<h2 id="初步的shell脚本的资料"><a href="#初步的shell脚本的资料" class="headerlink" title="初步的shell脚本的资料"></a>初步的shell脚本的资料</h2><p>语雀链接：<a href="https://www.yuque.com/allenlei/ia7uhw/edyrfz" target="_blank" rel="noopener">https://www.yuque.com/allenlei/ia7uhw/edyrfz</a><br>W3Cschool：<a href="https://www.w3cschool.cn/linux/linux-shell-variable.html" target="_blank" rel="noopener">https://www.w3cschool.cn/linux/linux-shell-variable.html</a><br><a name="edc466f2"></a></p>
+<h3 id="未知记录"><a href="#未知记录" class="headerlink" title="未知记录"></a>未知记录</h3><p>变量名外面的花括号是可选的，加不加都行，加花括号是为了帮助解释器识别变量的边界 echo “I am good at ${skill}Script”，推荐给所有变量加上花括号，这是个好的编程习惯。<br>单引号字符串的限制：</p>
+<ul>
+<li>单引号里的任何字符都会原样输出，单引号字符串中的变量是无效的；</li>
+<li>单引号字串中不能出现单引号（对单引号使用转义符后也不行）。</li>
+</ul>
+<p>双引号的优点：</p>
+<ul>
+<li>双引号里可以有变量</li>
+<li>双引号里可以出现转义字符</li>
+</ul>
+<p>$* 与 $@ 区别：</p>
+<ul>
+<li>相同点：都是引用所有参数。</li>
+<li>不同点：只有在双引号中体现出来。假设在脚本运行时写了三个参数 1、2、3，，则 “ * “ 等价于 “1 2 3”（传递了一个参数），而 “@” 等价于 “1” “2” “3”（传递了三个参数）。</li>
+</ul>
+<p>Shell 数组用括号来表示，元素用”空格”符号分割开，语法格式如下：array_name=(value1 … valuen)<br>读取数组元素值的一般格式是：${array_name[index]}<br><br><br>关系运算符只支持数字，不支持字符串，除非字符串的值是数字<br>[ $a -lt 20 -o $b -gt 100 ] 返回 true。 布尔或运算等同逻辑或运算 ||  [ $a -lt 20 -a $b -gt 100 ] 返回 false。布尔与运算等同于&amp;&amp;<br>字符串运算符和文件测试运算符<br>-e 开启转义 \c 不换行、Shell printf 命令和C语言的 printf 命令没什么大的区别<br><br><br><strong>test 命令 </strong><br>数值测试<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> $[num1] -eq $[num2]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'两个数相等！'</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'两个数不相等！'</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>字符串测试<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> num1=num2</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'两个字符串相等!'</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'两个字符串不相等!'</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>文件测试</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> -e ./bash</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'文件已存在!'</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'文件不存在!'</span></span><br></pre></td></tr></tbody></table></figure>
+<p>for 循环</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> loop <span class="keyword">in</span> 1 2 3 4 5</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"The value is: <span class="variable">$loop</span>"</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></tbody></table></figure>
 <p><a name="2fa853c1"></a></p>
 <h2 id="bilibili视频学习"><a href="#bilibili视频学习" class="headerlink" title="bilibili视频学习"></a>bilibili视频学习</h2><p>链接：<a href="https://www.bilibili.com/video/av17384556" target="_blank" rel="noopener">https://www.bilibili.com/video/av17384556</a></p>
 <p><a name="e82e03b8"></a></p>
@@ -3997,7 +4018,7 @@ abbrlink: 1
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语雀上有shell脚本的资料"><span class="nav-number">2.</span> <span class="nav-text">语雀上有shell脚本的资料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bilibili视频学习"><span class="nav-number">3.</span> <span class="nav-text">bilibili视频学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实验楼实战操作"><span class="nav-number">4.</span> <span class="nav-text">实验楼实战操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux温习"><span class="nav-number">5.</span> <span class="nav-text">Linux温习</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初步的shell脚本的资料"><span class="nav-number">2.</span> <span class="nav-text">初步的shell脚本的资料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#未知记录"><span class="nav-number">2.1.</span> <span class="nav-text">未知记录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bilibili视频学习"><span class="nav-number">3.</span> <span class="nav-text">bilibili视频学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实验楼实战操作"><span class="nav-number">4.</span> <span class="nav-text">实验楼实战操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux温习"><span class="nav-number">5.</span> <span class="nav-text">Linux温习</span></a></li></ol></div>
             
 
           </div>
