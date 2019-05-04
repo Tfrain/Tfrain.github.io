@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tfrain.github.io/"/>
-  <updated>2019-01-21T14:05:17.525Z</updated>
+  <updated>2019-01-21T14:05:17.145Z</updated>
   <id>https://tfrain.github.io/</id>
   
   <author>
@@ -15,106 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Linux学习3</title>
-    <link href="https://tfrain.github.io/2019/01/linux_learning3/"/>
-    <id>https://tfrain.github.io/2019/01/linux_learning3/</id>
-    <published>2019-01-08T09:57:12.000Z</published>
-    <updated>2019-01-21T14:05:17.525Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt; 文件查找命令&lt;/strong&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Linux" scheme="https://tfrain.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://tfrain.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux学习2</title>
-    <link href="https://tfrain.github.io/2018/12/linux-learning2/"/>
-    <id>https://tfrain.github.io/2018/12/linux-learning2/</id>
-    <published>2018-12-31T05:47:45.000Z</published>
-    <updated>2019-01-21T14:05:16.017Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt;文件目录操作命令(9-15）&lt;/strong&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Linux" scheme="https://tfrain.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://tfrain.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux学习1</title>
-    <link href="https://tfrain.github.io/2018/12/linux_learning1/"/>
-    <id>https://tfrain.github.io/2018/12/linux_learning1/</id>
-    <published>2018-12-23T15:17:09.000Z</published>
-    <updated>2019-01-21T14:05:16.953Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt;文档目录操作命令(1-8)&lt;/strong&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Linux" scheme="https://tfrain.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://tfrain.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS盒模型及BFC</title>
-    <link href="https://tfrain.github.io/2018/12/CSS-Box-BFC/"/>
-    <id>https://tfrain.github.io/2018/12/CSS-Box-BFC/</id>
-    <published>2018-12-07T12:17:48.000Z</published>
-    <updated>2019-01-21T14:05:17.621Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt;确实是因为菜，感觉自己没什么东西可以写，最近被迫学习一些前端的东西，为了防止日后遗忘，方便有用之时再次学习并加深印象，就记录一些比较基础的东西。 &lt;/strong&gt;&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="CSS" scheme="https://tfrain.github.io/categories/CSS/"/>
-    
-    
-      <category term="CSS" scheme="https://tfrain.github.io/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Struts2笔记</title>
-    <link href="https://tfrain.github.io/2018/11/Notes_of_Struts2/"/>
-    <id>https://tfrain.github.io/2018/11/Notes_of_Struts2/</id>
-    <published>2018-11-27T14:12:33.000Z</published>
-    <updated>2019-01-21T14:05:17.197Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/2018/11/Notes_of_Struts2/1.png&quot; alt=&quot;1.png&quot;&gt;&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Struts2" scheme="https://tfrain.github.io/categories/Struts2/"/>
-    
-    
-      <category term="Struts2" scheme="https://tfrain.github.io/tags/Struts2/"/>
-    
-  </entry>
   
   <entry>
     <title>servlet学习ing</title>
@@ -135,86 +35,6 @@
     
     
       <category term="servlet" scheme="https://tfrain.github.io/tags/servlet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>群聊初步学习实现过程</title>
-    <link href="https://tfrain.github.io/2018/10/Thinking-of-Chat/"/>
-    <id>https://tfrain.github.io/2018/10/Thinking-of-Chat/</id>
-    <published>2018-10-05T08:48:15.000Z</published>
-    <updated>2019-01-21T14:05:17.097Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 看学习视频所得 &lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Java" scheme="https://tfrain.github.io/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="https://tfrain.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>百度云加速的一些方式</title>
-    <link href="https://tfrain.github.io/2018/09/Baidu_cloud_acceleration/"/>
-    <id>https://tfrain.github.io/2018/09/Baidu_cloud_acceleration/</id>
-    <published>2018-09-30T13:24:36.000Z</published>
-    <updated>2019-01-21T14:05:16.249Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt; 有常见的几种方式&lt;/strong&gt;&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Life" scheme="https://tfrain.github.io/categories/Life/"/>
-    
-    
-      <category term="Life" scheme="https://tfrain.github.io/tags/Life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>牛客网学习</title>
-    <link href="https://tfrain.github.io/2018/09/Java_further_study/"/>
-    <id>https://tfrain.github.io/2018/09/Java_further_study/</id>
-    <published>2018-09-18T10:04:44.000Z</published>
-    <updated>2019-01-21T14:05:16.065Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt; 要每天都有收获&lt;/strong&gt;&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Java" scheme="https://tfrain.github.io/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="https://tfrain.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>落后的vim简易设计</title>
-    <link href="https://tfrain.github.io/2018/09/java_entry_learning/"/>
-    <id>https://tfrain.github.io/2018/09/java_entry_learning/</id>
-    <published>2018-09-06T19:36:50.000Z</published>
-    <updated>2019-01-21T14:05:17.573Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;strong&gt;还是要发点博客&lt;/strong&gt;&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="Java" scheme="https://tfrain.github.io/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="https://tfrain.github.io/tags/Java/"/>
     
   </entry>
   
