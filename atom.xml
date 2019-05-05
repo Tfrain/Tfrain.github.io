@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tfrain.github.io/"/>
-  <updated>2019-05-04T14:31:26.924Z</updated>
+  <updated>2019-05-05T01:39:15.579Z</updated>
   <id>https://tfrain.github.io/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="https://tfrain.github.io/2019/05/yuque/lundx2/"/>
     <id>https://tfrain.github.io/2019/05/yuque/lundx2/</id>
     <published>2019-05-01T14:29:00.000Z</published>
-    <updated>2019-05-04T14:31:26.924Z</updated>
+    <updated>2019-05-05T01:39:15.579Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;description: …&lt;br&gt;categories: Life&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/jpeg/203310/1556936178491-93454d2a-c36d-426c-b67d-592448d4c479.jpeg#align=left&amp;amp;display=inline&amp;amp;height=641&amp;amp;name=basketball.jpg&amp;amp;originHeight=641&amp;amp;originWidth=960&amp;amp;size=91329&amp;amp;status=done&amp;amp;width=960&quot; alt=&quot;basketball.jpg&quot;&gt;&lt;br&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2019/jpeg/203310/1556936178491-93454d2a-c36d-426c-b67d-592448d4c479.jpeg#align=left&amp;amp;display=inline&amp;amp;height=641&amp;amp;name=basketball.jpg&amp;amp;originHeight=641&amp;amp;originWidth=960&amp;amp;size=91329&amp;amp;status=done&amp;amp;width=960&quot; alt=&quot;basketball.jpg&quot;&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="Life" scheme="https://tfrain.github.io/categories/Life/"/>
     
     
   </entry>
