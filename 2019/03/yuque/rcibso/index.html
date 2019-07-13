@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Tfrain's  Blog">
 <meta property="og:description" content="脚本使用">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-05-04T14:31:26.932Z">
+<meta property="og:updated_time" content="2019-07-13T13:25:57.557Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="周会分享">
 <meta name="twitter:description" content="脚本使用">
@@ -2085,7 +2085,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #eeb066;
+  background: #4269a4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3664,7 +3664,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">Words count in article:</span>
                 
                 <span title="Words count in article">
-                  1,049
+                  1,059
                 </span>
               
 
@@ -3714,7 +3714,7 @@ pre .javascript .function {
 <p><a name="Shell"></a></p>
 <h3 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h3><p><a name="alias"></a></p>
 <h4 id="alias"><a href="#alias" class="headerlink" title="alias"></a>alias</h4><p>永久生效：<a href="https://blog.51cto.com/feihan21/1212954" target="_blank" rel="noopener">https://blog.51cto.com/feihan21/1212954</a><br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">alias</span> sudo=<span class="string">'sudo '</span></span><br><span class="line"><span class="built_in">alias</span> ll=<span class="string">'ls -alF'</span></span><br><span class="line"><span class="built_in">alias</span> la=<span class="string">'ls -A'</span></span><br><span class="line"><span class="built_in">alias</span> l=<span class="string">'ls -CF'</span></span><br><span class="line"><span class="built_in">alias</span> l.=<span class="string">'ls -d .* --color=auto'</span></span><br><span class="line"><span class="built_in">alias</span> nis=<span class="string">"npm install --save "</span></span><br><span class="line"><span class="built_in">alias</span> svim=<span class="string">'sudo nvim'</span></span><br><span class="line"><span class="built_in">alias</span> mkcd=<span class="string">'foo(){ mkdir -p "$1"; cd "$1" }; foo '</span></span><br><span class="line"><span class="built_in">alias</span> install=<span class="string">'sudo apt get install'</span></span><br><span class="line"><span class="built_in">alias</span> update=<span class="string">'sudo apt-get update; sudo apt-get upgrade'</span></span><br><span class="line"><span class="built_in">alias</span> ..=<span class="string">"cd .."</span></span><br><span class="line"><span class="built_in">alias</span> ...=<span class="string">"cd ..; cd .."</span></span><br><span class="line"><span class="built_in">alias</span> h=<span class="string">'history'</span></span><br><span class="line"><span class="built_in">alias</span> ports=<span class="string">'netstat -tulanp'</span></span><br><span class="line"><span class="built_in">alias</span> rm=<span class="string">'rm -I --preserve-root'</span></span><br><span class="line"><span class="built_in">alias</span> grep=<span class="string">"grep --color"</span></span><br><span class="line"><span class="built_in">alias</span> grepp=<span class="string">"grep -P --color"</span></span><br></pre></td></tr></tbody></table></figure><p></p>
-<p>alias 即可显示设置的命令，和git一个道理<br>vim ~/.bash_aliases 加入适合的alias命令<br><a name="8035c74d"></a></p>
+<p>alias 即可显示设置的命令，和git一个道理<br>vim ~/.bash_aliases 加入适合的alias命令<br>$ source .bashrc   #让我们的环境生效<br><a name="8035c74d"></a></p>
 <h3 id="引导"><a href="#引导" class="headerlink" title="引导"></a>引导</h3><p><a href="https://coolshell.cn/articles/19219.html" target="_blank" rel="noopener">https://coolshell.cn/articles/19219.html</a><br>建议先使用 <a href="https://github.com/tldr-pages/tldr" target="_blank" rel="noopener"><strong>tldr</strong></a> 命令，然后也可以在 github 上找有趣的 shell 工具。<br><strong>检查脚本</strong>：<a href="https://www.shellcheck.net/" target="_blank" rel="noopener">https://www.shellcheck.net/</a><br><a name="d64bbbae"></a></p>
 <h4 id="fish-和-zsh"><a href="#fish-和-zsh" class="headerlink" title="fish 和 zsh"></a>fish 和 zsh</h4><p><a href="http://www.ruanyifeng.com/blog/2017/05/fish_shell.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2017/05/fish_shell.html</a><br><a href="https://www.jianshu.com/p/bf03bce60987" target="_blank" rel="noopener">https://www.jianshu.com/p/bf03bce60987</a><br>fish:<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">help</span></span><br><span class="line">fish_config</span><br></pre></td></tr></tbody></table></figure><p></p>
 <p>oh-my-fish 和 oh-my-zsh<br>我给的是 oh-my-fish<br><a href="https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/zh-CN/README.md" target="_blank" rel="noopener">https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/zh-CN/README.md</a><br><a href="https://linux.cn/article-9515-1.html" target="_blank" rel="noopener">https://linux.cn/article-9515-1.html</a><br><a href="https://wiki.archlinux.org/index.php/Fish_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87" target="_blank" rel="noopener">https://wiki.archlinux.org/index.php/Fish_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)</a>)</p>
@@ -3908,7 +3908,7 @@ abbrlink: 1
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
