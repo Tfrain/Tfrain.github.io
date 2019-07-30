@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="Tfrain's  Blog">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1552527773485-1da446f7-b006-417b-a4cf-17e9d2d4cfd1.png#align=left&amp;display=inline&amp;height=400&amp;name=image.png&amp;originHeight=400&amp;originWidth=600&amp;size=77022&amp;status=done&amp;width=600">
-<meta property="og:updated_time" content="2019-07-29T15:18:38.952Z">
+<meta property="og:updated_time" content="2019-07-30T11:50:37.414Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vim的资源与使用">
 <meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/203310/1552527773485-1da446f7-b006-417b-a4cf-17e9d2d4cfd1.png#align=left&amp;display=inline&amp;height=400&amp;name=image.png&amp;originHeight=400&amp;originWidth=600&amp;size=77022&amp;status=done&amp;width=600">
@@ -2084,7 +2084,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3effab;
+  background: #ff1dc4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2624,6 +2624,83 @@ pre .javascript .function {
 }
 .gt-container .gt-popup .gt-action.is--active:before {
   top: 0.7em;
+}
+.-hoofoo-share-buttons {
+  display: inline-block;
+}
+.-hoofoo-share-title {
+  font-size: 1.1em;
+  font-weight: 200;
+}
+.-hoofoo-share-ui-button {
+  cursor: pointer;
+  background-color: #555;
+  color: #fff;
+  font-size: 24px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 25px;
+  float: left;
+  transition: background 0.4s;
+  -moz-transition: background 0.4s; /* Firefox 4 */
+  -webkit-transition: background 0.4s; /* Safari 和 Chrome */
+  -o-transition: background 0.4s;
+}
+.-hoofoo-share-weibo:hover {
+  background-color: #cf3f41;
+}
+.-hoofoo-share-weixin:hover {
+  background-color: #18a01a;
+}
+.-hoofoo-share-qq:hover {
+  background-color: #950c0c;
+}
+.-hoofoo-share-twitter:hover {
+  background-color: #2ab3e6;
+}
+.-hoofoo-share-more:hover {
+  background-color: #777;
+}
+.-mob-share-weixin-qrcode-content {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  -o-box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+.-mob-share-weixin-qrcode {
+  margin: 5% !important;
+  width: 90% !important;
+  height: auto !important;
+}
+.-mob-share-weixin-qrcode-close {
+  background-image: url("/lib/fancybox/source/fancybox_sprite.png") !important;
+}
+.-mob-share-weixin-qrcode-close {
+  overflow: hidden;
+  line-height: 100px !important;
+  position: absolute !important;
+  top: -18px !important;
+  right: -18px !important;
+  width: 36px !important;
+  height: 36px !important;
+  cursor: pointer !important;
+  z-index: 8040 !important;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .-mob-share-weixin-qrcode-close {
+    background-image: url("/lib/fancybox/source/fancybox_sprite@2x.png") !important;
+    background-size: 44px 152px !important; /*The size of the normal image, half the size of the hi-res image*/
+  }
+}
+.-mob-share-close {
+  height: 4em !important;
+  font-size: 0.8em !important;
+  line-height: 4em !important;
+  background: #555 !important;
+  color: #fff !important;
 }
 .page-archive .archive-page-counter {
   position: relative;
@@ -3496,6 +3573,16 @@ pre .javascript .function {
         </li>
       
         
+        <li class="menu-item menu-item-library">
+          <a href="/library" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br>
+            
+            Library
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-donate">
           <a href="/donate" rel="section">
             
@@ -3663,7 +3750,7 @@ pre .javascript .function {
                   <span class="post-meta-item-text">Words count in article:</span>
                 
                 <span title="Words count in article">
-                  1,046
+                  1,044
                 </span>
               
 
@@ -3703,14 +3790,14 @@ pre .javascript .function {
         <p><img src="https://cdn.nlark.com/yuque/0/2019/png/203310/1552527773485-1da446f7-b006-417b-a4cf-17e9d2d4cfd1.png#align=left&amp;display=inline&amp;height=400&amp;name=image.png&amp;originHeight=400&amp;originWidth=600&amp;size=77022&amp;status=done&amp;width=600" alt="image.png"></p>
 <a id="more"></a>
 <p><a name="a4d3b02a"></a></p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>毫无疑问，Vim对新手很不友好。但是友好的编辑器通常跟不上程序员进步的速度，谁又不想一劳永逸，一直使用同一种编辑器呢？这显然是一种辩证选择。而选择 Vim 绝对是一个明智的长期投资。Vim 又被称为神的编辑器，前身 vi 是由 BIll Joy 于 1976 年开发，其改进版 Vim 最早于 1991 年由 Bram Moolenaar 开发。关于 Vim 的其他故事，可以参考<a href="https://upclinux.github.io/intro/07/vim-and-emacs/" target="_blank" rel="noopener">编辑器之神 &amp; 神的编辑器</a>1。<br><a name="a90ef60c"></a></p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>毫无疑问，Vim对新手很不友好。但是友好的编辑器通常跟不上程序员进步的速度，谁又不想一劳永逸，一直使用同一种编辑器呢？这显然是一种辩证选择。而选择 Vim 绝对是一个明智的长期投资。Vim 又被称为神的编辑器，前身 vi 是由 BIll Joy 于 1976 年开发，其改进版 Vim 最早于 1991 年由 Bram Moolenaar 开发。关于 Vim 的其他故事，可以参考<a href="https://upclinux.github.io/intro/07/vim-and-emacs/" target="_blank" rel="noopener">编辑器之神 &amp; 神的编辑器</a>。<br><a name="a90ef60c"></a></p>
 <h2 id="Vim-学习资源"><a href="#Vim-学习资源" class="headerlink" title="Vim 学习资源"></a>Vim 学习资源</h2><p>网上有很多乱七八糟的资源，但我感觉写得都不尽如人意。主要还是靠自己去搜索资源，找到最适合自己的学习方式，显然现在我还只是入门，仍旧处于不断学习的状态中。我的学习过程大致如下:</p>
 <ol>
 <li>vimtutor</li>
 <li>Vim 实用技巧</li>
 <li>笨方法学 Vimscript</li>
 </ol>
-<p>关于 Vim 实用技巧，推荐自己看一遍，里面针对问题来提出 Vim 的解决方案，是一个很好的参考资料，可以参考我的写得一篇  <a href="https://www.yuque.com/tfrain/boke/vim_skill" target="_blank" rel="noopener">Vim 实用技巧</a>2，至于<a href="http://learnvimscriptthehardway.onefloweroneworld.com/" target="_blank" rel="noopener">笨方法学Vim</a><a href="http://learnvimscriptthehardway.onefloweroneworld.com/" target="_blank" rel="noopener">script</a>，目前还没有深入下去，仍旧在学习当中。<br><a name="2c0b0f2f"></a></p>
+<p>关于 Vim 实用技巧，推荐自己看一遍，里面针对问题来提出 Vim 的解决方案，是一个很好的参考资料，可以参考我的写得一篇  <a href="https://www.yuque.com/tfrain/boke/vim_skill" target="_blank" rel="noopener">Vim 实用技巧</a>，至于<a href="http://learnvimscriptthehardway.onefloweroneworld.com/" target="_blank" rel="noopener">笨方法学Vim</a><a href="http://learnvimscriptthehardway.onefloweroneworld.com/" target="_blank" rel="noopener">script</a>，目前还没有深入下去，仍旧在学习当中。<br><a name="2c0b0f2f"></a></p>
 <h2 id="Vim-应用场景"><a href="#Vim-应用场景" class="headerlink" title="Vim 应用场景"></a>Vim 应用场景</h2><p>Vim 作为神的编辑器，自然少不了应用的地方。据我目前认知，大部分需要编辑器的地方，都能发现 Vim的身影，各种主流的 IDE 中 Vim 插件已经有大牛帮你写好了，只需要搜索进行下载就行了，我目前在这几个场景中应用 Vim：</p>
 <ol>
 <li>SpaceVim —-模块化的 Vim IDE</li>
@@ -3746,7 +3833,7 @@ color:#080808;
 
     
       </div>
- 
+
     
 
     
@@ -3800,6 +3887,10 @@ color:#080808;
       </div>
     
 
+    <div>
+    
+    </div>
+
     <footer class="post-footer">
       
 
@@ -3821,8 +3912,8 @@ color:#080808;
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/yuque/ubuntu/" rel="prev" title="Ubuntu18.04 记录">
-                Ubuntu18.04 记录 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/yuque/rcibso/" rel="prev" title="周会分享">
+                周会分享 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -3909,7 +4000,7 @@ abbrlink: 1
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">23</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -3920,7 +4011,7 @@ abbrlink: 1
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -4182,6 +4273,9 @@ abbrlink: 1
 
   
 
+
+
+  
 
 
   
